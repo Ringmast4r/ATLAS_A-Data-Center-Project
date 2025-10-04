@@ -118,6 +118,46 @@
             z-index: 1000;
         }
 
+        #results-panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.95);
+            border: 1px solid #00ff00;
+            padding: 15px;
+            width: 350px;
+            max-height: 500px;
+            overflow-y: auto;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            display: none;
+            z-index: 1000;
+            font-size: 11px;
+        }
+
+        .result-item {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #006600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .result-item:hover {
+            background: rgba(0, 255, 0, 0.1);
+            border-color: #00ff00;
+        }
+
+        .result-name {
+            color: #00ff00;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .result-details {
+            color: #00aa00;
+            font-size: 10px;
+        }
+
         #info-panel h3 {
             color: #00ff00;
             margin-bottom: 10px;
@@ -213,6 +253,12 @@
         <div id="map-container">
             <div id="loading">LOADING INTELLIGENCE DATA...</div>
             <div id="globe"></div>
+
+            <div id="results-panel">
+                <span class="close-btn" onclick="closeResults()">✕</span>
+                <h3 style="color: #00ff00; margin-bottom: 10px;">SEARCH RESULTS</h3>
+                <div id="results-list"></div>
+            </div>
 
             <div id="info-panel">
                 <span class="close-btn" onclick="closeInfo()">✕</span>
@@ -584,6 +630,14 @@
             const stateAbbr = stateAbbreviations[searchTerm];
 
             const filtered = datacenters.filter(dc => {
+                // If searching for a US state, only match US locations
+                if (stateAbbr) {
+                    return dc.country === 'United States' && (
+                        (dc.state && dc.state.toLowerCase().includes(searchTerm)) ||
+                        dc.address.includes(' ' + stateAbbr + ' ')
+                    );
+                }
+
                 const matchesSearch = !searchTerm ||
                     dc.name.toLowerCase().includes(searchTerm) ||
                     dc.company.toLowerCase().includes(searchTerm) ||
@@ -591,8 +645,7 @@
                     (dc.state && dc.state.toLowerCase().includes(searchTerm)) ||
                     (dc.city && dc.city.toLowerCase().includes(searchTerm)) ||
                     (dc.street && dc.street.toLowerCase().includes(searchTerm)) ||
-                    dc.address.toLowerCase().includes(searchTerm) ||
-                    (stateAbbr && dc.address.includes(' ' + stateAbbr + ' '));
+                    dc.address.toLowerCase().includes(searchTerm);
 
                 const matchesCountry = !countryFilter || dc.country === countryFilter;
                 const matchesCompany = !companyFilter || dc.company === companyFilter;
@@ -603,6 +656,46 @@
             console.log(`Filtered to ${filtered.length} datacenters`);
             addMarkers(filtered);
             document.getElementById('visible-count').textContent = filtered.length;
+
+            // Show results panel if searching and has results
+            if (searchTerm && filtered.length > 0 && filtered.length < 100) {
+                showResults(filtered);
+            } else {
+                closeResults();
+            }
+        }
+
+        function showResults(results) {
+            const resultsList = document.getElementById('results-list');
+            resultsList.innerHTML = '';
+
+            results.forEach(dc => {
+                const item = document.createElement('div');
+                item.className = 'result-item';
+                item.innerHTML = `
+                    <div class="result-name">${dc.name}</div>
+                    <div class="result-details">
+                        ${dc.company}<br>
+                        ${dc.city || ''}${dc.state ? ', ' + dc.state : ''} ${dc.country || ''}
+                    </div>
+                `;
+                item.onclick = () => {
+                    showInfo(dc);
+                    // Find and highlight marker
+                    const marker = allMarkers.find(m => m.data === dc);
+                    if (marker) {
+                        map.setView([marker.marker.getLatLng().lat, marker.marker.getLatLng().lng], 10);
+                        marker.marker.openPopup();
+                    }
+                };
+                resultsList.appendChild(item);
+            });
+
+            document.getElementById('results-panel').style.display = 'block';
+        }
+
+        function closeResults() {
+            document.getElementById('results-panel').style.display = 'none';
         }
 
         function showInfo(dc) {
