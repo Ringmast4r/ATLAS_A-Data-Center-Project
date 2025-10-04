@@ -55,7 +55,7 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 
 **CSV Format** (`datacenters_processed.csv`):
 ```csv
-name,company,street,city,state,zip,country,address
+name,company,city,country,address
 ```
 
 **JSON Format** (`datacenters.json`):
@@ -64,22 +64,21 @@ name,company,street,city,state,zip,country,address
   {
     "name": "NAP de las Americas Madrid",
     "company": "Terremark",
-    "street": "Calle de Yecora, 4",
     "city": "Madrid",
-    "state": "",
-    "zip": "28009",
     "country": "Spain",
     "address": "Calle de Yecora, 4 28009 Madrid Spain"
   }
 ]
 ```
 
+Note: The JSON format also includes additional fields like `street`, `state`, `zip`, and `city_coords` for internal processing, but the core fields are listed above.
+
 **Sample Records:**
 ```
-NAP de las Americas Madrid,Terremark,"Calle de Yecora, 4 28009 Madrid Spain",Spain
-Central Office 2,StarHub Ltd.,19 Tai Seng Dr 535222 Singapore Singapore,Singapore
-Cluj-Napoca,GTS Telecom SRL,Str. Garii nr. 21 400267 Cluj-Napoca Romania,Romania
-Etix Accra #1,Etix Everywhere,R40 Accra Ghana,Ghana
+NAP de las Americas Madrid,Terremark,Madrid,Spain,"Calle de Yecora, 4 28009 Madrid Spain"
+Central Office 2,StarHub Ltd.,Singapore,Singapore,19 Tai Seng Dr 535222 Singapore Singapore
+Cluj-Napoca,GTS Telecom SRL,Cluj-Napoca,Romania,Str. Garii nr. 21 400267 Cluj-Napoca Romania
+Etix Accra #1,Etix Everywhere,Accra,Ghana,R40 Accra Ghana
 ```
 
 ### Usage Examples
@@ -91,7 +90,7 @@ import csv
 with open('datacenters_processed.csv', 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
-        print(f"{row['name']} - {row['city']}, {row['state']} {row['country']}")
+        print(f"{row['name']} - {row['city']}, {row['country']}")
 ```
 
 **Python - Load JSON:**
@@ -102,16 +101,19 @@ with open('datacenters.json', 'r', encoding='utf-8') as f:
     datacenters = json.load(f)
 
 # Filter by country
-us_datacenters = [dc for dc in datacenters if dc['country'] == 'United States']
-
-# Filter by state
-florida_datacenters = [dc for dc in datacenters if dc['state'] == 'Florida']
+us_datacenters = [dc for dc in datacenters if dc.get('country') == 'United States']
 
 # Filter by city
-miami_datacenters = [dc for dc in datacenters if 'Miami' in dc.get('city', '')]
+london_datacenters = [dc for dc in datacenters if dc.get('city') == 'London']
 
 # Filter by company
-equinix_facilities = [dc for dc in datacenters if 'Equinix' in dc['company']]
+equinix_facilities = [dc for dc in datacenters if 'Equinix' in dc.get('company', '')]
+
+# Search across all fields
+search_term = 'miami'
+results = [dc for dc in datacenters
+           if search_term.lower() in str(dc.get('address', '')).lower() or
+              search_term.lower() in str(dc.get('city', '')).lower()]
 ```
 
 **JavaScript - Fetch and Query:**
