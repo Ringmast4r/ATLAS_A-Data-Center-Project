@@ -495,11 +495,31 @@
             console.log('Filters populated');
         }
 
+        // State abbreviations map
+        const stateAbbreviations = {
+            'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR',
+            'california': 'CA', 'colorado': 'CO', 'connecticut': 'CT', 'delaware': 'DE',
+            'florida': 'FL', 'georgia': 'GA', 'hawaii': 'HI', 'idaho': 'ID',
+            'illinois': 'IL', 'indiana': 'IN', 'iowa': 'IA', 'kansas': 'KS',
+            'kentucky': 'KY', 'louisiana': 'LA', 'maine': 'ME', 'maryland': 'MD',
+            'massachusetts': 'MA', 'michigan': 'MI', 'minnesota': 'MN', 'mississippi': 'MS',
+            'missouri': 'MO', 'montana': 'MT', 'nebraska': 'NE', 'nevada': 'NV',
+            'new hampshire': 'NH', 'new jersey': 'NJ', 'new mexico': 'NM', 'new york': 'NY',
+            'north carolina': 'NC', 'north dakota': 'ND', 'ohio': 'OH', 'oklahoma': 'OK',
+            'oregon': 'OR', 'pennsylvania': 'PA', 'rhode island': 'RI', 'south carolina': 'SC',
+            'south dakota': 'SD', 'tennessee': 'TN', 'texas': 'TX', 'utah': 'UT',
+            'vermont': 'VT', 'virginia': 'VA', 'washington': 'WA', 'west virginia': 'WV',
+            'wisconsin': 'WI', 'wyoming': 'WY'
+        };
+
         function filterData() {
             console.log('Filtering data...');
             const searchTerm = document.getElementById('search').value.toLowerCase();
             const countryFilter = document.getElementById('country-filter').value;
             const companyFilter = document.getElementById('company-filter').value;
+
+            // Check if search term is a state name and get abbreviation
+            const stateAbbr = stateAbbreviations[searchTerm];
 
             const filtered = datacenters.filter(dc => {
                 const matchesSearch = !searchTerm ||
@@ -509,7 +529,8 @@
                     (dc.state && dc.state.toLowerCase().includes(searchTerm)) ||
                     (dc.city && dc.city.toLowerCase().includes(searchTerm)) ||
                     (dc.street && dc.street.toLowerCase().includes(searchTerm)) ||
-                    dc.address.toLowerCase().includes(searchTerm);
+                    dc.address.toLowerCase().includes(searchTerm) ||
+                    (stateAbbr && dc.address.includes(' ' + stateAbbr + ' '));
 
                 const matchesCountry = !countryFilter || dc.country === countryFilter;
                 const matchesCompany = !companyFilter || dc.company === companyFilter;
