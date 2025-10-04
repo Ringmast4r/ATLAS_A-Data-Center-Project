@@ -1,5 +1,7 @@
 # Global Data Center Intelligence System
 
+🌍 **[LIVE INTERACTIVE MAP](https://yourusername.github.io/datacenter-osint/)** 🌍
+
 ## Project Origin
 
 This OSINT scraping tool was developed as part of a critical infrastructure mapping initiative for a commercial geospatial intelligence platform. Our company was building an advanced location-based system utilizing cellular coordinates and infrastructure data to power next-generation mapping and analytics services.
@@ -39,6 +41,9 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 #### Data Files
 - **`datacenters_clean.csv`** - Cleaned and standardized dataset (CSV format)
 - **`datacenters.json`** - JSON format for API/application integration
+
+#### Interactive Tools
+- **`index.html`** - Live interactive world map with search/filter capabilities
 
 #### Documentation
 - **`STATISTICS.md`** - Comprehensive statistics and regional breakdowns
