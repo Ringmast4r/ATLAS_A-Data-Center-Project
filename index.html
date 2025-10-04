@@ -465,7 +465,7 @@
 
         // Generate random offset for clustering
         function getRandomOffset() {
-            return (Math.random() - 0.5) * 2; // Spread within state/country
+            return (Math.random() - 0.5) * 0.3; // Small spread to avoid exact overlap
         }
 
         // Load data
@@ -512,34 +512,40 @@
             let markersAdded = 0;
             data.forEach((dc, index) => {
                 let lat, lng;
+                let useOffset = true;
 
-                // Use real coordinates if available
+                // Priority 1: Exact coordinates (no offset needed)
                 if (dc.lat && dc.lon) {
                     lat = dc.lat;
                     lng = dc.lon;
-                } else if (dc.city_coords) {
-                    // Use city coordinates if available
-                    lat = dc.city_coords[0] + getRandomOffset();
-                    lng = dc.city_coords[1] + getRandomOffset();
-                } else {
-                    // Try to use state coordinates for US datacenters
-                    let coords = null;
-
-                    if (dc.country === 'United States' && dc.state && usStateCoords[dc.state]) {
-                        coords = usStateCoords[dc.state];
-                    } else {
-                        // Fall back to country coordinates
-                        coords = countryCoords[dc.country];
-                    }
-
+                    useOffset = false;
+                }
+                // Priority 2: City coordinates (small offset)
+                else if (dc.city_coords && Array.isArray(dc.city_coords) && dc.city_coords.length === 2) {
+                    lat = dc.city_coords[0];
+                    lng = dc.city_coords[1];
+                }
+                // Priority 3: State coordinates for US (medium offset)
+                else if (dc.country === 'United States' && dc.state && usStateCoords[dc.state]) {
+                    let coords = usStateCoords[dc.state];
+                    lat = coords[0];
+                    lng = coords[1];
+                }
+                // Priority 4: Country coordinates (larger offset)
+                else {
+                    let coords = countryCoords[dc.country];
                     if (!coords) {
-                        console.warn(`No coordinates for: ${dc.state || dc.country}`);
+                        console.warn(`No coordinates for: ${dc.country}`);
                         coords = [0, 0];
                     }
+                    lat = coords[0];
+                    lng = coords[1];
+                }
 
-                    // Add random offset
-                    lat = coords[0] + getRandomOffset();
-                    lng = coords[1] + getRandomOffset();
+                // Add small random offset to avoid exact overlaps
+                if (useOffset) {
+                    lat += getRandomOffset();
+                    lng += getRandomOffset();
                 }
 
                 // Color based on country density

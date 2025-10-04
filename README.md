@@ -55,7 +55,7 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 
 **CSV Format** (`datacenters_processed.csv`):
 ```csv
-name,company,city,country,address
+name,company,city,administrative_area,country,address
 ```
 
 **JSON Format** (`datacenters.json`):
@@ -71,14 +71,16 @@ name,company,city,country,address
 ]
 ```
 
-Note: The JSON format also includes additional fields like `street`, `state`, `zip`, and `city_coords` for internal processing, but the core fields are listed above.
+**Field Descriptions:**
+- `administrative_area` - First-level administrative division (e.g., US states, Canadian provinces, UK counties, German Länder, French régions)
+- The JSON format includes additional fields like `street`, `state`, `zip`, and `city_coords` for internal map processing
 
 **Sample Records:**
 ```
-NAP de las Americas Madrid,Terremark,Madrid,Spain,"Calle de Yecora, 4 28009 Madrid Spain"
-Central Office 2,StarHub Ltd.,Singapore,Singapore,19 Tai Seng Dr 535222 Singapore Singapore
-Cluj-Napoca,GTS Telecom SRL,Cluj-Napoca,Romania,Str. Garii nr. 21 400267 Cluj-Napoca Romania
-Etix Accra #1,Etix Everywhere,Accra,Ghana,R40 Accra Ghana
+NAP de las Americas Madrid,Terremark,Madrid,,Spain,"Calle de Yecora, 4 28009 Madrid Spain"
+Handy Networks Denver,Handy Networks,Denver,Colorado,United States,"1801 California St, Suite 240 Denver"
+Central Office 2,StarHub Ltd.,Singapore,,Singapore,19 Tai Seng Dr 535222 Singapore Singapore
+Toronto,Allied Properties REIT,Toronto,Ontario,Canada,151 Front Street Toronto Canada
 ```
 
 ### Usage Examples
