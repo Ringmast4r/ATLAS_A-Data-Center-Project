@@ -39,11 +39,12 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 ### Files
 
 #### Data Files
-- **`datacenters_clean.csv`** - Cleaned and standardized dataset (CSV format)
-- **`datacenters.json`** - JSON format for API/application integration
+- **`datacenters_processed.csv`** - Processed dataset with parsed address fields (CSV format)
+- **`datacenters_original_scraped.csv`** - Original scraped data (reference)
+- **`datacenters.json`** - JSON format for API/application integration with structured address data
 
 #### Interactive Tools
-- **`index.html`** - Live interactive world map with search/filter capabilities
+- **`index.html`** - Live interactive world map with advanced search, state/city filtering, and results panel
 
 #### Documentation
 - **`STATISTICS.md`** - Comprehensive statistics and regional breakdowns
@@ -52,9 +53,9 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 
 ### Data Schema
 
-**CSV Format** (`datacenters_clean.csv`):
+**CSV Format** (`datacenters_processed.csv`):
 ```csv
-name,company,address,country
+name,company,street,city,state,zip,country,address
 ```
 
 **JSON Format** (`datacenters.json`):
@@ -63,8 +64,12 @@ name,company,address,country
   {
     "name": "NAP de las Americas Madrid",
     "company": "Terremark",
-    "address": "Calle de Yecora, 4 28009 Madrid Spain",
-    "country": "Spain"
+    "street": "Calle de Yecora, 4",
+    "city": "Madrid",
+    "state": "",
+    "zip": "28009",
+    "country": "Spain",
+    "address": "Calle de Yecora, 4 28009 Madrid Spain"
   }
 ]
 ```
@@ -83,10 +88,10 @@ Etix Accra #1,Etix Everywhere,R40 Accra Ghana,Ghana
 ```python
 import csv
 
-with open('datacenters_clean.csv', 'r', encoding='utf-8') as f:
+with open('datacenters_processed.csv', 'r', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
-        print(f"{row['name']} in {row['country']}")
+        print(f"{row['name']} - {row['city']}, {row['state']} {row['country']}")
 ```
 
 **Python - Load JSON:**
@@ -98,6 +103,12 @@ with open('datacenters.json', 'r', encoding='utf-8') as f:
 
 # Filter by country
 us_datacenters = [dc for dc in datacenters if dc['country'] == 'United States']
+
+# Filter by state
+florida_datacenters = [dc for dc in datacenters if dc['state'] == 'Florida']
+
+# Filter by city
+miami_datacenters = [dc for dc in datacenters if 'Miami' in dc.get('city', '')]
 
 # Filter by company
 equinix_facilities = [dc for dc in datacenters if 'Equinix' in dc['company']]
@@ -111,8 +122,17 @@ fetch('datacenters.json')
     // Find all datacenters in a country
     const ukDatacenters = data.filter(dc => dc.country === 'United Kingdom');
 
+    // Find all datacenters in a US state
+    const californiaDatacenters = data.filter(dc => dc.state === 'California');
+
+    // Find all datacenters in a city
+    const nycDatacenters = data.filter(dc => dc.city === 'New York');
+
     // Get unique countries
     const countries = [...new Set(data.map(dc => dc.country))];
+
+    // Get unique US states
+    const states = [...new Set(data.filter(dc => dc.state).map(dc => dc.state))];
   });
 ```
 
@@ -121,11 +141,17 @@ fetch('datacenters.json')
 # Count by country
 jq 'group_by(.country) | map({country: .[0].country, count: length})' datacenters.json
 
+# Count by state (US only)
+jq '[.[] | select(.state != "")] | group_by(.state) | map({state: .[0].state, count: length})' datacenters.json
+
 # Find specific operator
 jq '.[] | select(.company | contains("Equinix"))' datacenters.json
 
-# Extract all facilities in a country
-jq '.[] | select(.country == "Germany")' datacenters.json
+# Extract all facilities in a state
+jq '.[] | select(.state == "Florida")' datacenters.json
+
+# Extract all facilities in a city
+jq '.[] | select(.city == "Miami")' datacenters.json
 ```
 
 ### Coverage

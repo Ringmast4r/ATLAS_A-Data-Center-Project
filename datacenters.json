@@ -551,7 +551,11 @@
     "state": "Florida",
     "zip": "",
     "country": "",
-    "address": "11500 NW 25th Street, NW 117th Avenue, Building 6/7 FL 33172 Miami United States"
+    "address": "11500 NW 25th Street, NW 117th Avenue, Building 6/7 FL 33172 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "11525 Main Street",
@@ -1375,7 +1379,11 @@
     "state": "",
     "zip": "33131",
     "country": "",
-    "address": "200 SE 1st Street 33131 Miami United States"
+    "address": "200 SE 1st Street 33131 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "2000 Kubach Road",
@@ -1693,7 +1701,11 @@
     "state": "",
     "zip": "2300",
     "country": "",
-    "address": "2300 NW 89th Pl Miami United States"
+    "address": "2300 NW 89th Pl Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "2323 Bryan Street",
@@ -2271,7 +2283,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "",
-    "address": "36 NE 2nd St FL 33132 Miami United States"
+    "address": "36 NE 2nd St FL 33132 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "36 NE 2nd St.",
@@ -2615,7 +2631,11 @@
     "state": "",
     "zip": "19043556474",
     "country": "",
-    "address": "32202 Jacksonville United States 19043556474"
+    "address": "32202 Jacksonville United States 19043556474",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "4211 Bryan St.",
@@ -15769,7 +15789,11 @@
     "state": "Florida",
     "zip": "",
     "country": "",
-    "address": "100 West Lucerne Circle, Suite 201 FL 32801 Orlando United States"
+    "address": "100 West Lucerne Circle, Suite 201 FL 32801 Orlando United States",
+    "city_coords": [
+      28.5383,
+      -81.3792
+    ]
   },
   {
     "name": "Colo@34",
@@ -15939,7 +15963,11 @@
     "state": "",
     "zip": "33132",
     "country": "",
-    "address": "33132 Miami United States +1 (305) 731-2225"
+    "address": "33132 Miami United States +1 (305) 731-2225",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "ColoHouse Miami",
@@ -15949,7 +15977,11 @@
     "state": "",
     "zip": "33132",
     "country": "",
-    "address": "33132 Miami United States +1 (305) 731-2225"
+    "address": "33132 Miami United States +1 (305) 731-2225",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "ColoHouse Premier Data Center",
@@ -15959,7 +15991,11 @@
     "state": "",
     "zip": "33132",
     "country": "",
-    "address": "36 Northeast 2nd Street #400 33132 Miami United States"
+    "address": "36 Northeast 2nd Street #400 33132 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Colombia",
@@ -19113,7 +19149,11 @@
     "state": "",
     "zip": "32819",
     "country": "",
-    "address": "S. John Young Parkway 32819 Orlando United States"
+    "address": "S. John Young Parkway 32819 Orlando United States",
+    "city_coords": [
+      28.5383,
+      -81.3792
+    ]
   },
   {
     "name": "DataSpace1",
@@ -19133,7 +19173,11 @@
     "state": "",
     "zip": "33634",
     "country": "",
-    "address": "7904 Hopi Place 33634 Tampa United States"
+    "address": "7904 Hopi Place 33634 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Datautama-NET",
@@ -19593,7 +19637,11 @@
     "state": "",
     "zip": "33142",
     "country": "",
-    "address": "1953 NW 22nd Street 33142 Miami United States"
+    "address": "1953 NW 22nd Street 33142 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "DediPower Cadogan House",
@@ -21467,7 +21515,11 @@
     "state": "",
     "zip": "33602",
     "country": "",
-    "address": "400 N Tampa St. 33602 Tampa United States"
+    "address": "400 N Tampa St. 33602 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "E-Trade Plaza",
@@ -22997,7 +23049,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "",
-    "address": "36 NE 2nd Street, Suite 570 33132 Miami United States"
+    "address": "36 NE 2nd Street, Suite 570 33132 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "FiberMedia 75 Broad",
@@ -25359,7 +25415,11 @@
     "state": "",
     "zip": "32204",
     "country": "",
-    "address": "800 Water Street 32204 Jacksonville United States"
+    "address": "800 Water Street 32204 Jacksonville United States",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Gore Hill Data Centre",
@@ -27783,7 +27843,11 @@
     "state": "",
     "zip": "32810",
     "country": "",
-    "address": "440 West Kennedy Blvd, Suite 1 32810 Orlando United States"
+    "address": "440 West Kennedy Blvd, Suite 1 32810 Orlando United States",
+    "city_coords": [
+      28.5383,
+      -81.3792
+    ]
   },
   {
     "name": "Hostigger",
@@ -27853,7 +27917,11 @@
     "state": "",
     "zip": "33602",
     "country": "",
-    "address": "412 East Madison Avenue 33602 Tampa United States"
+    "address": "412 East Madison Avenue 33602 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Hostzone CGE1",
@@ -30047,7 +30115,11 @@
     "state": "Florida",
     "zip": "",
     "country": "",
-    "address": "6602 Executive Park Court N, Unit 105 FL 32216 Jacksonville United States"
+    "address": "6602 Executive Park Court N, Unit 105 FL 32216 Jacksonville United States",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Jacksonville",
@@ -30057,7 +30129,11 @@
     "state": "Florida",
     "zip": "",
     "country": "",
-    "address": "4905 Belfort Road FL 32256 Jacksonville United States"
+    "address": "4905 Belfort Road FL 32256 Jacksonville United States",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Jacksonville",
@@ -30081,7 +30157,11 @@
     "state": "",
     "zip": "32202",
     "country": "",
-    "address": "200 W Forsyth St #1010 32202 Jacksonville United States"
+    "address": "200 W Forsyth St #1010 32202 Jacksonville United States",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Jacksonville 1",
@@ -37859,7 +37939,11 @@
     "state": "",
     "zip": "33172",
     "country": "",
-    "address": "2300 NW 89th Pl 33172 Miami United States"
+    "address": "2300 NW 89th Pl 33172 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37869,7 +37953,11 @@
     "state": "Florida",
     "zip": "",
     "country": "",
-    "address": "2132 NW 114th Avenue FL 33172 Miami United States"
+    "address": "2132 NW 114th Avenue FL 33172 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37879,7 +37967,11 @@
     "state": "",
     "zip": "33142",
     "country": "",
-    "address": "2115 NW 22nd Street 33142 Miami United States"
+    "address": "2115 NW 22nd Street 33142 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37889,7 +37981,11 @@
     "state": "",
     "zip": "33172",
     "country": "",
-    "address": "11234 NW 20th St 33172 Miami United States"
+    "address": "11234 NW 20th St 33172 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37899,7 +37995,11 @@
     "state": "",
     "zip": "33169",
     "country": "",
-    "address": "16563 NW 15th Ave 33169 Miami United States"
+    "address": "16563 NW 15th Ave 33169 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37909,7 +38009,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "",
-    "address": "36 NE 2nd Street 33132 Miami United States"
+    "address": "36 NE 2nd Street 33132 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37919,7 +38023,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "",
-    "address": "50 NE 9th St 33132-1709 Miami United States"
+    "address": "50 NE 9th St 33132-1709 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37929,7 +38037,11 @@
     "state": "",
     "zip": "",
     "country": "",
-    "address": "tbc Miami United States"
+    "address": "tbc Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami",
@@ -37939,7 +38051,11 @@
     "state": "",
     "zip": "",
     "country": "",
-    "address": "Miami USA 1-877-843-7627"
+    "address": "Miami USA 1-877-843-7627",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami (Northeast 215th Street)",
@@ -37977,7 +38093,11 @@
     "state": "",
     "zip": "33128",
     "country": "",
-    "address": "49 N.W. 5th Street 33128 Miami United States"
+    "address": "49 N.W. 5th Street 33128 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami (Southeast 1st Street)",
@@ -37987,7 +38107,11 @@
     "state": "",
     "zip": "33131",
     "country": "",
-    "address": "200 SE 1st St 33131 Miami United States"
+    "address": "200 SE 1st St 33131 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami 1",
@@ -37997,7 +38121,11 @@
     "state": "Nebraska",
     "zip": "33132",
     "country": "",
-    "address": "NE 9th St 50 33132 Miami United States"
+    "address": "NE 9th St 50 33132 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami 1",
@@ -38059,7 +38187,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "",
-    "address": "100 NE 80th Terrace 33138 Miami United States"
+    "address": "100 NE 80th Terrace 33138 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami DC",
@@ -38083,7 +38215,11 @@
     "state": "",
     "zip": "33172",
     "country": "",
-    "address": "11300 NW 25th Street 33172 Miami United States"
+    "address": "11300 NW 25th Street 33172 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami (Northwest 79th Avenue)",
@@ -42871,7 +43007,11 @@
     "state": "",
     "zip": "1100",
     "country": "",
-    "address": "1100 NW 163rd Drive Miami United States"
+    "address": "1100 NW 163rd Drive Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "North Ryde",
@@ -44055,7 +44195,11 @@
     "state": "",
     "zip": "32810",
     "country": "",
-    "address": "440 West Kennedy Blvd 32810 Orlando United States"
+    "address": "440 West Kennedy Blvd 32810 Orlando United States",
+    "city_coords": [
+      28.5383,
+      -81.3792
+    ]
   },
   {
     "name": "Orlando (Lake Destiny Drive)",
@@ -44065,7 +44209,11 @@
     "state": "",
     "zip": "32810",
     "country": "",
-    "address": "380 Lake Destiny Drive 32810 Orlando United States"
+    "address": "380 Lake Destiny Drive 32810 Orlando United States",
+    "city_coords": [
+      28.5383,
+      -81.3792
+    ]
   },
   {
     "name": "Orlando (Presidents Drive)",
@@ -44459,7 +44607,11 @@
     "state": "",
     "zip": "",
     "country": "",
-    "address": "Miami Heritage Technology Park Oxford United States"
+    "address": "Miami Heritage Technology Park Oxford United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Oyama",
@@ -45139,7 +45291,11 @@
     "state": "",
     "zip": "33602",
     "country": "",
-    "address": "400 North Tampa Street 33602 Tampa United States"
+    "address": "400 North Tampa Street 33602 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Park West",
@@ -49999,7 +50155,11 @@
     "state": "",
     "zip": "33611",
     "country": "",
-    "address": "4465 W. Gandy Blvd 33611 Tampa United States"
+    "address": "4465 W. Gandy Blvd 33611 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "SAIB DR Al-Kharj",
@@ -53981,7 +54141,11 @@
     "state": "",
     "zip": "32810",
     "country": "",
-    "address": "1101 N. Keller Road, Suite B 32810 Orlando United States"
+    "address": "1101 N. Keller Road, Suite B 32810 Orlando United States",
+    "city_coords": [
+      28.5383,
+      -81.3792
+    ]
   },
   {
     "name": "Smart Village Area 2",
@@ -57213,7 +57377,11 @@
     "state": "Florida",
     "zip": "",
     "country": "",
-    "address": "9417 Corporate Lake Dr FL 33634 Tampa United States"
+    "address": "9417 Corporate Lake Dr FL 33634 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa",
@@ -57223,7 +57391,11 @@
     "state": "",
     "zip": "33602",
     "country": "",
-    "address": "655 N Franklin Street, Suite 1000, 10th floor 33602 Tampa United States"
+    "address": "655 N Franklin Street, Suite 1000, 10th floor 33602 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa",
@@ -57233,7 +57405,11 @@
     "state": "",
     "zip": "33610",
     "country": "",
-    "address": "5904-A Hampton Oaks Pkwy 33610 Tampa United States"
+    "address": "5904-A Hampton Oaks Pkwy 33610 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa",
@@ -57243,7 +57419,11 @@
     "state": "",
     "zip": "33614",
     "country": "",
-    "address": "7909 Woodland Center Blvd 33614 Tampa United States"
+    "address": "7909 Woodland Center Blvd 33614 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa (North Tampa Street)",
@@ -57253,7 +57433,11 @@
     "state": "",
     "zip": "33602",
     "country": "",
-    "address": "400 North Tampa Street 33602 Tampa United States"
+    "address": "400 North Tampa Street 33602 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa (North Tampa Street)",
@@ -58069,7 +58253,11 @@
     "state": "",
     "zip": "33602",
     "country": "",
-    "address": "655 N Franklin Street 33602 Tampa United States"
+    "address": "655 N Franklin Street 33602 Tampa United States",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "The Gatehouse",
@@ -61663,7 +61851,11 @@
     "state": "",
     "zip": "33131",
     "country": "",
-    "address": "200 SE 1st St. 33131 Miami United States"
+    "address": "200 SE 1st St. 33131 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Volico Miami #2",
@@ -61673,7 +61865,11 @@
     "state": "",
     "zip": "33132",
     "country": "",
-    "address": "100 N. Biscayne Blvd 33132 Miami United States"
+    "address": "100 N. Biscayne Blvd 33132 Miami United States",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Voonami Orem Data Center",
@@ -61773,7 +61969,11 @@
     "state": "",
     "zip": "32256",
     "country": "",
-    "address": "8324 Baymeadows Way 32256 ? Jacksonville United States"
+    "address": "8324 Baymeadows Way 32256 ? Jacksonville United States",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Waco",
