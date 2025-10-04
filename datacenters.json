@@ -77,7 +77,11 @@
     "state": "",
     "zip": "95126-2761",
     "country": "United States",
-    "address": "250 Stockton Ave 95126-2761 San Jose USA"
+    "address": "250 Stockton Ave 95126-2761 San Jose USA",
+    "city_coords": [
+      37.3382,
+      -121.8863
+    ]
   },
   {
     "name": "St. Leon-Rot",
@@ -157,7 +161,11 @@
     "state": "",
     "zip": "02110",
     "country": "United States",
-    "address": "1 Summer St, 7th Floor 02110 Boston USA"
+    "address": "1 Summer St, 7th Floor 02110 Boston USA",
+    "city_coords": [
+      42.3601,
+      -71.0589
+    ]
   },
   {
     "name": "1 Tarver Street",
@@ -237,7 +245,11 @@
     "state": "",
     "zip": "60606-3739",
     "country": "United States",
-    "address": "10 S Canal St 60606-3739 Chicago USA"
+    "address": "10 S Canal St 60606-3739 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "100 Delawanna Avenue",
@@ -287,7 +299,11 @@
     "state": "",
     "zip": "30005-4154",
     "country": "United States",
-    "address": "1001 Windward Concourse 30005-4154 Alpharetta USA"
+    "address": "1001 Windward Concourse 30005-4154 Alpharetta USA",
+    "city_coords": [
+      34.0754,
+      -84.2941
+    ]
   },
   {
     "name": "101 Aquila Way",
@@ -337,7 +353,11 @@
     "state": "",
     "zip": "75247-4306",
     "country": "United States",
-    "address": "1100 Empire Central Pl 75247-4306 Dallas USA"
+    "address": "1100 Empire Central Pl 75247-4306 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "1100 Space Park Drive",
@@ -357,7 +377,11 @@
     "state": "",
     "zip": "30310-2636",
     "country": "United States",
-    "address": "1100 White St SW 30310-2636 Atlanta USA"
+    "address": "1100 White St SW 30310-2636 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "1101 Space Park Drive",
@@ -377,7 +401,11 @@
     "state": "",
     "zip": "64106",
     "country": "United States",
-    "address": "1102 Grand Blvd 64106 Kansas City USA"
+    "address": "1102 Grand Blvd 64106 Kansas City USA",
+    "city_coords": [
+      39.0997,
+      -94.5786
+    ]
   },
   {
     "name": "11085 Sun Center Drive",
@@ -407,7 +435,11 @@
     "state": "",
     "zip": "10011",
     "country": "United States",
-    "address": "111 8th Ave, Suite 307 10011 New York USA"
+    "address": "111 8th Ave, Suite 307 10011 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "111 8th Avenue",
@@ -417,7 +449,11 @@
     "state": "",
     "zip": "10011",
     "country": "United States",
-    "address": "111 8th Ave 10011 New York USA"
+    "address": "111 8th Ave 10011 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "111 Town Square Place",
@@ -447,7 +483,11 @@
     "state": "",
     "zip": "98101",
     "country": "United States",
-    "address": "1122 3rd Ave 98101 Seattle USA"
+    "address": "1122 3rd Ave 98101 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "1124 Hardy Rd",
@@ -497,7 +537,11 @@
     "state": "",
     "zip": "30310",
     "country": "United States",
-    "address": "1150 White St SW 30310 Atlanta USA"
+    "address": "1150 White St SW 30310 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "11500 NW 25th Street",
@@ -587,7 +631,11 @@
     "state": "",
     "zip": "75081",
     "country": "United States",
-    "address": "1210 Integrity Dr 75081 Richardson USA"
+    "address": "1210 Integrity Dr 75081 Richardson USA",
+    "city_coords": [
+      32.9483,
+      -96.7299
+    ]
   },
   {
     "name": "1215 Integrity Drive",
@@ -597,7 +645,11 @@
     "state": "",
     "zip": "75081",
     "country": "United States",
-    "address": "1215 Integrity Dr 75081 Richardson USA"
+    "address": "1215 Integrity Dr 75081 Richardson USA",
+    "city_coords": [
+      32.9483,
+      -96.7299
+    ]
   },
   {
     "name": "1221 Coit Road",
@@ -607,7 +659,11 @@
     "state": "",
     "zip": "75075-7761",
     "country": "United States",
-    "address": "1221 Coit Rd 75075-7761 Plano USA"
+    "address": "1221 Coit Rd 75075-7761 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "12270 World Trade Drive",
@@ -627,7 +683,11 @@
     "state": "",
     "zip": "92128-3765",
     "country": "United States",
-    "address": "12270 World Trade Dr 92128-3765 San Diego USA"
+    "address": "12270 World Trade Dr 92128-3765 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "123 Eagle Street, Level 8",
@@ -697,7 +757,11 @@
     "state": "",
     "zip": "77002",
     "country": "United States",
-    "address": "1301 Fannin St 77002 Houston USA"
+    "address": "1301 Fannin St 77002 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "1313 Calgary",
@@ -717,7 +781,11 @@
     "state": "",
     "zip": "94086",
     "country": "United States",
-    "address": "1320 Kifer Rd 94086 Sunnyvale USA"
+    "address": "1320 Kifer Rd 94086 Sunnyvale USA",
+    "city_coords": [
+      37.3688,
+      -122.0363
+    ]
   },
   {
     "name": "1331 E Business Center Dr.",
@@ -777,7 +845,11 @@
     "state": "",
     "zip": "94086-5306",
     "country": "United States",
-    "address": "1400 Kifer Rd 94086-5306 Sunnyvale USA"
+    "address": "1400 Kifer Rd 94086-5306 Sunnyvale USA",
+    "city_coords": [
+      37.3688,
+      -122.0363
+    ]
   },
   {
     "name": "141 West Jackson Boulevard",
@@ -907,7 +979,11 @@
     "state": "",
     "zip": "20166-9306",
     "country": "United States",
-    "address": "1506 Moran Rd 20166-9306 Sterling USA"
+    "address": "1506 Moran Rd 20166-9306 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "151 Front St W",
@@ -1027,7 +1103,11 @@
     "state": "",
     "zip": "75252",
     "country": "United States",
-    "address": "17201 Waterview Pkwy 75252 Dallas USA"
+    "address": "17201 Waterview Pkwy 75252 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "17222 Von Karman Ave",
@@ -1097,7 +1177,11 @@
     "state": "",
     "zip": "30303",
     "country": "United States",
-    "address": "180 Peachtree St NW 30303 Atlanta USA"
+    "address": "180 Peachtree St NW 30303 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "1805 Center Park Drive",
@@ -1107,7 +1191,11 @@
     "state": "",
     "zip": "28217-2900",
     "country": "United States",
-    "address": "1805 Center Park Dr 28217-2900 Charlotte USA"
+    "address": "1805 Center Park Dr 28217-2900 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "1808 Swift Dr.",
@@ -1297,7 +1385,11 @@
     "state": "",
     "zip": "19116",
     "country": "United States",
-    "address": "2000 Kubach Rd 19116 Philadelphia USA"
+    "address": "2000 Kubach Rd 19116 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "2001 Sixth Avenue",
@@ -1397,7 +1489,11 @@
     "state": "",
     "zip": "63101",
     "country": "United States",
-    "address": "210 N Tucker Blvd 63101 St. Louis USA"
+    "address": "210 N Tucker Blvd 63101 St. Louis USA",
+    "city_coords": [
+      38.627,
+      -90.1994
+    ]
   },
   {
     "name": "21110 Ridgetop Circle",
@@ -1467,7 +1563,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "21625 Gresham Dr 20147 Ashburn USA"
+    "address": "21625 Gresham Dr 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "21635 Red Rum Dr",
@@ -1477,7 +1577,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "21635 Red Rum Dr 20147 Ashburn USA"
+    "address": "21635 Red Rum Dr 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "21745 Sir Timothy Drive",
@@ -1487,7 +1591,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "21745 Sir Timothy Drive 20147 Ashburn USA"
+    "address": "21745 Sir Timothy Drive 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "2200 Busse Road",
@@ -1507,7 +1615,11 @@
     "state": "",
     "zip": "95050",
     "country": "United States",
-    "address": "2220 De La Cruz Blvd 95050 Santa Clara USA"
+    "address": "2220 De La Cruz Blvd 95050 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "2260 East El Segundo Blvd",
@@ -1537,7 +1649,11 @@
     "state": "",
     "zip": "20166",
     "country": "United States",
-    "address": "22810 International Dr 20166 Sterling USA"
+    "address": "22810 International Dr 20166 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "22860 International Drive",
@@ -1667,7 +1783,11 @@
     "state": "",
     "zip": "30303",
     "country": "United States",
-    "address": "250 Williams St NW 30303 Atlanta USA"
+    "address": "250 Williams St NW 30303 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "250 Williams Street NW",
@@ -1817,7 +1937,11 @@
     "state": "",
     "zip": "20024-3224",
     "country": "United States",
-    "address": "30 E St SW 20024-3224 Washington USA"
+    "address": "30 E St SW 20024-3224 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "300 Bent Street",
@@ -1927,7 +2051,11 @@
     "state": "",
     "zip": "85012",
     "country": "United States",
-    "address": "3110 N Central Ave 85012 Phoenix USA"
+    "address": "3110 N Central Ave 85012 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "3110 North Central Avenue",
@@ -1947,7 +2075,11 @@
     "state": "",
     "zip": "10013-2473",
     "country": "United States",
-    "address": "32 6th Ave 10013-2473 New York USA"
+    "address": "32 6th Ave 10013-2473 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "3205 Alfred Street",
@@ -1957,7 +2089,11 @@
     "state": "",
     "zip": "95054",
     "country": "United States",
-    "address": "3205 Alfred St 95054 Santa Clara USA"
+    "address": "3205 Alfred St 95054 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "324 E Wisconsin",
@@ -1987,7 +2123,11 @@
     "state": "",
     "zip": "10013-1005",
     "country": "United States",
-    "address": "325 Hudson St 10013-1005 New York USA"
+    "address": "325 Hudson St 10013-1005 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "33 Chun Choi Street",
@@ -2007,7 +2147,11 @@
     "state": "",
     "zip": "75082-9708",
     "country": "United States",
-    "address": "3300 Essex Dr 75082-9708 Richardson USA"
+    "address": "3300 Essex Dr 75082-9708 Richardson USA",
+    "city_coords": [
+      32.9483,
+      -96.7299
+    ]
   },
   {
     "name": "3311 S. 120th",
@@ -2137,7 +2281,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "36 NE 2nd St 33132 Miami USA"
+    "address": "36 NE 2nd St 33132 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "360 Spear Street",
@@ -2147,7 +2295,11 @@
     "state": "",
     "zip": "94105-1638",
     "country": "United States",
-    "address": "360 Spear St 94105-1638 San Francisco USA"
+    "address": "360 Spear St 94105-1638 San Francisco USA",
+    "city_coords": [
+      37.7749,
+      -122.4194
+    ]
   },
   {
     "name": "360/GT Montreal",
@@ -2317,7 +2469,11 @@
     "state": "",
     "zip": "30346",
     "country": "United States",
-    "address": "40 Perimeter Center E 30346 Atlanta USA"
+    "address": "40 Perimeter Center E 30346 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "400 S Akard Street",
@@ -2347,7 +2503,11 @@
     "state": "",
     "zip": "87102",
     "country": "United States",
-    "address": "400 Tijeras Ave NW 87102 Albuquerque USA"
+    "address": "400 Tijeras Ave NW 87102 Albuquerque USA",
+    "city_coords": [
+      35.0844,
+      -106.6504
+    ]
   },
   {
     "name": "4003 East Speedway Boulevard",
@@ -2367,7 +2527,11 @@
     "state": "",
     "zip": "19108",
     "country": "United States",
-    "address": "401 N Broad St 19108 Philadelphia USA"
+    "address": "401 N Broad St 19108 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "402 Franklin Road",
@@ -2437,7 +2601,11 @@
     "state": "",
     "zip": "90071-1902",
     "country": "United States",
-    "address": "420 S Grand Ave 90071-1902 Los Angeles USA"
+    "address": "420 S Grand Ave 90071-1902 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "421 West Church Street",
@@ -2457,7 +2625,11 @@
     "state": "",
     "zip": "75204",
     "country": "United States",
-    "address": "4211 Bryan St 75204 Dallas USA"
+    "address": "4211 Bryan St 75204 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "4316 Bryan",
@@ -2467,7 +2639,11 @@
     "state": "",
     "zip": "75204",
     "country": "United States",
-    "address": "4316 Bryan St 75204 Dallas USA"
+    "address": "4316 Bryan St 75204 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "437 Williamstown Road",
@@ -2567,7 +2743,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "44461 Chilum Pl 20147 Ashburn USA"
+    "address": "44461 Chilum Pl 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "44470 Chillum Place",
@@ -2587,7 +2767,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "44480 Hastings Dr 20147 Ashburn USA"
+    "address": "44480 Hastings Dr 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "44480 Hastings Road",
@@ -2597,7 +2781,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "44480 Hastings Dr 20147 Ashburn USA"
+    "address": "44480 Hastings Dr 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "44490 Chilum Place",
@@ -2607,7 +2795,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "44490 Chilum Pl 20147 Ashburn USA"
+    "address": "44490 Chilum Pl 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "4450 Dean Lakes Blvd",
@@ -2627,7 +2819,11 @@
     "state": "",
     "zip": "20147-6037",
     "country": "United States",
-    "address": "44520 Hastings Dr 20147-6037 Ashburn USA"
+    "address": "44520 Hastings Dr 20147-6037 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "449 Route",
@@ -2657,7 +2853,11 @@
     "state": "",
     "zip": "20166-6574",
     "country": "United States",
-    "address": "45845 Nokes Blvd 20166-6574 Sterling USA"
+    "address": "45845 Nokes Blvd 20166-6574 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "45901 Nokes Blvd",
@@ -2667,7 +2867,11 @@
     "state": "",
     "zip": "20166-6516",
     "country": "United States",
-    "address": "45901 Nokes Blvd 20166-6516 Sterling USA"
+    "address": "45901 Nokes Blvd 20166-6516 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "4640 Admiralty Way",
@@ -2777,7 +2981,11 @@
     "state": "",
     "zip": "76017-2616",
     "country": "United States",
-    "address": "5000 S Bowen Rd 76017-2616 Arlington USA"
+    "address": "5000 S Bowen Rd 76017-2616 Arlington USA",
+    "city_coords": [
+      32.7357,
+      -97.1081
+    ]
   },
   {
     "name": "505 N Railroad Ave",
@@ -2797,7 +3005,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "51 Peachtree Center Ave NE 30303-2513 Atlanta USA"
+    "address": "51 Peachtree Center Ave NE 30303-2513 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "5101 Lafayette St.",
@@ -2807,7 +3019,11 @@
     "state": "",
     "zip": "95054-1010",
     "country": "United States",
-    "address": "5101 Lafayette St 95054-1010 Santa Clara USA"
+    "address": "5101 Lafayette St 95054-1010 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "511 Building - Minnesota Technology Center",
@@ -2837,7 +3053,11 @@
     "state": "",
     "zip": "78251",
     "country": "United States",
-    "address": "5200 Rogers Rd 78251 San Antonio USA"
+    "address": "5200 Rogers Rd 78251 San Antonio USA",
+    "city_coords": [
+      29.4241,
+      -98.4936
+    ]
   },
   {
     "name": "530 Collins",
@@ -2927,7 +3147,11 @@
     "state": "",
     "zip": "30303",
     "country": "United States",
-    "address": "56 Marietta St NW 30303 Atlanta USA"
+    "address": "56 Marietta St NW 30303 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "565 Metro Place South",
@@ -3007,7 +3231,11 @@
     "state": "",
     "zip": "10013",
     "country": "United States",
-    "address": "60 Hudson St, Floor 5 10013 New York USA"
+    "address": "60 Hudson St, Floor 5 10013 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "600 Albany Post Road",
@@ -3027,7 +3255,11 @@
     "state": "",
     "zip": "60605",
     "country": "United States",
-    "address": "600 S Federal St 60605 Chicago USA"
+    "address": "600 S Federal St 60605 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "600 Winter St",
@@ -3057,7 +3289,11 @@
     "state": "",
     "zip": "94107-1304",
     "country": "United States",
-    "address": "611 Folsom St 94107-1304 San Francisco USA"
+    "address": "611 Folsom St 94107-1304 San Francisco USA",
+    "city_coords": [
+      37.7749,
+      -122.4194
+    ]
   },
   {
     "name": "615 N 48th St",
@@ -3067,7 +3303,11 @@
     "state": "",
     "zip": "85008-6608",
     "country": "United States",
-    "address": "615 N 48th St 85008-6608 Phoenix USA"
+    "address": "615 N 48th St 85008-6608 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "650 Townsend St",
@@ -3087,7 +3327,11 @@
     "state": "",
     "zip": "75240",
     "country": "United States",
-    "address": "6606 Lyndon B Johnson Fwy 75240 Dallas USA"
+    "address": "6606 Lyndon B Johnson Fwy 75240 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "6715 Pinecrest Drive",
@@ -3097,7 +3341,11 @@
     "state": "",
     "zip": "75024",
     "country": "United States",
-    "address": "6715 Pinecrest Dr 75024 Plano USA"
+    "address": "6715 Pinecrest Dr 75024 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "6800 Mill Creek Drive",
@@ -3137,7 +3385,11 @@
     "state": "",
     "zip": "76701-2020",
     "country": "United States",
-    "address": "700 Austin Ave 76701-2020 Waco USA"
+    "address": "700 Austin Ave 76701-2020 Waco USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "701 East Trade Street",
@@ -3147,7 +3399,11 @@
     "state": "",
     "zip": "28202",
     "country": "United States",
-    "address": "701 E Trade St 28202 Charlotte USA"
+    "address": "701 E Trade St 28202 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "701-703 S Lasalle St.",
@@ -3167,7 +3423,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "707 Wilshire Blvd 90017 Los Angeles USA"
+    "address": "707 Wilshire Blvd 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "71 Av André Roussin",
@@ -3207,7 +3467,11 @@
     "state": "",
     "zip": "75201",
     "country": "United States",
-    "address": "717 N Harwood St 75201 Dallas USA"
+    "address": "717 N Harwood St 75201 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "717 South Wells",
@@ -3217,7 +3481,11 @@
     "state": "",
     "zip": "60607",
     "country": "United States",
-    "address": "717 S Wells St 60607 Chicago USA"
+    "address": "717 S Wells St 60607 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "7185 Pollock Drive",
@@ -3227,7 +3495,11 @@
     "state": "",
     "zip": "89119-4415",
     "country": "United States",
-    "address": "7185 Pollock Dr 89119-4415 Las Vegas USA"
+    "address": "7185 Pollock Dr 89119-4415 Las Vegas USA",
+    "city_coords": [
+      36.1699,
+      -115.1398
+    ]
   },
   {
     "name": "72 Radnor Drive",
@@ -3257,7 +3529,11 @@
     "state": "",
     "zip": "78729-7617",
     "country": "United States",
-    "address": "7218 McNeil Dr 78729-7617 Austin USA"
+    "address": "7218 McNeil Dr 78729-7617 Austin USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "725 S. Wells Street, Chicago ",
@@ -3287,7 +3563,11 @@
     "state": "",
     "zip": "92121",
     "country": "United States",
-    "address": "7337 Trade St 92121 San Diego USA"
+    "address": "7337 Trade St 92121 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "739 Welch Drive",
@@ -3537,7 +3817,11 @@
     "state": "",
     "zip": "60607",
     "country": "United States",
-    "address": "840 Canal St 60607 Chicago USA"
+    "address": "840 Canal St 60607 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "840 South Canal Street",
@@ -3597,7 +3881,11 @@
     "state": "",
     "zip": "75235-3015",
     "country": "United States",
-    "address": "8600 Harry Hines Blvd 75235-3015 Dallas USA"
+    "address": "8600 Harry Hines Blvd 75235-3015 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "8619 Westwood Center Drive",
@@ -3637,7 +3925,11 @@
     "state": "",
     "zip": "63102",
     "country": "United States",
-    "address": "900 Walnut St 63102 St. Louis USA"
+    "address": "900 Walnut St 63102 St. Louis USA",
+    "city_coords": [
+      38.627,
+      -90.1994
+    ]
   },
   {
     "name": "904 Quality Way",
@@ -3717,7 +4009,11 @@
     "state": "",
     "zip": "33619",
     "country": "United States",
-    "address": "9310 Florida Palm Dr 33619 Tampa USA"
+    "address": "9310 Florida Palm Dr 33619 Tampa USA",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "9333, 9355 & 9377 Grand Ave.",
@@ -3757,7 +4053,11 @@
     "state": "",
     "zip": "92123",
     "country": "United States",
-    "address": "9606 Aero Dr 92123 San Diego USA"
+    "address": "9606 Aero Dr 92123 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "9706 E. Easter Avenue",
@@ -5107,7 +5407,11 @@
     "state": "",
     "zip": "30004",
     "country": "United States",
-    "address": "2525 Westside Pkwy 30004 Alpharetta USA"
+    "address": "2525 Westside Pkwy 30004 Alpharetta USA",
+    "city_coords": [
+      34.0754,
+      -84.2941
+    ]
   },
   {
     "name": "Alpharetta Data Center",
@@ -5127,7 +5431,11 @@
     "state": "",
     "zip": "30022-2418",
     "country": "United States",
-    "address": "11650 Great Oaks Way 30022-2418 Alpharetta USA"
+    "address": "11650 Great Oaks Way 30022-2418 Alpharetta USA",
+    "city_coords": [
+      34.0754,
+      -84.2941
+    ]
   },
   {
     "name": "Alpharetta Data Center II",
@@ -5137,7 +5445,11 @@
     "state": "",
     "zip": "30005",
     "country": "United States",
-    "address": "1650 Union Hill Rd 30005 Alpharetta USA"
+    "address": "1650 Union Hill Rd 30005 Alpharetta USA",
+    "city_coords": [
+      34.0754,
+      -84.2941
+    ]
   },
   {
     "name": "Alpine Electronics R&D Europe",
@@ -6037,7 +6349,11 @@
     "state": "",
     "zip": "40218",
     "country": "United States",
-    "address": "Appliance Park Loop 40218 Louisville USA"
+    "address": "Appliance Park Loop 40218 Louisville USA",
+    "city_coords": [
+      38.2527,
+      -85.7585
+    ]
   },
   {
     "name": "Appolonia",
@@ -6247,7 +6563,11 @@
     "state": "",
     "zip": "20147-6042",
     "country": "United States",
-    "address": "44664 Guilford Dr 20147-6042 Ashburn USA"
+    "address": "44664 Guilford Dr 20147-6042 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Ascenix Singapore",
@@ -6317,7 +6637,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "21263 Smith Switch Rd 20147 Ashburn USA"
+    "address": "21263 Smith Switch Rd 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Ashburn",
@@ -6327,7 +6651,11 @@
     "state": "",
     "zip": "20147-6201",
     "country": "United States",
-    "address": "21800 Beaumeade Cir 20147-6201 Ashburn USA"
+    "address": "21800 Beaumeade Cir 20147-6201 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Ashburn",
@@ -6337,7 +6665,11 @@
     "state": "",
     "zip": "20166",
     "country": "United States",
-    "address": "22271 Broderick Dr 20166 Sterling USA"
+    "address": "22271 Broderick Dr 20166 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "Ashburn",
@@ -6347,7 +6679,11 @@
     "state": "",
     "zip": "20166-9304",
     "country": "United States",
-    "address": "22080 Pacific Blvd 20166-9304 Sterling USA"
+    "address": "22080 Pacific Blvd 20166-9304 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "Ashburn",
@@ -6367,7 +6703,11 @@
     "state": "",
     "zip": "20147-6011",
     "country": "United States",
-    "address": "21571 Beaumeade Cir 20147-6011 Ashburn USA"
+    "address": "21571 Beaumeade Cir 20147-6011 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Ashburn",
@@ -6387,7 +6727,11 @@
     "state": "",
     "zip": "20147-6207",
     "country": "United States",
-    "address": "21721 Filigree Ct 20147-6207 Ashburn USA"
+    "address": "21721 Filigree Ct 20147-6207 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Ashburn 2",
@@ -6407,7 +6751,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "44610 Guilford Dr 20147 Ashburn USA"
+    "address": "44610 Guilford Dr 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Ashburn 2",
@@ -6417,7 +6765,11 @@
     "state": "",
     "zip": "20147-6211",
     "country": "United States",
-    "address": "21691 Filigree Ct 20147-6211 Ashburn USA"
+    "address": "21691 Filigree Ct 20147-6211 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Ashburn 3",
@@ -6427,7 +6779,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "44245 Waxpool Rd 20147 Ashburn USA"
+    "address": "44245 Waxpool Rd 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Asheville",
@@ -6617,7 +6973,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "345 Courtland St NE 30308-3423 Atlanta USA"
+    "address": "345 Courtland St NE 30308-3423 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "Atlanta",
@@ -6627,7 +6987,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "6 W Druid Hills Dr NE 30329 Atlanta USA"
+    "address": "6 W Druid Hills Dr NE 30329 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "Atlanta",
@@ -6637,7 +7001,11 @@
     "state": "",
     "zip": "30303",
     "country": "United States",
-    "address": "34 Peachtree St SW 30303 Atlanta USA"
+    "address": "34 Peachtree St SW 30303 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "Atlanta",
@@ -6677,7 +7045,11 @@
     "state": "",
     "zip": "30009",
     "country": "United States",
-    "address": "4905 North Point Pkwy 30009 Alpharetta USA"
+    "address": "4905 North Point Pkwy 30009 Alpharetta USA",
+    "city_coords": [
+      34.0754,
+      -84.2941
+    ]
   },
   {
     "name": "Atlanta (Ravinia Drive)",
@@ -6777,7 +7149,11 @@
     "state": "",
     "zip": "30022",
     "country": "United States",
-    "address": "12655 Edison Dr 30022 Alpharetta USA"
+    "address": "12655 Edison Dr 30022 Alpharetta USA",
+    "city_coords": [
+      34.0754,
+      -84.2941
+    ]
   },
   {
     "name": "Atlanta 4",
@@ -6827,7 +7203,11 @@
     "state": "",
     "zip": "30308",
     "country": "United States",
-    "address": "756 W Peachtree St NW 30308 Atlanta USA"
+    "address": "756 W Peachtree St NW 30308 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "Atlanta Metro",
@@ -7207,7 +7587,11 @@
     "state": "",
     "zip": "78758",
     "country": "United States",
-    "address": "11501 Domain Drive, Suite 100 in Building 5 78758 Austin USA"
+    "address": "11501 Domain Drive, Suite 100 in Building 5 78758 Austin USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "Austin 1",
@@ -7227,7 +7611,11 @@
     "state": "",
     "zip": "78753-6743",
     "country": "United States",
-    "address": "1300 Park Center Dr 78753-6743 Austin USA"
+    "address": "1300 Park Center Dr 78753-6743 Austin USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "Austin 1",
@@ -7237,7 +7625,11 @@
     "state": "",
     "zip": "78741",
     "country": "United States",
-    "address": "2916 Montopolis Dr, Suite 300 78741 Austin USA"
+    "address": "2916 Montopolis Dr, Suite 300 78741 Austin USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "Austin 2",
@@ -7257,7 +7649,11 @@
     "state": "",
     "zip": "78744",
     "country": "United States",
-    "address": "7301 Metropolis Dr, Building #6 78744 Austin USA"
+    "address": "7301 Metropolis Dr, Building #6 78744 Austin USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "Austin 2",
@@ -7267,7 +7663,11 @@
     "state": "",
     "zip": "78744",
     "country": "United States",
-    "address": "7000c Burleson Rd 78744 Austin USA"
+    "address": "7000c Burleson Rd 78744 Austin USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "Austin 3",
@@ -7377,7 +7777,11 @@
     "state": "",
     "zip": "53223-4531",
     "country": "United States",
-    "address": "7901 W Clinton Ave 53223-4531 Milwaukee USA"
+    "address": "7901 W Clinton Ave 53223-4531 Milwaukee USA",
+    "city_coords": [
+      43.0389,
+      -87.9065
+    ]
   },
   {
     "name": "Awecomm Technologies",
@@ -7577,7 +7981,11 @@
     "state": "",
     "zip": "21230-2031",
     "country": "United States",
-    "address": "1401 Russell St 21230-2031 Baltimore USA"
+    "address": "1401 Russell St 21230-2031 Baltimore USA",
+    "city_coords": [
+      39.2904,
+      -76.6122
+    ]
   },
   {
     "name": "Baltimore (Market Place)",
@@ -7587,7 +7995,11 @@
     "state": "",
     "zip": "21202",
     "country": "United States",
-    "address": "111 Market Pl 21202 Baltimore USA"
+    "address": "111 Market Pl 21202 Baltimore USA",
+    "city_coords": [
+      39.2904,
+      -76.6122
+    ]
   },
   {
     "name": "Baltimore Technology Park",
@@ -10157,7 +10569,11 @@
     "state": "",
     "zip": "02129",
     "country": "United States",
-    "address": "500 Rutherford Ave 02129 Boston USA"
+    "address": "500 Rutherford Ave 02129 Boston USA",
+    "city_coords": [
+      42.3601,
+      -71.0589
+    ]
   },
   {
     "name": "Boston-Marlborough",
@@ -11257,7 +11673,11 @@
     "state": "",
     "zip": "78758",
     "country": "United States",
-    "address": "11400 Burnet Rd 78758 Austin USA"
+    "address": "11400 Burnet Rd 78758 Austin USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "Bulgaria SOF-SHI",
@@ -12277,7 +12697,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "600 W 7th St 90017 Los Angeles USA"
+    "address": "600 W 7th St 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "CarrierCom",
@@ -12467,7 +12891,11 @@
     "state": "",
     "zip": "21228",
     "country": "United States",
-    "address": "5525 Research Park Dr 21228 Baltimore USA"
+    "address": "5525 Research Park Dr 21228 Baltimore USA",
+    "city_coords": [
+      39.2904,
+      -76.6122
+    ]
   },
   {
     "name": "Cavern Technologies",
@@ -13157,7 +13585,11 @@
     "state": "",
     "zip": "28262-2372",
     "country": "United States",
-    "address": "10105 David Taylor Dr 28262-2372 Charlotte USA"
+    "address": "10105 David Taylor Dr 28262-2372 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "Charlotte 1",
@@ -13177,7 +13609,11 @@
     "state": "",
     "zip": "28262-2372",
     "country": "United States",
-    "address": "10105 David Taylor Dr 28262-2372 Charlotte USA"
+    "address": "10105 David Taylor Dr 28262-2372 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "Charlotte Data Center 2",
@@ -13187,7 +13623,11 @@
     "state": "",
     "zip": "28217-2803",
     "country": "United States",
-    "address": "1400 Cross Beam Dr 28217-2803 Charlotte USA"
+    "address": "1400 Cross Beam Dr 28217-2803 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "Charlotte Workgroup",
@@ -13207,7 +13647,11 @@
     "state": "",
     "zip": "28217-2900",
     "country": "United States",
-    "address": "1805 Center Park Dr 28217-2900 Charlotte USA"
+    "address": "1805 Center Park Dr 28217-2900 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "Charlotte-Center Park",
@@ -13217,7 +13661,11 @@
     "state": "",
     "zip": "28217-2900",
     "country": "United States",
-    "address": "1805 Center Park Dr 28217-2900 Charlotte USA"
+    "address": "1805 Center Park Dr 28217-2900 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "Charlotte-North Myers",
@@ -13227,7 +13675,11 @@
     "state": "",
     "zip": "28202",
     "country": "United States",
-    "address": "125 N Myers St 28202 Charlotte USA"
+    "address": "125 N Myers St 28202 Charlotte USA",
+    "city_coords": [
+      35.2271,
+      -80.8431
+    ]
   },
   {
     "name": "Charlotte-Rose Lake",
@@ -13617,7 +14069,11 @@
     "state": "",
     "zip": "60608",
     "country": "United States",
-    "address": "2800 S Ashland Ave 60608 Chicago USA"
+    "address": "2800 S Ashland Ave 60608 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "Chicago",
@@ -13647,7 +14103,11 @@
     "state": "",
     "zip": "60615",
     "country": "United States",
-    "address": "40 E Garfield Blvd 60615 Chicago USA"
+    "address": "40 E Garfield Blvd 60615 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "Chicago",
@@ -13667,7 +14127,11 @@
     "state": "",
     "zip": "60625-2116",
     "country": "United States",
-    "address": "4513 N Western Ave 60625-2116 Chicago USA"
+    "address": "4513 N Western Ave 60625-2116 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "Chicago (CHI2)",
@@ -13687,7 +14151,11 @@
     "state": "",
     "zip": "60605",
     "country": "United States",
-    "address": "427 S LaSalle St 60605 Chicago USA"
+    "address": "427 S LaSalle St 60605 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "Chicago (West Jackson Boulevard)",
@@ -13837,7 +14305,11 @@
     "state": "",
     "zip": "60616",
     "country": "United States",
-    "address": "350 E Cermak Rd, suite 8 60616 Chicago USA"
+    "address": "350 E Cermak Rd, suite 8 60616 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "Chicago Data Center 2",
@@ -13857,7 +14329,11 @@
     "state": "",
     "zip": "60605",
     "country": "United States",
-    "address": "600 S Federal St, Suite 100 60605 Chicago USA"
+    "address": "600 S Federal St, Suite 100 60605 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "Chicago Data Center 3",
@@ -13897,7 +14373,11 @@
     "state": "",
     "zip": "60607",
     "country": "United States",
-    "address": "601 W Polk St 60607 Chicago USA"
+    "address": "601 W Polk St 60607 Chicago USA",
+    "city_coords": [
+      41.8781,
+      -87.6298
+    ]
   },
   {
     "name": "Chicago-West",
@@ -14357,7 +14837,11 @@
     "state": "",
     "zip": "44114",
     "country": "United States",
-    "address": "1625 Rockwell Ave #100 44114 Cleveland USA"
+    "address": "1625 Rockwell Ave #100 44114 Cleveland USA",
+    "city_coords": [
+      41.4993,
+      -81.6944
+    ]
   },
   {
     "name": "Cleaveland",
@@ -14367,7 +14851,11 @@
     "state": "",
     "zip": "44103-3612",
     "country": "United States",
-    "address": "4000 Chester Ave, suite 122 44103-3612 Cleveland USA"
+    "address": "4000 Chester Ave, suite 122 44103-3612 Cleveland USA",
+    "city_coords": [
+      41.4993,
+      -81.6944
+    ]
   },
   {
     "name": "Cleveland",
@@ -14377,7 +14865,11 @@
     "state": "",
     "zip": "44115",
     "country": "United States",
-    "address": "200 W Prospect Ave 44115 Cleveland USA"
+    "address": "200 W Prospect Ave 44115 Cleveland USA",
+    "city_coords": [
+      41.4993,
+      -81.6944
+    ]
   },
   {
     "name": "Cleveland (Euclid Ave)",
@@ -15587,7 +16079,11 @@
     "state": "",
     "zip": "43231-4069",
     "country": "United States",
-    "address": "3000 E Dublin Granville Rd 43231-4069 Columbus USA"
+    "address": "3000 E Dublin Granville Rd 43231-4069 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus",
@@ -15597,7 +16093,11 @@
     "state": "",
     "zip": "43228-3845",
     "country": "United States",
-    "address": "1774 Dividend Dr 43228-3845 Columbus USA"
+    "address": "1774 Dividend Dr 43228-3845 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus",
@@ -15607,7 +16107,11 @@
     "state": "",
     "zip": "43215-2629",
     "country": "United States",
-    "address": "325 E Spring St 43215-2629 Columbus USA"
+    "address": "325 E Spring St 43215-2629 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus",
@@ -15617,7 +16121,11 @@
     "state": "",
     "zip": "45342",
     "country": "United States",
-    "address": "3366 S Tech Blvd 45342 Miamisburg USA"
+    "address": "3366 S Tech Blvd 45342 Miamisburg USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Columbus (East Naghten Street)",
@@ -15627,7 +16135,11 @@
     "state": "",
     "zip": "43215-2616",
     "country": "United States",
-    "address": "289 E Naghten St 43215-2616 Columbus USA"
+    "address": "289 E Naghten St 43215-2616 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus (Front Avenue)",
@@ -15677,7 +16189,11 @@
     "state": "",
     "zip": "43085-5710",
     "country": "United States",
-    "address": "555 Scherers Ct 43085-5710 Columbus USA"
+    "address": "555 Scherers Ct 43085-5710 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus 2",
@@ -15687,7 +16203,11 @@
     "state": "",
     "zip": "43085-5710",
     "country": "United States",
-    "address": "555 Scherers Ct 43085-5710 Columbus USA"
+    "address": "555 Scherers Ct 43085-5710 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus 2",
@@ -15697,7 +16217,11 @@
     "state": "",
     "zip": "43201-2838",
     "country": "United States",
-    "address": "1265 Indianola Ave 43201-2838 Columbus USA"
+    "address": "1265 Indianola Ave 43201-2838 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus 3",
@@ -15707,7 +16231,11 @@
     "state": "",
     "zip": "43085",
     "country": "United States",
-    "address": "585 Scherers Ct 43085 Columbus USA"
+    "address": "585 Scherers Ct 43085 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "Columbus Dublin",
@@ -17057,7 +17585,11 @@
     "state": "",
     "zip": "75074-7444",
     "country": "United States",
-    "address": "2800 Summit Ave 75074-7444 Plano USA"
+    "address": "2800 Summit Ave 75074-7444 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "Dallas",
@@ -17077,7 +17609,11 @@
     "state": "",
     "zip": "75202",
     "country": "United States",
-    "address": "400 S Akard St 75202 Dallas USA"
+    "address": "400 S Akard St 75202 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "Dallas",
@@ -17097,7 +17633,11 @@
     "state": "",
     "zip": "75201",
     "country": "United States",
-    "address": "2323 Bryan St 75201 Dallas USA"
+    "address": "2323 Bryan St 75201 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "Dallas",
@@ -17107,7 +17647,11 @@
     "state": "",
     "zip": "75074",
     "country": "United States",
-    "address": "1500 E Plano Pkwy 75074 Plano USA"
+    "address": "1500 E Plano Pkwy 75074 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "Dallas (Plano)",
@@ -17137,7 +17681,11 @@
     "state": "",
     "zip": "75202",
     "country": "United States",
-    "address": "400 S Akard St 75202 Dallas USA"
+    "address": "400 S Akard St 75202 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "Dallas 1",
@@ -17167,7 +17715,11 @@
     "state": "",
     "zip": "75207",
     "country": "United States",
-    "address": "1950 N Stemmons Fwy 75207 Dallas USA"
+    "address": "1950 N Stemmons Fwy 75207 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "Dallas 1",
@@ -17177,7 +17729,11 @@
     "state": "",
     "zip": "75207",
     "country": "United States",
-    "address": "1950 N Stemmons Fwy, Suite 1034 75207 Dallas USA"
+    "address": "1950 N Stemmons Fwy, Suite 1034 75207 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "Dallas 2",
@@ -19327,7 +19883,11 @@
     "state": "",
     "zip": "80202",
     "country": "United States",
-    "address": "1200 17th St 80202 Denver USA"
+    "address": "1200 17th St 80202 Denver USA",
+    "city_coords": [
+      39.7392,
+      -104.9903
+    ]
   },
   {
     "name": "Denver",
@@ -19367,7 +19927,11 @@
     "state": "",
     "zip": "80237",
     "country": "United States",
-    "address": "4643 S Ulster St 80237 Denver USA"
+    "address": "4643 S Ulster St 80237 Denver USA",
+    "city_coords": [
+      39.7392,
+      -104.9903
+    ]
   },
   {
     "name": "Denver 1",
@@ -19377,7 +19941,11 @@
     "state": "",
     "zip": "80202",
     "country": "United States",
-    "address": "910 15th St #740 80202 Denver USA"
+    "address": "910 15th St #740 80202 Denver USA",
+    "city_coords": [
+      39.7392,
+      -104.9903
+    ]
   },
   {
     "name": "Denver 1",
@@ -19387,7 +19955,11 @@
     "state": "",
     "zip": "80203",
     "country": "United States",
-    "address": "639 E 18th Ave 80203 Denver USA"
+    "address": "639 E 18th Ave 80203 Denver USA",
+    "city_coords": [
+      39.7392,
+      -104.9903
+    ]
   },
   {
     "name": "Denver 2",
@@ -19417,7 +19989,11 @@
     "state": "",
     "zip": "80202",
     "country": "United States",
-    "address": "1001 17th St 80202 Denver USA"
+    "address": "1001 17th St 80202 Denver USA",
+    "city_coords": [
+      39.7392,
+      -104.9903
+    ]
   },
   {
     "name": "Denver DEN-3431 Data Center",
@@ -19587,7 +20163,11 @@
     "state": "",
     "zip": "75247-3500",
     "country": "United States",
-    "address": "1460 Round Table Dr 75247-3500 Dallas USA"
+    "address": "1460 Round Table Dr 75247-3500 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "DFW 2",
@@ -19597,7 +20177,11 @@
     "state": "",
     "zip": "75247-4306",
     "country": "United States",
-    "address": "1100 Empire Central Pl 75247-4306 Dallas USA"
+    "address": "1100 Empire Central Pl 75247-4306 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "DFW 3 - Legacy Business Park",
@@ -19607,7 +20191,11 @@
     "state": "",
     "zip": "75024-2924",
     "country": "United States",
-    "address": "6653 Pinecrest Dr 75024-2924 Plano USA"
+    "address": "6653 Pinecrest Dr 75024-2924 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "DFW 4",
@@ -19617,7 +20205,11 @@
     "state": "",
     "zip": "75082-9708",
     "country": "United States",
-    "address": "3300 Essex Dr 75082-9708 Richardson USA"
+    "address": "3300 Essex Dr 75082-9708 Richardson USA",
+    "city_coords": [
+      32.9483,
+      -96.7299
+    ]
   },
   {
     "name": "DFW 5",
@@ -19627,7 +20219,11 @@
     "state": "",
     "zip": "75082",
     "country": "United States",
-    "address": "1811 E Renner Rd 75082 Richardson USA"
+    "address": "1811 E Renner Rd 75082 Richardson USA",
+    "city_coords": [
+      32.9483,
+      -96.7299
+    ]
   },
   {
     "name": "DFW 6 - Legacy Business Park",
@@ -19637,7 +20233,11 @@
     "state": "",
     "zip": "75024",
     "country": "United States",
-    "address": "Dominion Pkwy 75024 Plano USA"
+    "address": "Dominion Pkwy 75024 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "DFW 7 - Garland",
@@ -19797,7 +20397,11 @@
     "state": "",
     "zip": "31907",
     "country": "United States",
-    "address": "8 Corporate Ridge Pkwy 31907 Columbus USA"
+    "address": "8 Corporate Ridge Pkwy 31907 Columbus USA",
+    "city_coords": [
+      39.9612,
+      -82.9988
+    ]
   },
   {
     "name": "DLS Internet 216 Jackson",
@@ -20037,7 +20641,11 @@
     "state": "",
     "zip": "44115-1820",
     "country": "United States",
-    "address": "1255 Euclid Ave, #200 44115-1820 Cleveland USA"
+    "address": "1255 Euclid Ave, #200 44115-1820 Cleveland USA",
+    "city_coords": [
+      41.4993,
+      -81.6944
+    ]
   },
   {
     "name": "Downtown Dallas Data Center",
@@ -20047,7 +20655,11 @@
     "state": "",
     "zip": "75202",
     "country": "United States",
-    "address": "400 S Akard St 75202 Dallas USA"
+    "address": "400 S Akard St 75202 Dallas USA",
+    "city_coords": [
+      32.7767,
+      -96.797
+    ]
   },
   {
     "name": "Downtown Data Center",
@@ -20087,7 +20699,11 @@
     "state": "",
     "zip": "98121",
     "country": "United States",
-    "address": "3101 Western Ave 98121 Seattle USA"
+    "address": "3101 Western Ave 98121 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "Dowsings Point",
@@ -20637,7 +21253,11 @@
     "state": "",
     "zip": "20166-9306",
     "country": "United States",
-    "address": "1506 Moran Rd 20166-9306 Sterling USA"
+    "address": "1506 Moran Rd 20166-9306 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "Dulles Exchange",
@@ -20987,7 +21607,11 @@
     "state": "",
     "zip": "46219",
     "country": "United States",
-    "address": "401 Shadeland Ave 46219 Indianapolis USA"
+    "address": "401 Shadeland Ave 46219 Indianapolis USA",
+    "city_coords": [
+      39.7684,
+      -86.1581
+    ]
   },
   {
     "name": "Eastgate Cincinnati",
@@ -21227,7 +21851,11 @@
     "state": "",
     "zip": "74117-1308",
     "country": "United States",
-    "address": "7400 N Lakewood Ave 74117-1308 Tulsa USA"
+    "address": "7400 N Lakewood Ave 74117-1308 Tulsa USA",
+    "city_coords": [
+      36.154,
+      -95.9928
+    ]
   },
   {
     "name": "EDS - Wynyard",
@@ -21417,7 +22045,11 @@
     "state": "",
     "zip": "79936-6009",
     "country": "United States",
-    "address": "11455 Cedar Oak Dr 79936-6009 El Paso USA"
+    "address": "11455 Cedar Oak Dr 79936-6009 El Paso USA",
+    "city_coords": [
+      31.7619,
+      -106.485
+    ]
   },
   {
     "name": "El Paso (East Main Street)",
@@ -21427,7 +22059,11 @@
     "state": "",
     "zip": "79901",
     "country": "United States",
-    "address": "201 E Main St 79901 El Paso USA"
+    "address": "201 E Main St 79901 El Paso USA",
+    "city_coords": [
+      31.7619,
+      -106.485
+    ]
   },
   {
     "name": "El Paso (West Overland)",
@@ -21437,7 +22073,11 @@
     "state": "",
     "zip": "79901",
     "country": "United States",
-    "address": "500 W Overland Ave 79901 El Paso USA"
+    "address": "500 W Overland Ave 79901 El Paso USA",
+    "city_coords": [
+      31.7619,
+      -106.485
+    ]
   },
   {
     "name": "Eldoret",
@@ -22787,7 +23427,11 @@
     "state": "",
     "zip": "76177-3213",
     "country": "United States",
-    "address": "14100 Park Vista Blvd 76177-3213 Fort Worth USA"
+    "address": "14100 Park Vista Blvd 76177-3213 Fort Worth USA",
+    "city_coords": [
+      32.7555,
+      -97.3308
+    ]
   },
   {
     "name": "Fort Worth: 307 & 309 West 7th St",
@@ -23877,7 +24521,11 @@
     "state": "",
     "zip": "77027-7201",
     "country": "United States",
-    "address": "4201 Southwest Fwy 77027-7201 Houston USA"
+    "address": "4201 Southwest Fwy 77027-7201 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "Gallo Manor",
@@ -24597,7 +25245,11 @@
     "state": "",
     "zip": "90232-3311",
     "country": "United States",
-    "address": "10525 Washington Blvd 90232-3311 Culver City USA"
+    "address": "10525 Washington Blvd 90232-3311 Culver City USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "GlobeOp",
@@ -26427,7 +27079,11 @@
     "state": "",
     "zip": "46225-1194",
     "country": "United States",
-    "address": "733 W Henry St 46225-1194 Indianapolis USA"
+    "address": "733 W Henry St 46225-1194 Indianapolis USA",
+    "city_coords": [
+      39.7684,
+      -86.1581
+    ]
   },
   {
     "name": "Herakles",
@@ -27327,7 +27983,11 @@
     "state": "",
     "zip": "77060",
     "country": "United States",
-    "address": "12105 North Fwy 77060 Houston USA"
+    "address": "12105 North Fwy 77060 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "Houston (Empire Central Drive)",
@@ -27347,7 +28007,11 @@
     "state": "",
     "zip": "77090",
     "country": "United States",
-    "address": "12061 North Fwy 77090 Houston USA"
+    "address": "12061 North Fwy 77090 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "Houston 1",
@@ -27417,7 +28081,11 @@
     "state": "",
     "zip": "77079",
     "country": "United States",
-    "address": "225 Westlake Park Blvd 77079 Houston USA"
+    "address": "225 Westlake Park Blvd 77079 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "Houston Energy Corridor",
@@ -27467,7 +28135,11 @@
     "state": "",
     "zip": "77027",
     "country": "United States",
-    "address": "4635 Southwest Fwy 77027 Houston USA"
+    "address": "4635 Southwest Fwy 77027 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "Houston: 777 Walker (2 Shell Plaza)",
@@ -28057,7 +28729,11 @@
     "state": "",
     "zip": "46225",
     "country": "United States",
-    "address": "505 W Merrill St 46225 Indianapolis USA"
+    "address": "505 W Merrill St 46225 Indianapolis USA",
+    "city_coords": [
+      39.7684,
+      -86.1581
+    ]
   },
   {
     "name": "Indianapolis Workgroup",
@@ -28357,7 +29033,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "21735 Red Rum Dr 20147 Ashburn USA"
+    "address": "21735 Red Rum Dr 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Intergate.Manhattan",
@@ -29387,7 +30067,11 @@
     "state": "",
     "zip": "32256-8221",
     "country": "United States",
-    "address": "8324 Baymeadows Way 32256-8221 Jacksonville USA"
+    "address": "8324 Baymeadows Way 32256-8221 Jacksonville USA",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Jacksonville (West Forsyth Street)",
@@ -29407,7 +30091,11 @@
     "state": "",
     "zip": "32202",
     "country": "United States",
-    "address": "421 W Church St 32202 Jacksonville USA"
+    "address": "421 W Church St 32202 Jacksonville USA",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Jacksonville 2",
@@ -29417,7 +30105,11 @@
     "state": "",
     "zip": "32207",
     "country": "United States",
-    "address": "4800 Spring Park Rd 32207 Jacksonville USA"
+    "address": "4800 Spring Park Rd 32207 Jacksonville USA",
+    "city_coords": [
+      30.3322,
+      -81.6557
+    ]
   },
   {
     "name": "Jaipur",
@@ -29917,7 +30609,11 @@
     "state": "",
     "zip": "02210",
     "country": "United States",
-    "address": "601 Congress St 02210 Boston USA"
+    "address": "601 Congress St 02210 Boston USA",
+    "city_coords": [
+      42.3601,
+      -71.0589
+    ]
   },
   {
     "name": "Johor Baru",
@@ -29977,7 +30673,11 @@
     "state": "",
     "zip": "73102-8614",
     "country": "United States",
-    "address": "100 N Broadway Ave 73102-8614 Oklahoma City USA"
+    "address": "100 N Broadway Ave 73102-8614 Oklahoma City USA",
+    "city_coords": [
+      35.4676,
+      -97.5164
+    ]
   },
   {
     "name": "JPX",
@@ -30327,7 +31027,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "9050 NE Underground Dr 64161 Kansas City USA"
+    "address": "9050 NE Underground Dr 64161 Kansas City USA",
+    "city_coords": [
+      39.0997,
+      -94.5786
+    ]
   },
   {
     "name": "Kansas City",
@@ -30337,7 +31041,11 @@
     "state": "",
     "zip": "64153",
     "country": "United States",
-    "address": "10801 N Amity Ave 64153 Kansas City USA"
+    "address": "10801 N Amity Ave 64153 Kansas City USA",
+    "city_coords": [
+      39.0997,
+      -94.5786
+    ]
   },
   {
     "name": "Kansas City 1 (Edmond Street)",
@@ -31887,7 +32595,11 @@
     "state": "",
     "zip": "78040-4544",
     "country": "United States",
-    "address": "302 Washington St 78040-4544 Laredo USA"
+    "address": "302 Washington St 78040-4544 Laredo USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Las Vegas",
@@ -31957,7 +32669,11 @@
     "state": "",
     "zip": "89120-3977",
     "country": "United States",
-    "address": "3944 Silvestri Ln 89120-3977 Las Vegas USA"
+    "address": "3944 Silvestri Ln 89120-3977 Las Vegas USA",
+    "city_coords": [
+      36.1699,
+      -115.1398
+    ]
   },
   {
     "name": "Las Vegas 1-6",
@@ -32017,7 +32733,11 @@
     "state": "",
     "zip": "89139",
     "country": "United States",
-    "address": "W Warm Springs Road 89139 Las Vegas USA"
+    "address": "W Warm Springs Road 89139 Las Vegas USA",
+    "city_coords": [
+      36.1699,
+      -115.1398
+    ]
   },
   {
     "name": "Las Vegas 9",
@@ -32027,7 +32747,11 @@
     "state": "",
     "zip": "89139",
     "country": "United States",
-    "address": "Westwind Rd 89139 Las Vegas USA"
+    "address": "Westwind Rd 89139 Las Vegas USA",
+    "city_coords": [
+      36.1699,
+      -115.1398
+    ]
   },
   {
     "name": "Las Vegas/Henderson",
@@ -32237,7 +32961,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "600 W 7th St 90017 Los Angeles USA"
+    "address": "600 W 7th St 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Layer42 Mountain View",
@@ -32547,7 +33275,11 @@
     "state": "",
     "zip": "75024",
     "country": "United States",
-    "address": "8375 Dominion Pkwy 75024 Plano USA"
+    "address": "8375 Dominion Pkwy 75024 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "Legan Centre",
@@ -34217,7 +34949,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "624 S Grand Ave #2820 90017 Los Angeles USA"
+    "address": "624 S Grand Ave #2820 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles",
@@ -34227,7 +34963,11 @@
     "state": "",
     "zip": "90014",
     "country": "United States",
-    "address": "530 W 6th St, Suite 901 90014 Los Angeles USA"
+    "address": "530 W 6th St, Suite 901 90014 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles",
@@ -34247,7 +34987,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "818 W 7th St, 3rd floor 90017 Los Angeles USA"
+    "address": "818 W 7th St, 3rd floor 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles (900)",
@@ -34277,7 +35021,11 @@
     "state": "",
     "zip": "90014",
     "country": "United States",
-    "address": "530 W 6th St 90014 Los Angeles USA"
+    "address": "530 W 6th St 90014 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles 1",
@@ -34287,7 +35035,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "624 S Grand Ave, Suite #2435 90017 Los Angeles USA"
+    "address": "624 S Grand Ave, Suite #2435 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles 2",
@@ -34307,7 +35059,11 @@
     "state": "",
     "zip": "90012",
     "country": "United States",
-    "address": "900 N Alameda St, Suite 200 90012 Los Angeles USA"
+    "address": "900 N Alameda St, Suite 200 90012 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles 3",
@@ -34337,7 +35093,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "600 7th St 90017 Los Angeles USA"
+    "address": "600 7th St 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles 7",
@@ -34367,7 +35127,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "624 S Grand Ave, Suite 900 90017 Los Angeles USA"
+    "address": "624 S Grand Ave, Suite 900 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles DC 2",
@@ -34387,7 +35151,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "600 W 7th St, Suite 600 90017 Los Angeles USA"
+    "address": "600 W 7th St, Suite 600 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles DC 4",
@@ -34397,7 +35165,11 @@
     "state": "",
     "zip": "90014",
     "country": "United States",
-    "address": "530 W 6th St, suite 903 90014 Los Angeles USA"
+    "address": "530 W 6th St, suite 903 90014 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Los Angeles DC 5",
@@ -34497,7 +35269,11 @@
     "state": "",
     "zip": "40202",
     "country": "United States",
-    "address": "332 W Broadway 40202 Louisville USA"
+    "address": "332 W Broadway 40202 Louisville USA",
+    "city_coords": [
+      38.2527,
+      -85.7585
+    ]
   },
   {
     "name": "Louisville 2",
@@ -34507,7 +35283,11 @@
     "state": "",
     "zip": "40223",
     "country": "United States",
-    "address": "2101 Nelson Miller Pkwy 40223 Louisville USA"
+    "address": "2101 Nelson Miller Pkwy 40223 Louisville USA",
+    "city_coords": [
+      38.2527,
+      -85.7585
+    ]
   },
   {
     "name": "Louwsmeer, Tytjerk",
@@ -35227,7 +36007,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "36 NE 2nd St, 4th Floor 33132 Miami USA"
+    "address": "36 NE 2nd St, 4th Floor 33132 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Main Place Mall",
@@ -36817,7 +37601,11 @@
     "state": "",
     "zip": "38125-8883",
     "country": "United States",
-    "address": "3180 Players Ln 38125-8883 Memphis USA"
+    "address": "3180 Players Ln 38125-8883 Memphis USA",
+    "city_coords": [
+      35.1495,
+      -90.049
+    ]
   },
   {
     "name": "Memphis",
@@ -36827,7 +37615,11 @@
     "state": "",
     "zip": "38117",
     "country": "United States",
-    "address": "5127 Truse Rd, 1st floor 38117 Memphis USA"
+    "address": "5127 Truse Rd, 1st floor 38117 Memphis USA",
+    "city_coords": [
+      35.1495,
+      -90.049
+    ]
   },
   {
     "name": "Memphis (Cordova Road)",
@@ -37157,7 +37949,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "460 NE 215th St 33179-1101 Miami USA"
+    "address": "460 NE 215th St 33179-1101 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami (Northeast 9th Street)",
@@ -37167,7 +37963,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "50 NE 9th St 33132 Miami USA"
+    "address": "50 NE 9th St 33132 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami (Northwest 5th Street)",
@@ -37207,7 +38007,11 @@
     "state": "",
     "zip": "33132",
     "country": "United States",
-    "address": "100 Biscayne Blvd 33132 Miami USA"
+    "address": "100 Biscayne Blvd 33132 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami 1",
@@ -37217,7 +38021,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "50 NE 9th St 33132 Miami USA"
+    "address": "50 NE 9th St 33132 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami 2",
@@ -37227,7 +38035,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "475 NE 185th St 33179-4537 Miami USA"
+    "address": "475 NE 185th St 33179-4537 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami 3",
@@ -37257,7 +38069,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "36 NE 2nd St, Suite 400 33132 Miami USA"
+    "address": "36 NE 2nd St, Suite 400 33132 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Miami Keycentre",
@@ -37277,7 +38093,11 @@
     "state": "",
     "zip": "33126",
     "country": "United States",
-    "address": "444 NW 79th Ave 33126 Miami USA"
+    "address": "444 NW 79th Ave 33126 Miami USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Mid Michigan (Exchange Drive)",
@@ -37577,7 +38397,11 @@
     "state": "",
     "zip": "53202",
     "country": "United States",
-    "address": "325 E Wisconsin Ave 53202 Milwaukee USA"
+    "address": "325 E Wisconsin Ave 53202 Milwaukee USA",
+    "city_coords": [
+      43.0389,
+      -87.9065
+    ]
   },
   {
     "name": "Milwaukee",
@@ -37587,7 +38411,11 @@
     "state": "",
     "zip": "53215",
     "country": "United States",
-    "address": "3701 W Burnham St, Ste. A 53215 West Milwaukee USA"
+    "address": "3701 W Burnham St, Ste. A 53215 West Milwaukee USA",
+    "city_coords": [
+      43.0389,
+      -87.9065
+    ]
   },
   {
     "name": "Milwaukee (East Wisconsin)",
@@ -37597,7 +38425,11 @@
     "state": "",
     "zip": "53202",
     "country": "United States",
-    "address": "324 E Wisconsin Ave 53202 Milwaukee USA"
+    "address": "324 E Wisconsin Ave 53202 Milwaukee USA",
+    "city_coords": [
+      43.0389,
+      -87.9065
+    ]
   },
   {
     "name": "MindSHIFT Commack",
@@ -37687,7 +38519,11 @@
     "state": "",
     "zip": "55415",
     "country": "United States",
-    "address": "511 11th Ave S 55415 Minneapolis USA"
+    "address": "511 11th Ave S 55415 Minneapolis USA",
+    "city_coords": [
+      44.9778,
+      -93.265
+    ]
   },
   {
     "name": "Minneapolis (11th Avenue South)",
@@ -37707,7 +38543,11 @@
     "state": "",
     "zip": "55401",
     "country": "United States",
-    "address": "250 S Marquette Ave 55401 Minneapolis USA"
+    "address": "250 S Marquette Ave 55401 Minneapolis USA",
+    "city_coords": [
+      44.9778,
+      -93.265
+    ]
   },
   {
     "name": "Minneapolis (Washington Ave.)",
@@ -37717,7 +38557,11 @@
     "state": "",
     "zip": "55401",
     "country": "United States",
-    "address": "1200 N Washington Ave, 1st floor 55401 Minneapolis USA"
+    "address": "1200 N Washington Ave, 1st floor 55401 Minneapolis USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Minneapolis 1",
@@ -37727,7 +38571,11 @@
     "state": "",
     "zip": "55415",
     "country": "United States",
-    "address": "511 11th Ave S 55415 Minneapolis USA"
+    "address": "511 11th Ave S 55415 Minneapolis USA",
+    "city_coords": [
+      44.9778,
+      -93.265
+    ]
   },
   {
     "name": "Minneapolis 2",
@@ -37737,7 +38585,11 @@
     "state": "",
     "zip": "55415",
     "country": "United States",
-    "address": "511 11th Ave S 55415 Minneapolis USA"
+    "address": "511 11th Ave S 55415 Minneapolis USA",
+    "city_coords": [
+      44.9778,
+      -93.265
+    ]
   },
   {
     "name": "Minneapolis 3",
@@ -37747,7 +38599,11 @@
     "state": "",
     "zip": "55415",
     "country": "United States",
-    "address": "511 11th Ave S 55415 Minneapolis USA"
+    "address": "511 11th Ave S 55415 Minneapolis USA",
+    "city_coords": [
+      44.9778,
+      -93.265
+    ]
   },
   {
     "name": "Minnetonka",
@@ -39767,7 +40623,11 @@
     "state": "",
     "zip": "37201",
     "country": "United States",
-    "address": "211 Commerce St 37201 Nashville USA"
+    "address": "211 Commerce St 37201 Nashville USA",
+    "city_coords": [
+      36.1627,
+      -86.7816
+    ]
   },
   {
     "name": "Nashville",
@@ -39777,7 +40637,11 @@
     "state": "",
     "zip": "37217-2917",
     "country": "United States",
-    "address": "1661 Murfreesboro Pike 37217-2917 Nashville USA"
+    "address": "1661 Murfreesboro Pike 37217-2917 Nashville USA",
+    "city_coords": [
+      36.1627,
+      -86.7816
+    ]
   },
   {
     "name": "Nashville 1",
@@ -40767,7 +41631,11 @@
     "state": "",
     "zip": "70130",
     "country": "United States",
-    "address": "650 Poydras St 70130 New Orleans USA"
+    "address": "650 Poydras St 70130 New Orleans USA",
+    "city_coords": [
+      29.9511,
+      -90.0715
+    ]
   },
   {
     "name": "New Taipei City",
@@ -40917,7 +41785,11 @@
     "state": "",
     "zip": "10004",
     "country": "United States",
-    "address": "75 Broad St 10004 New York USA"
+    "address": "75 Broad St 10004 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York",
@@ -40927,7 +41799,11 @@
     "state": "",
     "zip": "10013",
     "country": "United States",
-    "address": "60 Hudson St 10013 New York USA"
+    "address": "60 Hudson St 10013 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York",
@@ -40957,7 +41833,11 @@
     "state": "",
     "zip": "10013",
     "country": "United States",
-    "address": "60 Hudson St, 13th floor 10013 New York USA"
+    "address": "60 Hudson St, 13th floor 10013 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York (75 Broad)",
@@ -40967,7 +41847,11 @@
     "state": "",
     "zip": "10004",
     "country": "United States",
-    "address": "75 Broad St, 7th floor 10004 New York USA"
+    "address": "75 Broad St, 7th floor 10004 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York (8th Avenue)",
@@ -40977,7 +41861,11 @@
     "state": "",
     "zip": "10011",
     "country": "United States",
-    "address": "111 8th Ave 10011 New York USA"
+    "address": "111 8th Ave 10011 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York (Broadway)",
@@ -40987,7 +41875,11 @@
     "state": "",
     "zip": "10004",
     "country": "United States",
-    "address": "25 Broadway 10004 New York USA"
+    "address": "25 Broadway 10004 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York (West 37th St.)",
@@ -40997,7 +41889,11 @@
     "state": "",
     "zip": "10018",
     "country": "United States",
-    "address": "15 W 37th St, 3rd floor 10018 New York USA"
+    "address": "15 W 37th St, 3rd floor 10018 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York (Whitehall Street)",
@@ -41187,7 +42083,11 @@
     "state": "",
     "zip": "10013",
     "country": "United States",
-    "address": "60 Hudson St, 9th Floor 10013 New York USA"
+    "address": "60 Hudson St, 9th Floor 10013 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York Data Center 2",
@@ -41197,7 +42097,11 @@
     "state": "",
     "zip": "10011",
     "country": "United States",
-    "address": "111 8th Ave, Floor 16 10011 New York USA"
+    "address": "111 8th Ave, Floor 16 10011 New York USA",
+    "city_coords": [
+      40.7128,
+      -74.006
+    ]
   },
   {
     "name": "New York Data Center 3",
@@ -42177,7 +43081,11 @@
     "state": "",
     "zip": "20147-6205",
     "country": "United States",
-    "address": "21715 Filigree Ct, Bldg F 20147-6205 Ashburn USA"
+    "address": "21715 Filigree Ct, Bldg F 20147-6205 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Northhampton 2",
@@ -42587,7 +43495,11 @@
     "state": "",
     "zip": "94607-3004",
     "country": "United States",
-    "address": "720 2nd St 94607-3004 Oakland USA"
+    "address": "720 2nd St 94607-3004 Oakland USA",
+    "city_coords": [
+      37.8044,
+      -122.2711
+    ]
   },
   {
     "name": "Oakland (Franklin Street)",
@@ -42597,7 +43509,11 @@
     "state": "",
     "zip": "94612",
     "country": "United States",
-    "address": "1624 Franklin St 94612 Oakland USA"
+    "address": "1624 Franklin St 94612 Oakland USA",
+    "city_coords": [
+      37.8044,
+      -122.2711
+    ]
   },
   {
     "name": "OBBTel",
@@ -42767,7 +43683,11 @@
     "state": "",
     "zip": "73112",
     "country": "United States",
-    "address": "4114 Perimeter Center Dr 73112 Oklahoma City USA"
+    "address": "4114 Perimeter Center Dr 73112 Oklahoma City USA",
+    "city_coords": [
+      35.4676,
+      -97.5164
+    ]
   },
   {
     "name": "Oliver Street, LLC",
@@ -42827,7 +43747,11 @@
     "state": "",
     "zip": "68106",
     "country": "United States",
-    "address": "6805 Pine St 68106 Omaha USA"
+    "address": "6805 Pine St 68106 Omaha USA",
+    "city_coords": [
+      41.2565,
+      -95.9345
+    ]
   },
   {
     "name": "Omaha-Bellevue",
@@ -42837,7 +43761,11 @@
     "state": "",
     "zip": "68005",
     "country": "United States",
-    "address": "1001 Fort Crook Rd N 68005 Bellevue USA"
+    "address": "1001 Fort Crook Rd N 68005 Bellevue USA",
+    "city_coords": [
+      47.6101,
+      -122.2015
+    ]
   },
   {
     "name": "Omaha-Midlands",
@@ -43147,7 +44075,11 @@
     "state": "",
     "zip": "32809",
     "country": "United States",
-    "address": "7003 Presidents Dr 32809 Orlando USA"
+    "address": "7003 Presidents Dr 32809 Orlando USA",
+    "city_coords": [
+      28.5383,
+      -81.3792
+    ]
   },
   {
     "name": "Orlando Workgroup",
@@ -44637,7 +45569,11 @@
     "state": "",
     "zip": "85027",
     "country": "United States",
-    "address": "2500 W Union Hills Dr 85027 Phoenix USA"
+    "address": "2500 W Union Hills Dr 85027 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "Philadelphia",
@@ -44677,7 +45613,11 @@
     "state": "",
     "zip": "19460-3192",
     "country": "United States",
-    "address": "1000 Black Rock Rd 19460-3192 Phoenixville USA"
+    "address": "1000 Black Rock Rd 19460-3192 Phoenixville USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "Philadelphia",
@@ -44687,7 +45627,11 @@
     "state": "",
     "zip": "19112-1220",
     "country": "United States",
-    "address": "4775 League Island Blvd 19112-1220 Philadelphia USA"
+    "address": "4775 League Island Blvd 19112-1220 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "Philadelphia",
@@ -44697,7 +45641,11 @@
     "state": "",
     "zip": "19130",
     "country": "United States",
-    "address": "1500 Spring Garden St 19130 Philadelphia USA"
+    "address": "1500 Spring Garden St 19130 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "Philadelphia (Locust St.)",
@@ -44707,7 +45655,11 @@
     "state": "",
     "zip": "19103-5416",
     "country": "United States",
-    "address": "2401 Locust St, 3rd floor 19103-5416 Philadelphia USA"
+    "address": "2401 Locust St, 3rd floor 19103-5416 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "Philadelphia (N. Broad St.)",
@@ -44717,7 +45669,11 @@
     "state": "",
     "zip": "19108",
     "country": "United States",
-    "address": "401 N Broad St, 4th floor, Suite 480 19108 Philadelphia USA"
+    "address": "401 N Broad St, 4th floor, Suite 480 19108 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "Philadelphia (North Broad Street)",
@@ -44727,7 +45683,11 @@
     "state": "",
     "zip": "19108",
     "country": "United States",
-    "address": "401 N Broad St 19108 Philadelphia USA"
+    "address": "401 N Broad St 19108 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "Philadelphia Data Center 1",
@@ -44857,7 +45817,11 @@
     "state": "",
     "zip": "85034",
     "country": "United States",
-    "address": "1710 E Grant St 85034 Phoenix USA"
+    "address": "1710 E Grant St 85034 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "Phoenix",
@@ -44877,7 +45841,11 @@
     "state": "",
     "zip": "85027-2124",
     "country": "United States",
-    "address": "1850 W Deer Valley Rd 85027-2124 Phoenix USA"
+    "address": "1850 W Deer Valley Rd 85027-2124 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "Phoenix",
@@ -44897,7 +45865,11 @@
     "state": "",
     "zip": "85008-6608",
     "country": "United States",
-    "address": "615 N 48th St 85008-6608 Phoenix USA"
+    "address": "615 N 48th St 85008-6608 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "Phoenix (East University Drive)",
@@ -44907,7 +45879,11 @@
     "state": "",
     "zip": "85034",
     "country": "United States",
-    "address": "3410 E University Dr 85034 Phoenix USA"
+    "address": "3410 E University Dr 85034 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "Phoenix (North 36th Avenue)",
@@ -44917,7 +45893,11 @@
     "state": "",
     "zip": "85009-1318",
     "country": "United States",
-    "address": "2820 N 36th Ave 85009-1318 Phoenix USA"
+    "address": "2820 N 36th Ave 85009-1318 Phoenix USA",
+    "city_coords": [
+      33.4484,
+      -112.074
+    ]
   },
   {
     "name": "Phoenix (North 3rd Street)",
@@ -45167,7 +46147,11 @@
     "state": "",
     "zip": "15212",
     "country": "United States",
-    "address": "3 Allegheny Square E, 1st floor 15212 Pittsburgh USA"
+    "address": "3 Allegheny Square E, 1st floor 15212 Pittsburgh USA",
+    "city_coords": [
+      40.4406,
+      -79.9959
+    ]
   },
   {
     "name": "Pittsburgh",
@@ -45177,7 +46161,11 @@
     "state": "",
     "zip": "15222",
     "country": "United States",
-    "address": "2202 Liberty Ave 15222 Pittsburgh USA"
+    "address": "2202 Liberty Ave 15222 Pittsburgh USA",
+    "city_coords": [
+      40.4406,
+      -79.9959
+    ]
   },
   {
     "name": "Pittsburgh ACM",
@@ -45197,7 +46185,11 @@
     "state": "",
     "zip": "15212",
     "country": "United States",
-    "address": "100 S Commons 15212 Pittsburgh USA"
+    "address": "100 S Commons 15212 Pittsburgh USA",
+    "city_coords": [
+      40.4406,
+      -79.9959
+    ]
   },
   {
     "name": "Pittsburgh Green Tree",
@@ -45267,7 +46259,11 @@
     "state": "",
     "zip": "",
     "country": "United States",
-    "address": "tbc St. Louis USA"
+    "address": "tbc St. Louis USA",
+    "city_coords": [
+      38.627,
+      -90.1994
+    ]
   },
   {
     "name": "Plano",
@@ -45287,7 +46283,11 @@
     "state": "",
     "zip": "75074",
     "country": "United States",
-    "address": "3500 E Plano Pkwy 75074 Plano USA"
+    "address": "3500 E Plano Pkwy 75074 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "Platino 225, Torreon",
@@ -45347,7 +46347,11 @@
     "state": "Nebraska",
     "zip": "",
     "country": "United States",
-    "address": "470 East Paces Ferry Rd NE 30305-3301 Atlanta USA"
+    "address": "470 East Paces Ferry Rd NE 30305-3301 Atlanta USA",
+    "city_coords": [
+      33.749,
+      -84.388
+    ]
   },
   {
     "name": "POINT-3-MSK",
@@ -45617,7 +46621,11 @@
     "state": "",
     "zip": "97209",
     "country": "United States",
-    "address": "1225 W Burnside St 97209 Portland USA"
+    "address": "1225 W Burnside St 97209 Portland USA",
+    "city_coords": [
+      45.5152,
+      -122.6784
+    ]
   },
   {
     "name": "Portland",
@@ -45647,7 +46655,11 @@
     "state": "",
     "zip": "04101-3090",
     "country": "United States",
-    "address": "340 Cumberland Ave 04101-3090 Portland USA"
+    "address": "340 Cumberland Ave 04101-3090 Portland USA",
+    "city_coords": [
+      45.5152,
+      -122.6784
+    ]
   },
   {
     "name": "Portland (Southwest 6th Avenue)",
@@ -46897,7 +47909,11 @@
     "state": "",
     "zip": "27616",
     "country": "United States",
-    "address": "5301 Departure Dr 27616 Raleigh USA"
+    "address": "5301 Departure Dr 27616 Raleigh USA",
+    "city_coords": [
+      35.7796,
+      -78.6382
+    ]
   },
   {
     "name": "Raleigh",
@@ -46907,7 +47923,11 @@
     "state": "",
     "zip": "27703",
     "country": "United States",
-    "address": "4518 S Miami Blvd 27703 Durham USA"
+    "address": "4518 S Miami Blvd 27703 Durham USA",
+    "city_coords": [
+      25.7617,
+      -80.1918
+    ]
   },
   {
     "name": "Raleigh",
@@ -46917,7 +47937,11 @@
     "state": "",
     "zip": "27617",
     "country": "United States",
-    "address": "8020 Arco Corporate Dr, Suite 310 27617 Raleigh USA"
+    "address": "8020 Arco Corporate Dr, Suite 310 27617 Raleigh USA",
+    "city_coords": [
+      35.7796,
+      -78.6382
+    ]
   },
   {
     "name": "Raleigh (Departure Drive)",
@@ -48857,7 +49881,11 @@
     "state": "",
     "zip": "95605-2778",
     "country": "United States",
-    "address": "1075 Triangle Ct 95605-2778 West Sacramento USA"
+    "address": "1075 Triangle Ct 95605-2778 West Sacramento USA",
+    "city_coords": [
+      38.5816,
+      -121.4944
+    ]
   },
   {
     "name": "Sacramento (AK Street)",
@@ -48897,7 +49925,11 @@
     "state": "",
     "zip": "95834",
     "country": "United States",
-    "address": "1625 W National Dr 95834 Sacramento USA"
+    "address": "1625 W National Dr 95834 Sacramento USA",
+    "city_coords": [
+      38.5816,
+      -121.4944
+    ]
   },
   {
     "name": "Safehouse",
@@ -49287,7 +50319,11 @@
     "state": "",
     "zip": "78207-1809",
     "country": "United States",
-    "address": "911 N Frio St 78207-1809 San Antonio USA"
+    "address": "911 N Frio St 78207-1809 San Antonio USA",
+    "city_coords": [
+      29.4241,
+      -98.4936
+    ]
   },
   {
     "name": "San Antonio (Ramsey Road)",
@@ -49297,7 +50333,11 @@
     "state": "",
     "zip": "78216",
     "country": "United States",
-    "address": "214 E Ramsey Rd 78216 San Antonio USA"
+    "address": "214 E Ramsey Rd 78216 San Antonio USA",
+    "city_coords": [
+      29.4241,
+      -98.4936
+    ]
   },
   {
     "name": "San Antonio (Service Center Drive)",
@@ -49307,7 +50347,11 @@
     "state": "",
     "zip": "78218",
     "country": "United States",
-    "address": "5130 Service Center Dr, Suite 104 78218 San Antonio USA"
+    "address": "5130 Service Center Dr, Suite 104 78218 San Antonio USA",
+    "city_coords": [
+      29.4241,
+      -98.4936
+    ]
   },
   {
     "name": "San Antonio (Taylor Street)",
@@ -49317,7 +50361,11 @@
     "state": "",
     "zip": "78205",
     "country": "United States",
-    "address": "100 Taylor St, Suite 301 78205 San Antonio USA"
+    "address": "100 Taylor St, Suite 301 78205 San Antonio USA",
+    "city_coords": [
+      29.4241,
+      -98.4936
+    ]
   },
   {
     "name": "San Antonio (Walsh Road)",
@@ -49327,7 +50375,11 @@
     "state": "",
     "zip": "78224",
     "country": "United States",
-    "address": "2675 Walsh Rd 78224 San Antonio USA"
+    "address": "2675 Walsh Rd 78224 San Antonio USA",
+    "city_coords": [
+      29.4241,
+      -98.4936
+    ]
   },
   {
     "name": "San Antonio 1",
@@ -49367,7 +50419,11 @@
     "state": "",
     "zip": "78251",
     "country": "United States",
-    "address": "9550 Westover Hills Blvd 78251 San Antonio USA"
+    "address": "9550 Westover Hills Blvd 78251 San Antonio USA",
+    "city_coords": [
+      29.4241,
+      -98.4936
+    ]
   },
   {
     "name": "San Clemente",
@@ -49417,7 +50473,11 @@
     "state": "",
     "zip": "92111-7912",
     "country": "United States",
-    "address": "5771 Copley Dr, 1st floor 92111-7912 San Diego USA"
+    "address": "5771 Copley Dr, 1st floor 92111-7912 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego",
@@ -49427,7 +50487,11 @@
     "state": "",
     "zip": "92123",
     "country": "United States",
-    "address": "8830 Complex Dr 92123 San Diego USA"
+    "address": "8830 Complex Dr 92123 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego",
@@ -49437,7 +50501,11 @@
     "state": "",
     "zip": "92104",
     "country": "United States",
-    "address": "3180 University Ave 92104 San Diego USA"
+    "address": "3180 University Ave 92104 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego",
@@ -49447,7 +50515,11 @@
     "state": "",
     "zip": "92121",
     "country": "United States",
-    "address": "5732 Pacific Center Blvd 92121 San Diego USA"
+    "address": "5732 Pacific Center Blvd 92121 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego (Aero Drive)",
@@ -49457,7 +50529,11 @@
     "state": "",
     "zip": "92123",
     "country": "United States",
-    "address": "8829 Aero Dr 92123 San Diego USA"
+    "address": "8829 Aero Dr 92123 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego (B Street)",
@@ -49467,7 +50543,11 @@
     "state": "",
     "zip": "92101",
     "country": "United States",
-    "address": "535 B St 92101 San Diego USA"
+    "address": "535 B St 92101 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego (Town Centre Drive)",
@@ -49477,7 +50557,11 @@
     "state": "",
     "zip": "92121",
     "country": "United States",
-    "address": "9530 Towne Centre Dr 92121 San Diego USA"
+    "address": "9530 Towne Centre Dr 92121 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego Supercomputer Center - UCSD",
@@ -49487,7 +50571,11 @@
     "state": "",
     "zip": "92121",
     "country": "United States",
-    "address": "10100 Hopkins Dr 92121 San Diego USA"
+    "address": "10100 Hopkins Dr 92121 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "San Diego Tech Center",
@@ -49537,7 +50625,11 @@
     "state": "",
     "zip": "94124-3125",
     "country": "United States",
-    "address": "400 Paul Ave 94124-3125 San Francisco USA"
+    "address": "400 Paul Ave 94124-3125 San Francisco USA",
+    "city_coords": [
+      37.7749,
+      -122.4194
+    ]
   },
   {
     "name": "San Francisco",
@@ -49547,7 +50639,11 @@
     "state": "",
     "zip": "94124",
     "country": "United States",
-    "address": "200 Paul Ave, Suite 401 94124 San Francisco USA"
+    "address": "200 Paul Ave, Suite 401 94124 San Francisco USA",
+    "city_coords": [
+      37.7749,
+      -122.4194
+    ]
   },
   {
     "name": "San Francisco",
@@ -49557,7 +50653,11 @@
     "state": "",
     "zip": "95051-0904",
     "country": "United States",
-    "address": "2820 Northwestern Pkwy 95051-0904 Santa Clara USA"
+    "address": "2820 Northwestern Pkwy 95051-0904 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "San Francisco (Brannan St.)",
@@ -49567,7 +50667,11 @@
     "state": "",
     "zip": "94107-1535",
     "country": "United States",
-    "address": "651 Brannan St, 3rd floor 94107-1535 San Francisco USA"
+    "address": "651 Brannan St, 3rd floor 94107-1535 San Francisco USA",
+    "city_coords": [
+      37.7749,
+      -122.4194
+    ]
   },
   {
     "name": "San Francisco 2",
@@ -49627,7 +50731,11 @@
     "state": "",
     "zip": "95131-1835",
     "country": "United States",
-    "address": "2030 Fortune Dr 95131-1835 San Jose USA"
+    "address": "2030 Fortune Dr 95131-1835 San Jose USA",
+    "city_coords": [
+      37.3382,
+      -121.8863
+    ]
   },
   {
     "name": "San Jose",
@@ -49637,7 +50745,11 @@
     "state": "",
     "zip": "95126-2430",
     "country": "United States",
-    "address": "534 Stockton Ave 95126-2430 San Jose USA"
+    "address": "534 Stockton Ave 95126-2430 San Jose USA",
+    "city_coords": [
+      37.3382,
+      -121.8863
+    ]
   },
   {
     "name": "San Jose",
@@ -49647,7 +50759,11 @@
     "state": "",
     "zip": "95113",
     "country": "United States",
-    "address": "55 S Market St 95113 San Jose USA"
+    "address": "55 S Market St 95113 San Jose USA",
+    "city_coords": [
+      37.3382,
+      -121.8863
+    ]
   },
   {
     "name": "San Jose",
@@ -49657,7 +50773,11 @@
     "state": "",
     "zip": "95134-1368",
     "country": "United States",
-    "address": "400 Holger Way 95134-1368 San Jose USA"
+    "address": "400 Holger Way 95134-1368 San Jose USA",
+    "city_coords": [
+      37.3382,
+      -121.8863
+    ]
   },
   {
     "name": "San Jose (Silicon Valley)",
@@ -49677,7 +50797,11 @@
     "state": "",
     "zip": "95119",
     "country": "United States",
-    "address": "9 Great Oaks Blvd 95119 San Jose USA"
+    "address": "9 Great Oaks Blvd 95119 San Jose USA",
+    "city_coords": [
+      37.3382,
+      -121.8863
+    ]
   },
   {
     "name": "San Jose Live / Shopping Mall Colo",
@@ -49697,7 +50821,11 @@
     "state": "",
     "zip": "93401",
     "country": "United States",
-    "address": "3610 Sacramento Dr 93401 San Luis Obispo USA"
+    "address": "3610 Sacramento Dr 93401 San Luis Obispo USA",
+    "city_coords": [
+      38.5816,
+      -121.4944
+    ]
   },
   {
     "name": "San Marcos",
@@ -49827,7 +50955,11 @@
     "state": "",
     "zip": "95054-3431",
     "country": "United States",
-    "address": "3075 Raymond St 95054-3431 Santa Clara USA"
+    "address": "3075 Raymond St 95054-3431 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara",
@@ -49837,7 +50969,11 @@
     "state": "",
     "zip": "95050-2851",
     "country": "United States",
-    "address": "1700 Richard Ave 95050-2851 Santa Clara USA"
+    "address": "1700 Richard Ave 95050-2851 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara",
@@ -49847,7 +50983,11 @@
     "state": "",
     "zip": "95050-2702",
     "country": "United States",
-    "address": "2050 Martin Ave 95050-2702 Santa Clara USA"
+    "address": "2050 Martin Ave 95050-2702 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara",
@@ -49887,7 +51027,11 @@
     "state": "",
     "zip": "95054-3413",
     "country": "United States",
-    "address": "1350 Duane Ave 95054-3413 Santa Clara USA"
+    "address": "1350 Duane Ave 95054-3413 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara 3",
@@ -49897,7 +51041,11 @@
     "state": "",
     "zip": "95054-3410",
     "country": "United States",
-    "address": "870 Duane Ave 95054-3410 Santa Clara USA"
+    "address": "870 Duane Ave 95054-3410 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara 4",
@@ -49907,7 +51055,11 @@
     "state": "",
     "zip": "95054-3431",
     "country": "United States",
-    "address": "3075 Raymond St 95054-3431 Santa Clara USA"
+    "address": "3075 Raymond St 95054-3431 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara 6",
@@ -49917,7 +51069,11 @@
     "state": "",
     "zip": "95054-3438",
     "country": "United States",
-    "address": "3011 Lafayette St 95054-3438 Santa Clara USA"
+    "address": "3011 Lafayette St 95054-3438 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara Campus II",
@@ -49927,7 +51083,11 @@
     "state": "",
     "zip": "95050",
     "country": "United States",
-    "address": "737 Mathew St 95050 Santa Clara USA"
+    "address": "737 Mathew St 95050 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Santa Clara Data Center",
@@ -50557,7 +51717,11 @@
     "state": "",
     "zip": "98109",
     "country": "United States",
-    "address": "1000 Denny Way 98109 Seattle USA"
+    "address": "1000 Denny Way 98109 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "Seattle",
@@ -50567,7 +51731,11 @@
     "state": "",
     "zip": "98109",
     "country": "United States",
-    "address": "140 4th Ave N, Suite 360 98109 Seattle USA"
+    "address": "140 4th Ave N, Suite 360 98109 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "Seattle",
@@ -50607,7 +51775,11 @@
     "state": "",
     "zip": "98121",
     "country": "United States",
-    "address": "2001 6th Ave, 15 floor 98121 Seattle USA"
+    "address": "2001 6th Ave, 15 floor 98121 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "Seattle (Second Ave.)",
@@ -50617,7 +51789,11 @@
     "state": "",
     "zip": "98101",
     "country": "United States",
-    "address": "1100 2nd Ave, 1st floor 98101 Seattle USA"
+    "address": "1100 2nd Ave, 1st floor 98101 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "Seattle 1",
@@ -50657,7 +51833,11 @@
     "state": "",
     "zip": "98121-2505",
     "country": "United States",
-    "address": "2020 5th Ave, floor 5 98121-2505 Seattle USA"
+    "address": "2020 5th Ave, floor 5 98121-2505 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "Seattle 3",
@@ -51637,7 +52817,11 @@
     "state": "",
     "zip": "95131-1824",
     "country": "United States",
-    "address": "2001 Fortune Dr 95131-1824 San Jose USA"
+    "address": "2001 Fortune Dr 95131-1824 San Jose USA",
+    "city_coords": [
+      37.3382,
+      -121.8863
+    ]
   },
   {
     "name": "Silicon Valley 1",
@@ -51687,7 +52871,11 @@
     "state": "",
     "zip": "95051",
     "country": "United States",
-    "address": "2960 Corvin Dr, Pod D 95051 Santa Clara USA"
+    "address": "2960 Corvin Dr, Pod D 95051 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Silicon Valley 15",
@@ -51737,7 +52925,11 @@
     "state": "",
     "zip": "95054-3413",
     "country": "United States",
-    "address": "1350 Duane Ave 95054-3413 Santa Clara USA"
+    "address": "1350 Duane Ave 95054-3413 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Silicon Valley 3",
@@ -51817,7 +53009,11 @@
     "state": "",
     "zip": "95054",
     "country": "United States",
-    "address": "3020 Coronado Dr 95054 Santa Clara USA"
+    "address": "3020 Coronado Dr 95054 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Silicon Valley 7",
@@ -51827,7 +53023,11 @@
     "state": "",
     "zip": "95054-3213",
     "country": "United States",
-    "address": "2900 Stender Way 95054-3213 Santa Clara USA"
+    "address": "2900 Stender Way 95054-3213 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "Silicon Valley 8",
@@ -52437,7 +53637,11 @@
     "state": "",
     "zip": "57107",
     "country": "United States",
-    "address": "5300 N La Mesa Dr 57107 Sioux Falls USA"
+    "address": "5300 N La Mesa Dr 57107 Sioux Falls USA",
+    "city_coords": [
+      33.4152,
+      -111.8315
+    ]
   },
   {
     "name": "Sirius Satellite Services Latvija",
@@ -53007,7 +54211,11 @@
     "state": "",
     "zip": "90066",
     "country": "United States",
-    "address": "12950 Culver Blvd 90066 Los Angeles USA"
+    "address": "12950 Culver Blvd 90066 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "Solcon Datacenter Dronten",
@@ -53237,7 +54445,11 @@
     "state": "",
     "zip": "98168-2569",
     "country": "United States",
-    "address": "12101 Tukwila International Blvd 98168-2569 Seattle USA"
+    "address": "12101 Tukwila International Blvd 98168-2569 Seattle USA",
+    "city_coords": [
+      47.6062,
+      -122.3321
+    ]
   },
   {
     "name": "South Wacker Chicago",
@@ -53557,7 +54769,11 @@
     "state": "",
     "zip": "19147-3905",
     "country": "United States",
-    "address": "900 Walnut St, 2nd floor 19147-3905 Philadelphia USA"
+    "address": "900 Walnut St, 2nd floor 19147-3905 Philadelphia USA",
+    "city_coords": [
+      39.9526,
+      -75.1652
+    ]
   },
   {
     "name": "St. Louis-Olive",
@@ -53567,7 +54783,11 @@
     "state": "",
     "zip": "63101-1908",
     "country": "United States",
-    "address": "1111 Olive St 63101-1908 St. Louis USA"
+    "address": "1111 Olive St 63101-1908 St. Louis USA",
+    "city_coords": [
+      38.627,
+      -90.1994
+    ]
   },
   {
     "name": "St. Louis-Walnut",
@@ -53577,7 +54797,11 @@
     "state": "",
     "zip": "63102",
     "country": "United States",
-    "address": "900 Walnut St 63102 St. Louis USA"
+    "address": "900 Walnut St 63102 St. Louis USA",
+    "city_coords": [
+      38.627,
+      -90.1994
+    ]
   },
   {
     "name": "St. Paul",
@@ -53767,7 +54991,11 @@
     "state": "",
     "zip": "20166",
     "country": "United States",
-    "address": "21111 Ridgetop Cir 20166 Sterling USA"
+    "address": "21111 Ridgetop Cir 20166 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "Sterling 2",
@@ -53777,7 +55005,11 @@
     "state": "",
     "zip": "20166",
     "country": "United States",
-    "address": "21111 Ridgetop Cir 20166 Sterling USA"
+    "address": "21111 Ridgetop Cir 20166 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "Sterling 4",
@@ -53797,7 +55029,11 @@
     "state": "",
     "zip": "20166-9402",
     "country": "United States",
-    "address": "511 Shaw Rd 20166-9402 Sterling USA"
+    "address": "511 Shaw Rd 20166-9402 Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "Sterling 5",
@@ -54517,7 +55753,11 @@
     "state": "",
     "zip": "94086-5305",
     "country": "United States",
-    "address": "1380 Kifer Rd 94086-5305 Sunnyvale USA"
+    "address": "1380 Kifer Rd 94086-5305 Sunnyvale USA",
+    "city_coords": [
+      37.3688,
+      -122.0363
+    ]
   },
   {
     "name": "Sunnyvale Data Center",
@@ -54527,7 +55767,11 @@
     "state": "",
     "zip": "94086-5306",
     "country": "United States",
-    "address": "1400 Kifer Rd 94086-5306 Sunnyvale USA"
+    "address": "1400 Kifer Rd 94086-5306 Sunnyvale USA",
+    "city_coords": [
+      37.3688,
+      -122.0363
+    ]
   },
   {
     "name": "Suntech @ Penang Cybercity",
@@ -55617,7 +56861,11 @@
     "state": "",
     "zip": "80906-4109",
     "country": "United States",
-    "address": "3819 Janitell Rd 80906-4109 Colorado Springs USA"
+    "address": "3819 Janitell Rd 80906-4109 Colorado Springs USA",
+    "city_coords": [
+      38.8339,
+      -104.8214
+    ]
   },
   {
     "name": "T5@Dallas I",
@@ -55637,7 +56885,11 @@
     "state": "",
     "zip": "75024-2924",
     "country": "United States",
-    "address": "6653 Pinecrest Dr 75024-2924 Plano USA"
+    "address": "6653 Pinecrest Dr 75024-2924 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "T5@Dallas III",
@@ -55647,7 +56899,11 @@
     "state": "",
     "zip": "75024-2924",
     "country": "United States",
-    "address": "6653 Pinecrest Dr 75024-2924 Plano USA"
+    "address": "6653 Pinecrest Dr 75024-2924 Plano USA",
+    "city_coords": [
+      33.0198,
+      -96.6989
+    ]
   },
   {
     "name": "T5@LA",
@@ -56007,7 +57263,11 @@
     "state": "",
     "zip": "33602",
     "country": "United States",
-    "address": "400 N Tampa St 33602 Tampa USA"
+    "address": "400 N Tampa St 33602 Tampa USA",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa 1",
@@ -56017,7 +57277,11 @@
     "state": "",
     "zip": "33614",
     "country": "United States",
-    "address": "8010 Woodland Center Blvd, Suite 700 33614 Tampa USA"
+    "address": "8010 Woodland Center Blvd, Suite 700 33614 Tampa USA",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa 2",
@@ -56027,7 +57291,11 @@
     "state": "",
     "zip": "33637",
     "country": "United States",
-    "address": "8350 Parkedge Dr 33637 Tampa USA"
+    "address": "8350 Parkedge Dr 33637 Tampa USA",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampa 2",
@@ -56037,7 +57305,11 @@
     "state": "",
     "zip": "33610",
     "country": "United States",
-    "address": "5908 Hampton Oaks Pkwy 33610 Tampa USA"
+    "address": "5908 Hampton Oaks Pkwy 33610 Tampa USA",
+    "city_coords": [
+      27.9506,
+      -82.4572
+    ]
   },
   {
     "name": "Tampere",
@@ -58247,7 +59519,11 @@
     "state": "",
     "zip": "77002",
     "country": "United States",
-    "address": "1415 Louisiana St 77002 Houston USA"
+    "address": "1415 Louisiana St 77002 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "Transtelco El Paso",
@@ -58457,7 +59733,11 @@
     "state": "",
     "zip": "85713-2109",
     "country": "United States",
-    "address": "1919 S Country Club Rd 85713-2109 Tucson USA"
+    "address": "1919 S Country Club Rd 85713-2109 Tucson USA",
+    "city_coords": [
+      32.2226,
+      -110.9747
+    ]
   },
   {
     "name": "Tucson (South Evans Boulevard)",
@@ -58497,7 +59777,11 @@
     "state": "",
     "zip": "74120",
     "country": "United States",
-    "address": "738 S Elgin Ave 74120 Tulsa USA"
+    "address": "738 S Elgin Ave 74120 Tulsa USA",
+    "city_coords": [
+      36.154,
+      -95.9928
+    ]
   },
   {
     "name": "Tulsa 1",
@@ -58507,7 +59791,11 @@
     "state": "",
     "zip": "74120",
     "country": "United States",
-    "address": "322 E Archer St 74120 Tulsa USA"
+    "address": "322 E Archer St 74120 Tulsa USA",
+    "city_coords": [
+      36.154,
+      -95.9928
+    ]
   },
   {
     "name": "Tulsa 2",
@@ -58517,7 +59805,11 @@
     "state": "",
     "zip": "74146",
     "country": "United States",
-    "address": "12151 E State Farm Blvd S 74146 Tulsa USA"
+    "address": "12151 E State Farm Blvd S 74146 Tulsa USA",
+    "city_coords": [
+      36.154,
+      -95.9928
+    ]
   },
   {
     "name": "TulsaConnect (DC1) Oklahoma",
@@ -58727,7 +60019,11 @@
     "state": "",
     "zip": "06901",
     "country": "United States",
-    "address": "677 Washington Blvd 06901 Stamford USA"
+    "address": "677 Washington Blvd 06901 Stamford USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Ucomline Kiev",
@@ -59197,7 +60493,11 @@
     "state": "",
     "zip": "95051",
     "country": "United States",
-    "address": "Northwestern Pkwy 95051 Santa Clara USA"
+    "address": "Northwestern Pkwy 95051 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "V6",
@@ -59207,7 +60507,11 @@
     "state": "",
     "zip": "95051",
     "country": "United States",
-    "address": "2895 Northwestern Pkwy 95051 Santa Clara USA"
+    "address": "2895 Northwestern Pkwy 95051 Santa Clara USA",
+    "city_coords": [
+      37.3541,
+      -121.9552
+    ]
   },
   {
     "name": "VADS Hong Kong Data Centre (HKDC)",
@@ -60077,7 +61381,11 @@
     "state": "",
     "zip": "23454",
     "country": "United States",
-    "address": "Corporate Landing Pkwy 23454 Virginia Beach USA"
+    "address": "Corporate Landing Pkwy 23454 Virginia Beach USA",
+    "city_coords": [
+      36.8529,
+      -75.978
+    ]
   },
   {
     "name": "Virginia Beach",
@@ -60087,7 +61395,11 @@
     "state": "",
     "zip": "23454",
     "country": "United States",
-    "address": "Corporate Landing Pkwy 23454 Virginia Beach USA"
+    "address": "Corporate Landing Pkwy 23454 Virginia Beach USA",
+    "city_coords": [
+      36.8529,
+      -75.978
+    ]
   },
   {
     "name": "Virginia Beach",
@@ -60097,7 +61409,11 @@
     "state": "",
     "zip": "23454",
     "country": "United States",
-    "address": "Corporate Landing Pkwy 23454 Virginia Beach USA"
+    "address": "Corporate Landing Pkwy 23454 Virginia Beach USA",
+    "city_coords": [
+      36.8529,
+      -75.978
+    ]
   },
   {
     "name": "Virtual CLS Ougadougou",
@@ -60497,7 +61813,11 @@
     "state": "",
     "zip": "76701-2020",
     "country": "United States",
-    "address": "700 Austin Ave 76701-2020 Waco USA"
+    "address": "700 Austin Ave 76701-2020 Waco USA",
+    "city_coords": [
+      30.2672,
+      -97.7431
+    ]
   },
   {
     "name": "WaiGaoQiao",
@@ -60817,7 +62137,11 @@
     "state": "",
     "zip": "20005",
     "country": "United States",
-    "address": "1120 Vermont Ave NW 20005 Washington USA"
+    "address": "1120 Vermont Ave NW 20005 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Washington (Connecticut Ave.)",
@@ -60827,7 +62151,11 @@
     "state": "",
     "zip": "20008",
     "country": "United States",
-    "address": "4301 Connecticut Ave NW, 1st floor 20008 Washington USA"
+    "address": "4301 Connecticut Ave NW, 1st floor 20008 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Washington (L Street)",
@@ -60837,7 +62165,11 @@
     "state": "",
     "zip": "20005",
     "country": "United States",
-    "address": "1220 L St NW, 2nd floor 20005 Washington USA"
+    "address": "1220 L St NW, 2nd floor 20005 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Washington (Vermont Ave.)",
@@ -60847,7 +62179,11 @@
     "state": "",
     "zip": "20005",
     "country": "United States",
-    "address": "1120 Vermont Ave NW 20005 Washington USA"
+    "address": "1120 Vermont Ave NW 20005 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Washington 1",
@@ -60877,7 +62213,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "Performance Circle 20147 Ashburn USA"
+    "address": "Performance Circle 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Washington 13",
@@ -60927,7 +62267,11 @@
     "state": "",
     "zip": "20147",
     "country": "United States",
-    "address": "21701 Filigree Ct 20147 Ashburn USA"
+    "address": "21701 Filigree Ct 20147 Ashburn USA",
+    "city_coords": [
+      39.0438,
+      -77.4874
+    ]
   },
   {
     "name": "Washington 6",
@@ -60987,7 +62331,11 @@
     "state": "",
     "zip": "20037",
     "country": "United States",
-    "address": "2100 M St NW, floor 1 20037 Washington USA"
+    "address": "2100 M St NW, floor 1 20037 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Washington DC 1",
@@ -61007,7 +62355,11 @@
     "state": "",
     "zip": "20005",
     "country": "United States",
-    "address": "1099 14th St NW 20005 Washington USA"
+    "address": "1099 14th St NW 20005 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Washington Dulles Gateway",
@@ -61017,7 +62369,11 @@
     "state": "",
     "zip": "",
     "country": "United States",
-    "address": "Dulles Greenway Sterling USA"
+    "address": "Dulles Greenway Sterling USA",
+    "city_coords": [
+      39.0062,
+      -77.4286
+    ]
   },
   {
     "name": "Washington State 1",
@@ -61047,7 +62403,11 @@
     "state": "",
     "zip": "20005",
     "country": "United States",
-    "address": "1120 Vermont Ave NW 20005 Washington USA"
+    "address": "1120 Vermont Ave NW 20005 Washington USA",
+    "city_coords": [
+      38.9072,
+      -77.0369
+    ]
   },
   {
     "name": "Wat1",
@@ -61277,7 +62637,11 @@
     "state": "",
     "zip": "92121",
     "country": "United States",
-    "address": "9276 Scranton Rd 92121 San Diego USA"
+    "address": "9276 Scranton Rd 92121 San Diego USA",
+    "city_coords": [
+      32.7157,
+      -117.1611
+    ]
   },
   {
     "name": "Welltech Centre",
@@ -61337,7 +62701,11 @@
     "state": "",
     "zip": "77041-2014",
     "country": "United States",
-    "address": "5150 Westway Park Blvd 77041-2014 Houston USA"
+    "address": "5150 Westway Park Blvd 77041-2014 Houston USA",
+    "city_coords": [
+      29.7604,
+      -95.3698
+    ]
   },
   {
     "name": "West 2",
@@ -61377,7 +62745,11 @@
     "state": "",
     "zip": "90017",
     "country": "United States",
-    "address": "1200 W 7th St 90017 Los Angeles USA"
+    "address": "1200 W 7th St 90017 Los Angeles USA",
+    "city_coords": [
+      34.0522,
+      -118.2437
+    ]
   },
   {
     "name": "WEST AFRICA DATABRIDGE",
@@ -61757,7 +63129,11 @@
     "state": "",
     "zip": "30005",
     "country": "United States",
-    "address": "1865 McFarland Pkwy 30005 Alpharetta USA"
+    "address": "1865 McFarland Pkwy 30005 Alpharetta USA",
+    "city_coords": [
+      34.0754,
+      -84.2941
+    ]
   },
   {
     "name": "Wingrove House- Newcastle",
