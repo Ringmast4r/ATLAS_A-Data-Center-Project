@@ -190,11 +190,11 @@
 <body>
     <div id="container">
         <div id="header">
-            <h1>⚡ GLOBAL DATA CENTER INTELLIGENCE ⚡</h1>
+            <h1>📡 GLOBAL DATA CENTER INTELLIGENCE 📡</h1>
             <div class="subtitle">CRITICAL INFRASTRUCTURE MAPPING SYSTEM</div>
 
             <div id="controls">
-                <input type="text" id="search" placeholder="Search by name, company, or country...">
+                <input type="text" id="search" placeholder="Search by name, company, city, state, or country...">
                 <select id="country-filter">
                     <option value="">All Countries</option>
                 </select>
@@ -218,7 +218,9 @@
                 <span class="close-btn" onclick="closeInfo()">✕</span>
                 <h3 id="info-title"></h3>
                 <p><strong>Operator:</strong> <span id="info-company"></span></p>
-                <p><strong>Location:</strong> <span id="info-address"></span></p>
+                <p><strong>Street:</strong> <span id="info-street"></span></p>
+                <p><strong>City:</strong> <span id="info-city"></span></p>
+                <p><strong>State:</strong> <span id="info-state"></span></p>
                 <p><strong>Country:</strong> <span id="info-country"></span></p>
             </div>
 
@@ -226,11 +228,19 @@
                 <div style="color: #00ff00; font-weight: bold; margin-bottom: 10px;">MARKER LEGEND</div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: #00ff00; box-shadow: 0 0 10px #00ff00;"></div>
-                    <span>Data Center</span>
+                    <span>Standard (1-20)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ffff00; box-shadow: 0 0 10px #ffff00;"></div>
+                    <span>Medium (21-50)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff8800; box-shadow: 0 0 10px #ff8800;"></div>
+                    <span>High (51-100)</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: #ff0000; box-shadow: 0 0 10px #ff0000;"></div>
-                    <span>High Density (100+)</span>
+                    <span>Very High (100+)</span>
                 </div>
             </div>
         </div>
@@ -400,16 +410,25 @@
 
             let markersAdded = 0;
             data.forEach((dc, index) => {
-                let coords = countryCoords[dc.country];
+                let lat, lng;
 
-                if (!coords) {
-                    console.warn(`No coordinates for country: ${dc.country}`);
-                    coords = [0, 0];
+                // Use real coordinates if available
+                if (dc.lat && dc.lon) {
+                    lat = dc.lat;
+                    lng = dc.lon;
+                } else {
+                    // Fall back to country coordinates with random offset
+                    let coords = countryCoords[dc.country];
+
+                    if (!coords) {
+                        console.warn(`No coordinates for country: ${dc.country}`);
+                        coords = [0, 0];
+                    }
+
+                    // Add random offset
+                    lat = coords[0] + getRandomOffset();
+                    lng = coords[1] + getRandomOffset();
                 }
-
-                // Add random offset
-                const lat = coords[0] + getRandomOffset();
-                const lng = coords[1] + getRandomOffset();
 
                 // Color based on country density
                 let color = '#00ff00';
@@ -435,8 +454,9 @@
                     <div style="color: #000; font-family: 'Courier New', monospace;">
                         <strong>${dc.name}</strong><br>
                         <em>${dc.company}</em><br>
-                        ${dc.address}<br>
-                        <strong>${dc.country}</strong>
+                        ${dc.street || ''}<br>
+                        ${dc.city || ''}${dc.state ? ', ' + dc.state : ''}${dc.zip ? ' ' + dc.zip : ''}<br>
+                        <strong>${dc.country || ''}</strong>
                     </div>
                 `);
 
@@ -486,6 +506,9 @@
                     dc.name.toLowerCase().includes(searchTerm) ||
                     dc.company.toLowerCase().includes(searchTerm) ||
                     dc.country.toLowerCase().includes(searchTerm) ||
+                    (dc.state && dc.state.toLowerCase().includes(searchTerm)) ||
+                    (dc.city && dc.city.toLowerCase().includes(searchTerm)) ||
+                    (dc.street && dc.street.toLowerCase().includes(searchTerm)) ||
                     dc.address.toLowerCase().includes(searchTerm);
 
                 const matchesCountry = !countryFilter || dc.country === countryFilter;
@@ -503,8 +526,10 @@
             document.getElementById('info-panel').style.display = 'block';
             document.getElementById('info-title').textContent = dc.name;
             document.getElementById('info-company').textContent = dc.company;
-            document.getElementById('info-address').textContent = dc.address;
-            document.getElementById('info-country').textContent = dc.country;
+            document.getElementById('info-street').textContent = dc.street || 'N/A';
+            document.getElementById('info-city').textContent = dc.city || 'N/A';
+            document.getElementById('info-state').textContent = dc.state || 'N/A';
+            document.getElementById('info-country').textContent = dc.country || 'N/A';
         }
 
         function closeInfo() {
