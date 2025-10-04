@@ -39,11 +39,11 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 #### Data Files
 - **`datacenters_clean.csv`** - Cleaned and standardized dataset (CSV format)
 - **`datacenters.json`** - JSON format for API/application integration
-- **`statistics.json`** - Machine-readable statistics
 
 #### Documentation
 - **`STATISTICS.md`** - Comprehensive statistics and regional breakdowns
 - **`README.md`** - This file
+- **`LICENSE`** - Usage terms
 
 ### Data Schema
 
