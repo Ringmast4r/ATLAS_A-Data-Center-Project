@@ -1,6 +1,6 @@
 # Global Data Center Intelligence System
 
-🌍 **[LIVE INTERACTIVE MAP](https://yourusername.github.io/datacenter-osint/)** 🌍
+🌍 **[LIVE INTERACTIVE MAP](https://ringmast4r.github.io/datacenter-atlas/)** 🌍
 
 ## Project Origin
 
