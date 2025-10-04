@@ -661,7 +661,7 @@
             document.getElementById('visible-count').textContent = filtered.length;
 
             // Show results panel if searching and has results
-            if (searchTerm && filtered.length > 0 && filtered.length < 100) {
+            if (searchTerm && filtered.length > 0) {
                 showResults(filtered);
             } else {
                 closeResults();
@@ -672,7 +672,19 @@
             const resultsList = document.getElementById('results-list');
             resultsList.innerHTML = '';
 
-            results.forEach(dc => {
+            // Show message if too many results
+            if (results.length > 200) {
+                resultsList.innerHTML = `
+                    <div style="color: #ffaa00; padding: 10px; border: 1px solid #ffaa00; margin-bottom: 10px;">
+                        Showing first 200 of ${results.length} results. Refine search for better results.
+                    </div>
+                `;
+            }
+
+            // Limit display to first 200 results
+            const displayResults = results.slice(0, 200);
+
+            displayResults.forEach(dc => {
                 const item = document.createElement('div');
                 item.className = 'result-item';
                 item.innerHTML = `
