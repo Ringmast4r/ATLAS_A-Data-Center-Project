@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Data Center Intelligence Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff00;
+            overflow: hidden;
+        }
+
+        #container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+            padding: 20px;
+            border-bottom: 2px solid #00ff00;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 0 0 10px #00ff00;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 12px;
+            color: #00aa00;
+            margin-top: 5px;
+        }
+
+        #controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        #search {
+            background: #1a1a1a;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            padding: 8px 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            width: 300px;
+            outline: none;
+        }
+
+        #search::placeholder {
+            color: #006600;
+        }
+
+        select {
+            background: #1a1a1a;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            padding: 8px 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .stat {
+            color: #00aa00;
+        }
+
+        .stat span {
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        #map-container {
+            flex: 1;
+            position: relative;
+            background: radial-gradient(circle at center, #0f0f0f 0%, #000000 100%);
+        }
+
+        #info-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.95);
+            border: 1px solid #00ff00;
+            padding: 15px;
+            max-width: 350px;
+            max-height: 500px;
+            overflow-y: auto;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            display: none;
+            z-index: 1000;
+        }
+
+        #info-panel h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+        #info-panel p {
+            font-size: 12px;
+            margin: 5px 0;
+            color: #00aa00;
+        }
+
+        .close-btn {
+            float: right;
+            cursor: pointer;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            text-shadow: 0 0 10px #00ff00;
+            animation: pulse 1.5s infinite;
+            z-index: 2000;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border: 1px solid #00ff00;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            border: 1px solid #00ff00;
+            padding: 15px;
+            font-size: 11px;
+            z-index: 1000;
+        }
+
+        .legend-item {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+
+        #globe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>⚡ GLOBAL DATA CENTER INTELLIGENCE ⚡</h1>
+            <div class="subtitle">CRITICAL INFRASTRUCTURE MAPPING SYSTEM</div>
+
+            <div id="controls">
+                <input type="text" id="search" placeholder="Search by name, company, or country...">
+                <select id="country-filter">
+                    <option value="">All Countries</option>
+                </select>
+                <select id="company-filter">
+                    <option value="">All Companies</option>
+                </select>
+            </div>
+
+            <div id="stats">
+                <div class="stat">Displaying: <span id="visible-count">0</span></div>
+                <div class="stat">Total: <span id="total-count">0</span></div>
+                <div class="stat">Countries: <span id="country-count">0</span></div>
+            </div>
+        </div>
+
+        <div id="map-container">
+            <div id="loading">LOADING INTELLIGENCE DATA...</div>
+            <div id="globe"></div>
+
+            <div id="info-panel">
+                <span class="close-btn" onclick="closeInfo()">✕</span>
+                <h3 id="info-title"></h3>
+                <p><strong>Operator:</strong> <span id="info-company"></span></p>
+                <p><strong>Location:</strong> <span id="info-address"></span></p>
+                <p><strong>Country:</strong> <span id="info-country"></span></p>
+            </div>
+
+            <div class="legend">
+                <div style="color: #00ff00; font-weight: bold; margin-bottom: 10px;">MARKER LEGEND</div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #00ff00; box-shadow: 0 0 10px #00ff00;"></div>
+                    <span>Data Center</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff0000; box-shadow: 0 0 10px #ff0000;"></div>
+                    <span>High Density (100+)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        console.log('Script starting...');
+
+        let datacenters = [];
+        let map;
+        let markerLayer;
+        let allMarkers = [];
+
+        // Comprehensive country coordinates
+        const countryCoords = {
+            'United States': [37.0902, -95.7129],
+            'United Kingdom': [55.3781, -3.4360],
+            'Netherlands': [52.1326, 5.2913],
+            'France': [46.2276, 2.2137],
+            'Germany': [51.1657, 10.4515],
+            'Australia': [-25.2744, 133.7751],
+            'Canada': [56.1304, -106.3468],
+            'India': [20.5937, 78.9629],
+            'Brazil': [-14.2350, -51.9253],
+            'China': [35.8617, 104.1954],
+            'Switzerland': [46.8182, 8.2275],
+            'Spain': [40.4637, -3.7492],
+            'Italy': [41.8719, 12.5674],
+            'Japan': [36.2048, 138.2529],
+            'Sweden': [60.1282, 18.6435],
+            'Singapore': [1.3521, 103.8198],
+            'Russia': [61.5240, 105.3188],
+            'South Africa': [-30.5595, 22.9375],
+            'Ireland': [53.1424, -7.6921],
+            'Mexico': [23.6345, -102.5528],
+            'Belgium': [50.5039, 4.4699],
+            'Poland': [51.9194, 19.1451],
+            'Norway': [60.4720, 8.4689],
+            'Denmark': [56.2639, 9.5018],
+            'Finland': [61.9241, 25.7482],
+            'Austria': [47.5162, 14.5501],
+            'Portugal': [39.3999, -8.2245],
+            'Czech Republic': [49.8175, 15.4730],
+            'Greece': [39.0742, 21.8243],
+            'Romania': [45.9432, 24.9668],
+            'Hungary': [47.1625, 19.5033],
+            'Turkey': [38.9637, 35.2433],
+            'South Korea': [35.9078, 127.7669],
+            'Thailand': [15.8700, 100.9925],
+            'Malaysia': [4.2105, 101.9758],
+            'Indonesia': [-0.7893, 113.9213],
+            'Philippines': [12.8797, 121.7740],
+            'Vietnam': [14.0583, 108.2772],
+            'Hong Kong': [22.3193, 114.1694],
+            'Taiwan': [23.6978, 120.9605],
+            'New Zealand': [-40.9006, 174.8860],
+            'Israel': [31.0461, 34.8516],
+            'United Arab Emirates': [23.4241, 53.8478],
+            'Saudi Arabia': [23.8859, 45.0792],
+            'Egypt': [26.8206, 30.8025],
+            'Nigeria': [9.0820, 8.6753],
+            'Kenya': [-0.0236, 37.9062],
+            'Ghana': [7.9465, -1.0232],
+            'Argentina': [-38.4161, -63.6167],
+            'Colombia': [4.5709, -74.2973],
+            'Chile': [-35.6751, -71.5430],
+            'Peru': [-9.1900, -75.0152],
+            'Ukraine': [48.3794, 31.1656],
+            'Pakistan': [30.3753, 69.3451],
+            'Bangladesh': [23.6850, 90.3563],
+            'Sri Lanka': [7.8731, 80.7718],
+            'Bulgaria': [42.7339, 25.4858],
+            'Serbia': [44.0165, 21.0059],
+            'Croatia': [45.1000, 15.2000],
+            'Slovenia': [46.1512, 14.9955],
+            'Slovakia': [48.6690, 19.6990],
+            'Lithuania': [55.1694, 23.8813],
+            'Latvia': [56.8796, 24.6032],
+            'Estonia': [58.5953, 25.0136],
+            'Iceland': [64.9631, -19.0208],
+            'Luxembourg': [49.8153, 6.1296],
+            'Malta': [35.9375, 14.3754],
+            'Cyprus': [35.1264, 33.4299],
+            'Qatar': [25.3548, 51.1839],
+            'Kuwait': [29.3117, 47.4818],
+            'Oman': [21.4735, 55.9754],
+            'Jordan': [30.5852, 36.2384],
+            'Lebanon': [33.8547, 35.8623],
+            'Morocco': [31.7917, -7.0926],
+            'Tunisia': [33.8869, 9.5375],
+            'Algeria': [28.0339, 1.6596],
+            'Iran': [32.4279, 53.6880],
+            'Kazakhstan': [48.0196, 66.9237],
+            'Belarus': [53.7098, 27.9534],
+            'Azerbaijan': [40.1431, 47.5769],
+            'Armenia': [40.0691, 45.0382],
+            'Moldova': [47.4116, 28.3699],
+            'Unknown': [0, 0]
+        };
+
+        // Initialize map
+        function initMap() {
+            console.log('Initializing map...');
+            map = L.map('globe', {
+                center: [20, 0],
+                zoom: 2,
+                minZoom: 2,
+                maxZoom: 18
+            });
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap © CARTO',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }).addTo(map);
+
+            markerLayer = L.layerGroup().addTo(map);
+            console.log('Map initialized');
+        }
+
+        // Generate random offset for clustering
+        function getRandomOffset() {
+            return (Math.random() - 0.5) * 5; // Increase spread
+        }
+
+        // Load data
+        async function loadData() {
+            console.log('Loading data...');
+            try {
+                const response = await fetch('datacenters.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                datacenters = await response.json();
+                console.log(`Loaded ${datacenters.length} datacenters`);
+
+                document.getElementById('total-count').textContent = datacenters.length;
+
+                populateFilters();
+                addMarkers(datacenters);
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('visible-count').textContent = datacenters.length;
+
+                const uniqueCountries = new Set(datacenters.map(dc => dc.country));
+                document.getElementById('country-count').textContent = uniqueCountries.size;
+
+                console.log('Data loaded successfully');
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').textContent = 'ERROR: ' + error.message;
+                document.getElementById('loading').style.color = '#ff0000';
+            }
+        }
+
+        function addMarkers(data) {
+            console.log(`Adding ${data.length} markers...`);
+            markerLayer.clearLayers();
+            allMarkers = [];
+
+            // Count datacenters per country
+            const countryCount = {};
+            data.forEach(dc => {
+                countryCount[dc.country] = (countryCount[dc.country] || 0) + 1;
+            });
+
+            let markersAdded = 0;
+            data.forEach((dc, index) => {
+                let coords = countryCoords[dc.country];
+
+                if (!coords) {
+                    console.warn(`No coordinates for country: ${dc.country}`);
+                    coords = [0, 0];
+                }
+
+                // Add random offset
+                const lat = coords[0] + getRandomOffset();
+                const lng = coords[1] + getRandomOffset();
+
+                // Color based on country density
+                let color = '#00ff00';
+                const count = countryCount[dc.country];
+                if (count > 100) {
+                    color = '#ff0000';
+                } else if (count > 50) {
+                    color = '#ff8800';
+                } else if (count > 20) {
+                    color = '#ffff00';
+                }
+
+                const marker = L.circleMarker([lat, lng], {
+                    radius: 5,
+                    fillColor: color,
+                    color: color,
+                    weight: 2,
+                    opacity: 0.8,
+                    fillOpacity: 0.6
+                });
+
+                marker.bindPopup(`
+                    <div style="color: #000; font-family: 'Courier New', monospace;">
+                        <strong>${dc.name}</strong><br>
+                        <em>${dc.company}</em><br>
+                        ${dc.address}<br>
+                        <strong>${dc.country}</strong>
+                    </div>
+                `);
+
+                marker.on('click', () => showInfo(dc));
+                marker.addTo(markerLayer);
+                allMarkers.push({ marker, data: dc });
+                markersAdded++;
+            });
+
+            console.log(`Added ${markersAdded} markers to map`);
+        }
+
+        function populateFilters() {
+            console.log('Populating filters...');
+            const countries = [...new Set(datacenters.map(dc => dc.country))].sort();
+            const companies = [...new Set(datacenters.map(dc => dc.company))].sort();
+
+            const countryFilter = document.getElementById('country-filter');
+            const companyFilter = document.getElementById('company-filter');
+
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                countryFilter.appendChild(option);
+            });
+
+            companies.slice(0, 200).forEach(company => {
+                if (company) {
+                    const option = document.createElement('option');
+                    option.value = company;
+                    option.textContent = company;
+                    companyFilter.appendChild(option);
+                }
+            });
+            console.log('Filters populated');
+        }
+
+        function filterData() {
+            console.log('Filtering data...');
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const countryFilter = document.getElementById('country-filter').value;
+            const companyFilter = document.getElementById('company-filter').value;
+
+            const filtered = datacenters.filter(dc => {
+                const matchesSearch = !searchTerm ||
+                    dc.name.toLowerCase().includes(searchTerm) ||
+                    dc.company.toLowerCase().includes(searchTerm) ||
+                    dc.country.toLowerCase().includes(searchTerm) ||
+                    dc.address.toLowerCase().includes(searchTerm);
+
+                const matchesCountry = !countryFilter || dc.country === countryFilter;
+                const matchesCompany = !companyFilter || dc.company === companyFilter;
+
+                return matchesSearch && matchesCountry && matchesCompany;
+            });
+
+            console.log(`Filtered to ${filtered.length} datacenters`);
+            addMarkers(filtered);
+            document.getElementById('visible-count').textContent = filtered.length;
+        }
+
+        function showInfo(dc) {
+            document.getElementById('info-panel').style.display = 'block';
+            document.getElementById('info-title').textContent = dc.name;
+            document.getElementById('info-company').textContent = dc.company;
+            document.getElementById('info-address').textContent = dc.address;
+            document.getElementById('info-country').textContent = dc.country;
+        }
+
+        function closeInfo() {
+            document.getElementById('info-panel').style.display = 'none';
+        }
+
+        // Event listeners
+        document.getElementById('search').addEventListener('input', filterData);
+        document.getElementById('country-filter').addEventListener('change', filterData);
+        document.getElementById('company-filter').addEventListener('change', filterData);
+
+        // Initialize
+        console.log('Starting initialization...');
+        initMap();
+        loadData();
+    </script>
+</body>
+</html>
