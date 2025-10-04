@@ -517,6 +517,10 @@
                 if (dc.lat && dc.lon) {
                     lat = dc.lat;
                     lng = dc.lon;
+                } else if (dc.city_coords) {
+                    // Use city coordinates if available
+                    lat = dc.city_coords[0] + getRandomOffset();
+                    lng = dc.city_coords[1] + getRandomOffset();
                 } else {
                     // Try to use state coordinates for US datacenters
                     let coords = null;
