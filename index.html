@@ -634,18 +634,17 @@
             const stateAbbr = stateAbbreviations[searchTerm];
 
             const filtered = datacenters.filter(dc => {
-                // If searching for a US state, only match US locations
+                // If searching for a US state, match addresses with that state abbr
                 if (stateAbbr) {
-                    return dc.country === 'United States' && (
-                        (dc.state && dc.state.toLowerCase().includes(searchTerm)) ||
-                        dc.address.includes(' ' + stateAbbr + ' ')
-                    );
+                    return (dc.state && dc.state.toLowerCase().includes(searchTerm)) ||
+                           dc.address.includes(' ' + stateAbbr + ' ') ||
+                           dc.address.toLowerCase().includes(searchTerm);
                 }
 
                 const matchesSearch = !searchTerm ||
                     dc.name.toLowerCase().includes(searchTerm) ||
                     dc.company.toLowerCase().includes(searchTerm) ||
-                    dc.country.toLowerCase().includes(searchTerm) ||
+                    (dc.country && dc.country.toLowerCase().includes(searchTerm)) ||
                     (dc.state && dc.state.toLowerCase().includes(searchTerm)) ||
                     (dc.city && dc.city.toLowerCase().includes(searchTerm)) ||
                     (dc.street && dc.street.toLowerCase().includes(searchTerm)) ||
