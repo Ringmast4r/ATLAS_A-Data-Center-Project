@@ -1,6 +1,9 @@
-# Global Data Center Intelligence System
+# ATLAS
+## **A**ll **T**he **L**ocations of **A**ll **S**ervers
 
 🌍 **[LIVE INTERACTIVE MAP](https://ringmast4r.github.io/datacenter-atlas/)** 🌍
+
+A comprehensive global data center intelligence system mapping the world's critical infrastructure.
 
 ## Project Origin
 
