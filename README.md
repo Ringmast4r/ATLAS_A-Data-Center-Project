@@ -47,6 +47,26 @@ The scraped intelligence includes **6,266 verified data center locations** acros
 - Coordinate validation (lat: -90 to 90, lon: -180 to 180)
 - Created optimized `datacenters_cleaned.json` database
 
+### 🌍 Batch Geocoding & Coordinate Accuracy (v2.1)
+**Major Accuracy Improvement:**
+- 🎯 **Batch geocoded 3,973 facilities** using OpenStreetMap Nominatim API
+- 📍 **Added 2,119 precise coordinates** (53% success rate)
+- 📈 **Coverage increased: 36.6% → 70.4%** (2,293 → 4,412 facilities with coordinates)
+- 🔧 **Fixed critical coordinate errors:**
+  - 261 Southern Hemisphere facilities with inverted latitude signs
+  - 3 Australia facilities with UK/Europe coordinates
+  - 6 facilities with completely wrong city coordinates
+  - Hawaii & Iceland state/country fallback coordinate corrections
+
+**Geocoding Methodology:**
+- Free OpenStreetMap Nominatim API (no cost, no API key required)
+- Address-to-coordinate conversion with ~100m accuracy
+- Country-specific boundary validation
+- Automatic retry logic and error handling
+- Rate-limited to 1 request/second (API compliance)
+
+**Result:** Facilities now plot at actual street addresses instead of state/country centers (50-200 miles more accurate)
+
 ### 📊 Interactive Statistics Dashboard
 - **Real-time Analytics** with Chart.js integration
 - **Top 10 Countries** - Bar chart showing facility distribution
