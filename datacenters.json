@@ -69253,7 +69253,11 @@
     "state": "",
     "zip": "33064",
     "country": "United States",
-    "address": "500 Green Road 33064 Pompano United States"
+    "address": "500 Green Road 33064 Pompano United States",
+    "city_coords": [
+      26.2379,
+      -80.1248
+    ]
   },
   {
     "name": "Volico Miami",
