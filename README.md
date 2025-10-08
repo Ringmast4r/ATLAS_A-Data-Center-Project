@@ -31,26 +31,81 @@ The scraped intelligence includes **6,266 verified data center locations** acros
 
 ## ⚡ Latest Enhancements (v2.0)
 
-### Data Quality Improvements
+### 🔬 Advanced Data Cleaning & Optimization
 **Critical Issues Discovered & Fixed:**
-- 🔍 **970 entries (15.5%)** had missing country fields → **Fixed 382 via address parsing**
+- 🔍 **970 entries (15.5%)** had missing country fields → **Fixed 707 via intelligent address parsing (73% improvement)**
 - 🔍 **1,708 US entries (83.5%)** lacked state information → **Added 1,434 via ZIP code geocoding**
 - 🔍 **Only 36.6% (2,292)** had precise city-level coordinates
-- ✅ **Result:** Reduced invalid plotting by 39.4% (970 → 588 unresolved)
+- ✅ **Result:** Reduced invalid plotting by 73% (970 → 263 remaining)
 
-**Automated Data Cleaning:**
-- Country extraction from address strings (handles international formats)
-- US state geocoding via ZIP code ranges (50 states + DC)
+**Automated Data Cleaning Script:**
+- Expanded country dictionary to 200+ countries/territories (UN members + territories)
+- Comprehensive country alias system (USA→United States, UK→United Kingdom, Nederland→Netherlands, etc.)
+- Special character handling (Côte d'Ivoire, etc.)
+- Multi-word country name support (United Arab Emirates, South Korea, etc.)
+- US state geocoding via ZIP code ranges (all 50 states + DC)
 - Coordinate validation (lat: -90 to 90, lon: -180 to 180)
 - Created optimized `datacenters_cleaned.json` database
 
-### Performance & Visualization Enhancements
-- 🚀 **Marker Clustering:** Smart proximity grouping for 6,266 markers - dramatic performance boost
-- 🔥 **Heatmap Layer:** Infrastructure density visualization with Matrix-style gradient
-- 🎯 **Precision Mapping:** Eliminated ocean/null island plotting
-- 🎨 **Enhanced UI:** Matrix-themed cluster bubbles with dynamic sizing
-- ⚡ **Instant Filtering:** Real-time search across 6,266 entries
-- 📊 **Live Statistics:** Dynamic country/facility count updates
+### 📊 Interactive Statistics Dashboard
+- **Real-time Analytics** with Chart.js integration
+- **Top 10 Countries** - Bar chart showing facility distribution
+- **Top 10 Operators** - Bar chart of leading data center providers
+- **Data Quality Metrics** - Doughnut chart displaying coordinate precision stats
+- **Regional Distribution** - Pie chart of global infrastructure spread
+- **Live Metrics** - Key stats updating dynamically based on filtered data
+- **Collapsible Panel** - Matrix-themed UI with smooth animations
+
+### 🎨 Multi-Theme Support (5 Themes)
+- 🟢 **Dark Matrix** (CartoDB Dark) - Default cybersecurity aesthetic
+- ☀️ **Light Professional** (OpenStreetMap) - Clean business presentation
+- 🛰️ **Satellite View** (ESRI World Imagery) - Real satellite photography
+- 🗺️ **Topographic** (OpenTopoMap) - Terrain and elevation mapping
+- 🌊 **Ocean Navigation** (ESRI Ocean Base) - Maritime infrastructure focus
+- CSS variable system for dynamic UI theming across all components
+- LocalStorage persistence - remembers user preference
+
+### 🛠️ Advanced Geospatial Analysis Tools
+
+**📍 Radius Search**
+- Interactive circle drawing with click-to-place center point
+- Customizable radius (1-10,000 miles or kilometers)
+- Haversine distance calculations for accurate great-circle distances
+- Real-time facility discovery within radius
+- Results sorted by distance with top 10 display
+- Visual circle overlay with adjustable parameters
+
+**📏 Distance Calculator**
+- Measure precise distance between any two points on the map
+- Click-to-place Point A and Point B markers
+- Support for 3 unit types: Miles, Kilometers, Nautical Miles
+- Visual line drawing between points with dashed styling
+- Real-time unit conversion
+- Auto-zoom to fit both points in view
+
+**🎯 Proximity Analysis**
+- Click any facility to find N nearest neighbors (1-50)
+- Haversine-based distance ranking
+- Visual connection lines (top 3 highlighted in green, others in yellow)
+- Detailed neighbor information (name, company, location, distance)
+- Configurable neighbor count and distance units
+- Auto-zoom to display all related facilities
+
+### 💾 Export Functionality
+- **CSV Export** - Properly escaped, Excel-compatible format
+- **JSON Export** - Structured data for API/application integration
+- **GeoJSON Export** - Geographic format with coordinates for GIS tools
+- Smart coordinate fallback system (city → state → country)
+- Timestamped filenames for version tracking
+- Export visible/filtered results only
+
+### 🚀 Performance & Visualization
+- **Marker Clustering** - Smart proximity grouping for 6,266 markers (dramatic performance boost)
+- **Heatmap Layer** - Infrastructure density visualization with Matrix-style gradient
+- **Precision Mapping** - Eliminated ocean/null island plotting (0,0 coordinates)
+- **Enhanced UI** - Matrix-themed cluster bubbles with dynamic sizing
+- **Instant Filtering** - Real-time search across 6,266 entries
+- **Live Statistics** - Dynamic country/facility count updates
 
 ### Quick Stats
 
@@ -62,6 +117,29 @@ The scraped intelligence includes **6,266 verified data center locations** acros
 
 See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis.
 
+### 🎮 How to Use the Interactive Map
+
+**Basic Navigation:**
+- **Search Bar** - Type facility name, company, city, state, or country
+- **Filters** - Use dropdown menus to filter by country or company
+- **Zoom** - Scroll or pinch to zoom, click clusters to expand
+
+**Advanced Tools (Toolbar Buttons):**
+
+1. **🔥 Toggle Heatmap** - Switch between marker view and density heatmap
+2. **📊 Statistics Dashboard** - View interactive charts and analytics
+3. **🎨 Theme Selector** - Choose from 5 map themes (dropdown menu)
+4. **💾 Export Data** - Download visible facilities in CSV, JSON, or GeoJSON format
+5. **📍 Radius Search** - Click button → Click map → Set radius → View facilities within distance
+6. **📏 Distance Calculator** - Click button → Click Point A → Click Point B → View distance
+7. **🎯 Proximity Analysis** - Click button → Click any facility marker → View N nearest neighbors
+
+**Tips:**
+- Click any facility marker to view detailed information
+- Use filters before exporting to get specific subsets
+- Proximity Analysis shows top 3 neighbors highlighted in green
+- Theme preference is saved automatically
+
 ### Files
 
 #### Data Files
@@ -72,12 +150,17 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 
 #### Interactive Tools
 - **`index.html`** - Live interactive world map with:
-  - ✨ **Marker clustering** for performance
-  - 🔥 **Heatmap density visualization**
-  - 🔍 Advanced search (name, company, city, state, country)
-  - 📊 Real-time statistics display
-  - 🎯 Country/company filtering
-  - 📍 Interactive results panel
+  - ✨ **Marker Clustering** - Smart proximity grouping for 6,266 facilities
+  - 🔥 **Heatmap Layer** - Density visualization with Matrix-style gradient
+  - 🔍 **Advanced Search** - Real-time filtering (name, company, city, state, country)
+  - 📊 **Statistics Dashboard** - 4 interactive charts (Chart.js)
+  - 🎨 **Multi-Theme Support** - 5 map themes (Dark Matrix, Light, Satellite, Topographic, Ocean)
+  - 💾 **Export Tools** - CSV/JSON/GeoJSON download of filtered data
+  - 📍 **Radius Search** - Find facilities within customizable distance from any point
+  - 📏 **Distance Calculator** - Measure between two points (miles/km/nautical miles)
+  - 🎯 **Proximity Analysis** - Find N nearest neighbors to any facility
+  - 🎯 **Country/Company Filtering** - Dropdown filters for precise queries
+  - 📍 **Interactive Results Panel** - Click-through facility details
 
 #### Utilities
 - **`clean_data.py`** ⭐ **NEW** - Data cleaning script with country/state extraction and coordinate validation
