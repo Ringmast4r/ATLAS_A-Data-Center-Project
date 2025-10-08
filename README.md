@@ -1,7 +1,7 @@
 # ATLAS
 ## **A**ll **T**he **L**ocations of **A**ll **S**ervers
 
-🌍 **[LIVE INTERACTIVE MAP](https://ringmast4r.github.io/datacenter-atlas/)** 🌍
+🌍 **[LIVE INTERACTIVE MAP](https://ringmast4r.github.io/ATLAS_A-Data-Center-Project/)** 🌍
 
 A comprehensive global data center intelligence system mapping the world's critical infrastructure.
 
