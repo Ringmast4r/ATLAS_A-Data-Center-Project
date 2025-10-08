@@ -23,7 +23,7 @@
     "country": "Singapore",
     "address": "19 Tai Seng Dr 535222 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -135,7 +135,7 @@
     "country": "Singapore",
     "address": "1 Changi Business Park Ave 1, #04-02 Ultro Building 486058 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -197,7 +197,7 @@
     "country": "Australia",
     "address": "1 Tarver Street Port Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -231,7 +231,7 @@
     "country": "Singapore",
     "address": "Technopark, 750 Estuary Chai Chee Road 469005 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -245,7 +245,7 @@
     "country": "Singapore",
     "address": "Marsiling Road 739144 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -259,7 +259,7 @@
     "country": "Singapore",
     "address": "10 Tampines Central 1 529536 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -307,7 +307,7 @@
     "country": "Australia",
     "address": "100 Wickham St, Fortitude Valley 4000 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -783,7 +783,7 @@
     "country": "Australia",
     "address": "123 Eagle Street, level 8 4000 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -835,7 +835,7 @@
     "country": "Singapore",
     "address": "13 Tai Seng Dr 535219 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -1381,7 +1381,7 @@
     "country": "Australia",
     "address": "19 McKechnie Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -1973,7 +1973,7 @@
     "country": "Australia",
     "address": "24 Upper Edward St., Spring Hill 4001 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -2039,7 +2039,7 @@
     "country": "Australia",
     "address": "247 Pulteney Street 5000 Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -2159,7 +2159,7 @@
     "country": "Singapore",
     "address": "29A International Parkway 609923 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -2203,7 +2203,7 @@
     "country": "Singapore",
     "address": "3 Loyang Way 508719 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -2523,7 +2523,7 @@
     "country": "Australia",
     "address": "344 Queen St Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -2781,7 +2781,7 @@
     "country": "Australia",
     "address": "376 Flinders Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -3031,7 +3031,7 @@
     "country": "Australia",
     "address": "437 Williamstown Road Port Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -3261,7 +3261,7 @@
     "country": "Australia",
     "address": "45 Pirie Street, Level 1 5000 Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -3413,7 +3413,7 @@
     "country": "Singapore",
     "address": "50 Yishun Industrial Park A, 3rd floor, Suite 31 768725 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -3517,7 +3517,7 @@
     "country": "Australia",
     "address": "530 Collins St VIC 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -3545,7 +3545,7 @@
     "country": "Australia",
     "address": "55 Clarence Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -3669,7 +3669,7 @@
     "country": "Singapore",
     "address": "6 Changi S Ln 486400 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -3683,7 +3683,7 @@
     "country": "Singapore",
     "address": "6 Changi South Lane Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -3697,7 +3697,7 @@
     "country": "Singapore",
     "address": "6 Changi S Ln 486400 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -4023,7 +4023,7 @@
     "country": "Australia",
     "address": "Radnor Drive 72 3023 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -4483,7 +4483,7 @@
     "country": "Australia",
     "address": "90 King William Street 5000 Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -5343,7 +5343,7 @@
     "country": "Australia",
     "address": "78 Hasler Road, Osborne Park 6017 Perth Australia",
     "city_coords": [
-      31.9505,
+      -31.9505,
       115.8605
     ]
   },
@@ -5397,7 +5397,7 @@
     "country": "Australia",
     "address": "132 Franklin St, Level 2 5000 Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -5411,7 +5411,7 @@
     "country": "Australia",
     "address": "Adelaide Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -5425,7 +5425,7 @@
     "country": "Australia",
     "address": "202 Halifax Street 5000 Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -5439,7 +5439,7 @@
     "country": "Australia",
     "address": "Franklin St Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -7527,7 +7527,7 @@
     "country": "Singapore",
     "address": "25 Kallang Avenue #05-04 339416 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -8843,7 +8843,7 @@
     "country": "Australia",
     "address": "Australia Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -8857,7 +8857,7 @@
     "country": "Australia",
     "address": "15 Lancaster Pl 2609 Canberra Australia",
     "city_coords": [
-      35.2809,
+      -35.2809,
       149.13
     ]
   },
@@ -8871,7 +8871,7 @@
     "country": "Australia",
     "address": "Dacre Street Canberra Australia",
     "city_coords": [
-      35.2809,
+      -35.2809,
       149.13
     ]
   },
@@ -9889,7 +9889,7 @@
     "country": "Brazil",
     "address": "Av. Pintor Antônio Bandeira Fortaleza Brazil",
     "city_coords": [
-      3.7172,
+      -3.7172,
       -38.5433
     ]
   },
@@ -10427,7 +10427,7 @@
     "country": "South Africa",
     "address": "2 Strand Rd 7530 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -10441,7 +10441,7 @@
     "country": "South Africa",
     "address": "7535 Cape Town South Africa www.telkom.co.za",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -10475,7 +10475,7 @@
     "country": "Brazil",
     "address": "Av. Antônio Carlos, 6627 - Pampulha, Campus da UFMG, prédio do ICEx, sala 3052 31.270-010 Belo Horizonte Brazil",
     "city_coords": [
-      19.9167,
+      -19.9167,
       -43.9345
     ]
   },
@@ -10489,7 +10489,7 @@
     "country": "Brazil",
     "address": "Rua Pirapetinga, 322 - Conj. 309 - Serra 30220-150 Belo Horizonte Brazil",
     "city_coords": [
-      19.9167,
+      -19.9167,
       -43.9345
     ]
   },
@@ -10503,7 +10503,7 @@
     "country": "Brazil",
     "address": "Agenério de Araújo st. , 20 Camargos 30140090 Belo Horizonte Brazil",
     "city_coords": [
-      19.9167,
+      -19.9167,
       -43.9345
     ]
   },
@@ -10517,7 +10517,7 @@
     "country": "Brazil",
     "address": "Rua Espirito Santo, 605 - Centro 30160-919 Belo Horizonte Brazil",
     "city_coords": [
-      19.9167,
+      -19.9167,
       -43.9345
     ]
   },
@@ -10531,7 +10531,7 @@
     "country": "Brazil",
     "address": "Avenida Barão Homem de Melo, 4324 - Estoril 30450-250 Belo Horizonte Brazil",
     "city_coords": [
-      19.9167,
+      -19.9167,
       -43.9345
     ]
   },
@@ -10545,7 +10545,7 @@
     "country": "Brazil",
     "address": "Rua Jorge Marine, 571 Belo Horizonte Brazil",
     "city_coords": [
-      19.9167,
+      -19.9167,
       -43.9345
     ]
   },
@@ -12201,7 +12201,7 @@
     "country": "Brazil",
     "address": "tbc Brasilia Brazil",
     "city_coords": [
-      15.8267,
+      -15.8267,
       -47.9218
     ]
   },
@@ -12215,7 +12215,7 @@
     "country": "Brazil",
     "address": "SAS Quadra 05, Bloco \"H\" 7º Andar 70070-914 Brasilia Brazil",
     "city_coords": [
-      15.8267,
+      -15.8267,
       -47.9218
     ]
   },
@@ -12443,7 +12443,7 @@
     "country": "Australia",
     "address": "Brisbane, Fortitude Valley Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12457,7 +12457,7 @@
     "country": "Australia",
     "address": "Wharf Street 20 4000 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12471,7 +12471,7 @@
     "country": "Australia",
     "address": "127 Creek St, Level 9 4000 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12485,7 +12485,7 @@
     "country": "Australia",
     "address": "127 Creek Street Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12499,7 +12499,7 @@
     "country": "Australia",
     "address": "tbc Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12513,7 +12513,7 @@
     "country": "Australia",
     "address": "Level 8, 123 Eagle Street 4000 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12527,7 +12527,7 @@
     "country": "Australia",
     "address": "317 Edward Street Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12541,7 +12541,7 @@
     "country": "Australia",
     "address": "tbc Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12555,7 +12555,7 @@
     "country": "Australia",
     "address": "2 Cycas Lane 4008 Brisbane Airport Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -12589,7 +12589,7 @@
     "country": "Australia",
     "address": "20 Wharf St 4000 Brisbane City Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -13991,7 +13991,7 @@
     "country": "Australia",
     "address": "Battye Street 19 2617 Canberra Australia",
     "city_coords": [
-      35.2809,
+      -35.2809,
       149.13
     ]
   },
@@ -14005,7 +14005,7 @@
     "country": "Australia",
     "address": "Mitchell Canberra Australia",
     "city_coords": [
-      35.2809,
+      -35.2809,
       149.13
     ]
   },
@@ -14079,7 +14079,7 @@
     "country": "South Africa",
     "address": "7700 Cape Town South Africa +27 21 970 2000",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14093,7 +14093,7 @@
     "country": "South Africa",
     "address": "Wale St & Burg St 8000 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14107,7 +14107,7 @@
     "country": "South Africa",
     "address": "112-115 De Waal Rd 7880 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14121,7 +14121,7 @@
     "country": "South Africa",
     "address": "76 Regent Rd 8060 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14135,7 +14135,7 @@
     "country": "South Africa",
     "address": "Great Westerford Building, 240 Main Road, Rondebosch 7700 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14149,7 +14149,7 @@
     "country": "South Africa",
     "address": "33 Bree Street Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14163,7 +14163,7 @@
     "country": "South Africa",
     "address": "240 Main Rd 7700 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14177,7 +14177,7 @@
     "country": "South Africa",
     "address": "34 Bree St 8000 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -14883,7 +14883,7 @@
     "country": "Australia",
     "address": "Canberra Australia 02 6260 2277",
     "city_coords": [
-      35.2809,
+      -35.2809,
       149.13
     ]
   },
@@ -14987,7 +14987,7 @@
     "country": "Singapore",
     "address": "31 Kaki Bukit Rd 3, 3rd Floor Suite 80-89 417818 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -19085,7 +19085,7 @@
     "country": "Australia",
     "address": "9 Dympna St 2099 Cromer Australia",
     "city_coords": [
-      41.9028,
+      -41.9028,
       12.4964
     ]
   },
@@ -20483,7 +20483,7 @@
     "country": "Brazil",
     "address": "Rua dos Ingleses, 600 01329-000 Sao Paulo Brazil",
     "city_coords": [
-      23.5505,
+      -23.5505,
       -46.6333
     ]
   },
@@ -22061,7 +22061,7 @@
     "country": "Singapore",
     "address": "21 Defu Ave 1 539539 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -22075,7 +22075,7 @@
     "country": "Singapore",
     "address": "15 Defu Ave 1 539538 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -23965,7 +23965,7 @@
     "country": "South Africa",
     "address": "Umhlanga Rocks Dr 4022 Durban South Africa",
     "city_coords": [
-      29.8587,
+      -29.8587,
       31.0218
     ]
   },
@@ -23979,7 +23979,7 @@
     "country": "South Africa",
     "address": "11 Walnut Rd 4001 Durban South Africa",
     "city_coords": [
-      29.8587,
+      -29.8587,
       31.0218
     ]
   },
@@ -23993,7 +23993,7 @@
     "country": "South Africa",
     "address": "Unit 9211, Grid Heights, No. 1 River Horse Close 4001 Durban South Africa",
     "city_coords": [
-      29.8587,
+      -29.8587,
       31.0218
     ]
   },
@@ -24255,7 +24255,7 @@
     "country": "South Africa",
     "address": "Bonza Bay Rd 5241 East London South Africa",
     "city_coords": [
-      51.5074,
+      -51.5074,
       -0.1278
     ]
   },
@@ -24279,7 +24279,7 @@
     "country": "Australia",
     "address": "Capicure Drive, Eastern Creek Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -24485,7 +24485,7 @@
     "country": "Australia",
     "address": "23 Woomera Ave 5111 Edinburgh Australia",
     "city_coords": [
-      55.9533,
+      -55.9533,
       -3.1883
     ]
   },
@@ -26289,7 +26289,7 @@
     "country": "Brazil",
     "address": "Avenida Pontes Vieira, 220 - São João Tatuapé 60130-240 Fortaleza Brazil",
     "city_coords": [
-      3.7172,
+      -3.7172,
       -38.5433
     ]
   },
@@ -26303,7 +26303,7 @@
     "country": "Brazil",
     "address": "tbc Fortaleza Brazil",
     "city_coords": [
-      3.7172,
+      -3.7172,
       -38.5433
     ]
   },
@@ -26317,7 +26317,7 @@
     "country": "Brazil",
     "address": "Campus do PICI, Av. Humberto Monte, s/n Bl. 901(NPD) Sl. da RNP Térreo PICI Fortaleza Brazil",
     "city_coords": [
-      3.7172,
+      -3.7172,
       -38.5433
     ]
   },
@@ -26391,7 +26391,7 @@
     "country": "Australia",
     "address": "Level 1, 100 Wickham Street, Fortitude Valley 4006 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -27515,7 +27515,7 @@
     "country": "Australia",
     "address": "7 Brandl 4113 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -28227,7 +28227,7 @@
     "country": "Australia",
     "address": "30 Ross Street, Glebe 2037 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -28271,7 +28271,7 @@
     "country": "Australia",
     "address": "190 City Road 3205 South Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -30157,7 +30157,7 @@
     "country": "Australia",
     "address": "187 Thomas Street Haymarket 2006 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -31711,7 +31711,7 @@
     "country": "Australia",
     "address": "2070 Moggill Rd, Kenmore 4069 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -32591,7 +32591,7 @@
     "country": "Australia",
     "address": "Level 7, 54 Marcus Clarke St ACT 2600 Canberra Australia",
     "city_coords": [
-      35.2809,
+      -35.2809,
       149.13
     ]
   },
@@ -33143,7 +33143,7 @@
     "country": "South Africa",
     "address": "IDC 4, 6th Floor, The Terraces, 34 Bree street 8001 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -33211,7 +33211,7 @@
     "country": "Australia",
     "address": "Cycas Lane 4008 Brisbane Airport Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -34263,7 +34263,7 @@
     "country": "South Africa",
     "address": "Walters St 2196 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -34277,7 +34277,7 @@
     "country": "South Africa",
     "address": "401 Old Pretoria Rd 1685 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -34291,7 +34291,7 @@
     "country": "South Africa",
     "address": "57 Sloane St 2191 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -34305,7 +34305,7 @@
     "country": "South Africa",
     "address": "5 Brewery Street, Isando 1609 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -34319,7 +34319,7 @@
     "country": "South Africa",
     "address": "2 Gwen Lane, Sandton Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -34333,7 +34333,7 @@
     "country": "South Africa",
     "address": "141 Sivewright Ave 2094 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -34347,7 +34347,7 @@
     "country": "South Africa",
     "address": "21 Sterling Rd 0187 Centurion South Africa",
     "city_coords": [
-      39.0062,
+      -39.0062,
       -77.4286
     ]
   },
@@ -34401,7 +34401,7 @@
     "country": "South Africa",
     "address": "93 Central St 2198 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -34575,7 +34575,7 @@
     "country": "Singapore",
     "address": "Singapore Singapore 65 6808 3388",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -34589,7 +34589,7 @@
     "country": "Singapore",
     "address": "International Business Park, Jurong East Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -34603,7 +34603,7 @@
     "country": "Singapore",
     "address": "Creative resource building, 31 International Business Park, Jurong East Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -39969,7 +39969,7 @@
     "country": "Australia",
     "address": "96 Lytton Road 4169 QLD Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -41707,7 +41707,7 @@
     "country": "Singapore",
     "address": "1 Media Link 138552 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -41741,7 +41741,7 @@
     "country": "South Africa",
     "address": "38 Conrad Street Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -41867,7 +41867,7 @@
     "country": "Australia",
     "address": "222 Dryburgh Street 3000 North Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41881,7 +41881,7 @@
     "country": "Australia",
     "address": "11-17 Dorcas St 3205 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41895,7 +41895,7 @@
     "country": "Australia",
     "address": "Q2 2 Queen Street 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41909,7 +41909,7 @@
     "country": "Australia",
     "address": "517 Flinders Lane 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41923,7 +41923,7 @@
     "country": "Australia",
     "address": "Level 5, 530 Collins Street 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41937,7 +41937,7 @@
     "country": "Australia",
     "address": "2 Frederick Street Doncater 3108 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41951,7 +41951,7 @@
     "country": "Australia",
     "address": "1 Kilsyth Road 3137 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41965,7 +41965,7 @@
     "country": "Australia",
     "address": "600 Lorimer Street, Port Melbourne Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41979,7 +41979,7 @@
     "country": "Australia",
     "address": "55 King Street 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -41993,7 +41993,7 @@
     "country": "Australia",
     "address": "Clayton Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42007,7 +42007,7 @@
     "country": "Australia",
     "address": "tbc Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42021,7 +42021,7 @@
     "country": "Australia",
     "address": "3004 Melbourne Australia +81-3-3500-8111",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42035,7 +42035,7 @@
     "country": "Australia",
     "address": "330 Spencer St 3003 West Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42049,7 +42049,7 @@
     "country": "Australia",
     "address": "3004 Melbourne Australia +61 2 9953 4780",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42063,7 +42063,7 @@
     "country": "Australia",
     "address": "55 King St 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42077,7 +42077,7 @@
     "country": "Australia",
     "address": "530 Collins St 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42101,7 +42101,7 @@
     "country": "Australia",
     "address": "Lorimer Street 826 3207 Port Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42115,7 +42115,7 @@
     "country": "Australia",
     "address": "Melbourne, West Melbourne Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42129,7 +42129,7 @@
     "country": "Australia",
     "address": "55 Crockford Street 3207 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42143,7 +42143,7 @@
     "country": "Australia",
     "address": "826 Lorimer St 3207 Port Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42157,7 +42157,7 @@
     "country": "Australia",
     "address": "530 Collins Street VIC 3000 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42171,7 +42171,7 @@
     "country": "Australia",
     "address": "Melbourne 3030 Derrimut Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42195,7 +42195,7 @@
     "country": "Australia",
     "address": "3004 Melbourne Australia info@nextdc.com.au",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -42209,7 +42209,7 @@
     "country": "Australia",
     "address": "221 Dryburgh Street North Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -43511,7 +43511,7 @@
     "country": "Brazil",
     "address": "Rua Jardim Botanico 674 sala 507 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -47631,7 +47631,7 @@
     "country": "Australia",
     "address": "22-36 Walsh Street West Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -48195,7 +48195,7 @@
     "country": "Australia",
     "address": "North Ryde Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -49307,7 +49307,7 @@
     "country": "Australia",
     "address": "Ultimo 2007 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -50721,7 +50721,7 @@
     "country": "South Africa",
     "address": "158 Jan Smuts Avenue  2121 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -50925,7 +50925,7 @@
     "country": "Australia",
     "address": "20 Wharf Street, L6 4000 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -51003,7 +51003,7 @@
     "country": "Australia",
     "address": "Millrose Drive 4 6090 Perth Australia",
     "city_coords": [
-      31.9505,
+      -31.9505,
       115.8605
     ]
   },
@@ -51017,7 +51017,7 @@
     "country": "Australia",
     "address": "undisclosed Perth Australia",
     "city_coords": [
-      31.9505,
+      -31.9505,
       115.8605
     ]
   },
@@ -51041,7 +51041,7 @@
     "country": "Australia",
     "address": "Perth, East Perth Perth Australia",
     "city_coords": [
-      31.9505,
+      -31.9505,
       115.8605
     ]
   },
@@ -51065,7 +51065,7 @@
     "country": "Australia",
     "address": "Shenton Park Perth Australia",
     "city_coords": [
-      31.9505,
+      -31.9505,
       115.8605
     ]
   },
@@ -51079,7 +51079,7 @@
     "country": "Australia",
     "address": "6004 East Perth Australia info@nextdc.com.au",
     "city_coords": [
-      31.9505,
+      -31.9505,
       115.8605
     ]
   },
@@ -51093,7 +51093,7 @@
     "country": "Australia",
     "address": "Ground Floor, The Quadrant, 1 William Street Perth Australia",
     "city_coords": [
-      31.9505,
+      -31.9505,
       115.8605
     ]
   },
@@ -51167,7 +51167,7 @@
     "country": "New Zealand",
     "address": "73 Sydney St 5012 Lower Hutt New Zealand",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -51705,7 +51705,7 @@
     "country": "South Africa",
     "address": "Jan Smuts Dr 7405 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -52115,7 +52115,7 @@
     "country": "Australia",
     "address": "Springfield Parkway 4300 Brisbane Australia",
     "city_coords": [
-      27.4698,
+      -27.4698,
       153.0251
     ]
   },
@@ -52279,7 +52279,7 @@
     "country": "Australia",
     "address": "461 Williamstown Road Port Park Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -52561,7 +52561,7 @@
     "country": "Brazil",
     "address": "Porto Maravilha Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -52843,7 +52843,7 @@
     "country": "Australia",
     "address": "Level 1, 132 Franklin Street 5000 Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -52857,7 +52857,7 @@
     "country": "Australia",
     "address": "132 Franklin Street Adelaide Australia",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -54839,7 +54839,7 @@
     "country": "Brazil",
     "address": "Rua Voluntarios da Patria, 360 Botafogo 22.270-010 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54853,7 +54853,7 @@
     "country": "Brazil",
     "address": "Rua Jardim Botanico 674 Cobertura 22461-000 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54867,7 +54867,7 @@
     "country": "Brazil",
     "address": "tbc Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54881,7 +54881,7 @@
     "country": "Brazil",
     "address": "Av. Estrada dos Bainderantes 12742 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54895,7 +54895,7 @@
     "country": "Brazil",
     "address": "Av. Rio Branco, 01 16°andar 1602 Bairro Centro 20090-003 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54909,7 +54909,7 @@
     "country": "Brazil",
     "address": "Av. Dom Pedro II 329 20941-070 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54923,7 +54923,7 @@
     "country": "Brazil",
     "address": "Rua Lauro Muller, 455 22290-160 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54937,7 +54937,7 @@
     "country": "Brazil",
     "address": "Estrada dos Bandeirantes, nº 10916 Bairro Vargem Pequena 22783-111 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54951,7 +54951,7 @@
     "country": "Brazil",
     "address": "Rua São Jose 90, 16 andar - Centro 20010-020 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54965,7 +54965,7 @@
     "country": "Brazil",
     "address": "Rio de Janeiro Brazil www.verizonenterprise.com",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54979,7 +54979,7 @@
     "country": "Brazil",
     "address": "Av. Cel. Phidias Távora, 1793 21535-510 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -54993,7 +54993,7 @@
     "country": "Brazil",
     "address": "Estrada Adhemar Bebiano (Estrada Velha da Pavuna), 1380 Del Castilho 1380 Rio de Janeiro Brazil",
     "city_coords": [
-      22.9068,
+      -22.9068,
       -43.1729
     ]
   },
@@ -55473,7 +55473,7 @@
     "country": "South Africa",
     "address": "158 Jan Smuts 2121 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -56201,7 +56201,7 @@
     "country": "Brazil",
     "address": "Av. Ademar de Barros, s/n, CPD/UFBA 40.170-110 Salvador Brazil",
     "city_coords": [
-      12.9714,
+      -12.9714,
       -38.5014
     ]
   },
@@ -56215,7 +56215,7 @@
     "country": "Brazil",
     "address": "Av. Trancredo Neves, 274, Bl A - SL 204 41820-020 Salvador Brazil",
     "city_coords": [
-      12.9714,
+      -12.9714,
       -38.5014
     ]
   },
@@ -56945,7 +56945,7 @@
     "country": "South Africa",
     "address": "Maude St., Sandown 2146 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -57367,7 +57367,7 @@
     "country": "Brazil",
     "address": "Av. Alfred Jurzykowski, 562 09961-400 São Bernardo do Campo Brazil",
     "city_coords": [
-      46.948,
+      -46.948,
       7.4474
     ]
   },
@@ -57381,7 +57381,7 @@
     "country": "Brazil",
     "address": "Av. Dr. Chucri Zaidan, 1240 Sao Paulo Brazil",
     "city_coords": [
-      23.5505,
+      -23.5505,
       -46.6333
     ]
   },
@@ -57395,7 +57395,7 @@
     "country": "Brazil",
     "address": "Av. Nações Unidas 13797 Sao Paulo Brazil",
     "city_coords": [
-      23.5505,
+      -23.5505,
       -46.6333
     ]
   },
@@ -57409,7 +57409,7 @@
     "country": "Brazil",
     "address": "Jundiai Sao Paulo Brazil",
     "city_coords": [
-      23.5505,
+      -23.5505,
       -46.6333
     ]
   },
@@ -57423,7 +57423,7 @@
     "country": "Brazil",
     "address": "tbc Sao Paulo Brazil",
     "city_coords": [
-      23.5505,
+      -23.5505,
       -46.6333
     ]
   },
@@ -57507,7 +57507,7 @@
     "country": "Brazil",
     "address": "Av. Marginal 261, Granja Viana, Cotia Sao Paulo Brazil",
     "city_coords": [
-      23.5505,
+      -23.5505,
       -46.6333
     ]
   },
@@ -57521,7 +57521,7 @@
     "country": "Brazil",
     "address": "Terremark do Brasil Ltda. AV. Ceci,1900, Residencial Tamboré, CEP: 06460-120, Baruer Sao Paulo Brazil",
     "city_coords": [
-      23.5505,
+      -23.5505,
       -46.6333
     ]
   },
@@ -58289,7 +58289,7 @@
     "country": "Singapore",
     "address": "51 Serangoon North Avenue 4 Serangoon Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59487,7 +59487,7 @@
     "country": "South Africa",
     "address": "102 Refinery Rd 1401 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -59525,7 +59525,7 @@
     "country": "Singapore",
     "address": "6 Changi S Ln, Level 2 486400 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59539,7 +59539,7 @@
     "country": "Singapore",
     "address": "24 Tampines Street 92, 4th floor Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59553,7 +59553,7 @@
     "country": "Singapore",
     "address": "29A International Business Park Rd 609934 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59567,7 +59567,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59581,7 +59581,7 @@
     "country": "Singapore",
     "address": "Singapore Singapore +(41)526302800",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59595,7 +59595,7 @@
     "country": "Singapore",
     "address": "110 Paya Lebar Rd 409009 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59609,7 +59609,7 @@
     "country": "Singapore",
     "address": "Singapore Singapore 877.843.7627",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59623,7 +59623,7 @@
     "country": "Singapore",
     "address": "Jurong West 648195 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59637,7 +59637,7 @@
     "country": "Singapore",
     "address": "Block 750D, Chai Chee Road, Technopark at Chai Chee 469001 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59651,7 +59651,7 @@
     "country": "Singapore",
     "address": "Tai Seng Drive 9 535227 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59665,7 +59665,7 @@
     "country": "Singapore",
     "address": "I-Park media hub complex, 35 Tai Seng Street #01-01 534103 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59679,7 +59679,7 @@
     "country": "Singapore",
     "address": "N/A 64 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59693,7 +59693,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59707,7 +59707,7 @@
     "country": "Singapore",
     "address": "15 minutes from Singapores Changi International Airport Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59721,7 +59721,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59735,7 +59735,7 @@
     "country": "Singapore",
     "address": "6th floor, 151 Lorong Chuan Road 556741 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59749,7 +59749,7 @@
     "country": "Singapore",
     "address": "Paya Lebar Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59763,7 +59763,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59777,7 +59777,7 @@
     "country": "Singapore",
     "address": "77 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59791,7 +59791,7 @@
     "country": "Singapore",
     "address": "Jurong Town Hall Rd Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59805,7 +59805,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59819,7 +59819,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59833,7 +59833,7 @@
     "country": "Singapore",
     "address": "60, Albert Street. , OG Albert Complex #12-07 189969 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59847,7 +59847,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59861,7 +59861,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59875,7 +59875,7 @@
     "country": "Singapore",
     "address": "Singapore Singapore www.verizonenterprise.com",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59889,7 +59889,7 @@
     "country": "Singapore",
     "address": "Serangoon Central Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59903,7 +59903,7 @@
     "country": "Singapore",
     "address": "Singapore Singapore +31(0)20 8882020",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59917,7 +59917,7 @@
     "country": "Singapore",
     "address": "Singapore Singapore 020 7357 6616",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59931,7 +59931,7 @@
     "country": "Singapore",
     "address": "Singapore Dacheng Industrial Park Changji Huizuzizhizhou Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59945,7 +59945,7 @@
     "country": "Singapore",
     "address": "7000 Ang Mo Kio Ave 5 569877 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59959,7 +59959,7 @@
     "country": "Singapore",
     "address": "51 Science Park Rd 117586 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59973,7 +59973,7 @@
     "country": "Singapore",
     "address": "25 Serangoon North Ave 5 554914 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -59987,7 +59987,7 @@
     "country": "Singapore",
     "address": "20 Ayer Rajah Crescent 139964 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60001,7 +60001,7 @@
     "country": "Singapore",
     "address": "20 Ayer Rajah Crescent 139964 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60015,7 +60015,7 @@
     "country": "Singapore",
     "address": "25 Tampines Street 92 528877 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60029,7 +60029,7 @@
     "country": "Singapore",
     "address": "15 Pioneer Walk, Jurong Industrial Park 627753 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60043,7 +60043,7 @@
     "country": "Singapore",
     "address": "tbc Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60057,7 +60057,7 @@
     "country": "Singapore",
     "address": "15 Pioneer Walk 627753 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60071,7 +60071,7 @@
     "country": "Singapore",
     "address": "8 Sunview Drive 627485 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60085,7 +60085,7 @@
     "country": "Singapore",
     "address": "27 Tampines Street 92 528878 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60099,7 +60099,7 @@
     "country": "Singapore",
     "address": "26A Ayer Rajah Crescent 139963 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60113,7 +60113,7 @@
     "country": "Singapore",
     "address": "20 Tampines Street 92 528875 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60127,7 +60127,7 @@
     "country": "Singapore",
     "address": "National University of Singapore / Computer Centre 2 Engineering Drive 4 117584 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60141,7 +60141,7 @@
     "country": "Singapore",
     "address": "27 Prince George's Park 118425 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60155,7 +60155,7 @@
     "country": "Singapore",
     "address": "2 Tai Seng Ave 534408 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -60169,7 +60169,7 @@
     "country": "Singapore",
     "address": "Woodlands Ave 12 738990 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -61091,7 +61091,7 @@
     "country": "Australia",
     "address": "127 York Street, South Melbourne 3205 Melbourne Australia",
     "city_coords": [
-      37.8136,
+      -37.8136,
       144.9631
     ]
   },
@@ -61105,7 +61105,7 @@
     "country": "South Africa",
     "address": "755 16th Rd 1685 Johannesburg South Africa",
     "city_coords": [
-      26.2041,
+      -26.2041,
       28.0473
     ]
   },
@@ -62913,7 +62913,7 @@
     "country": "Australia",
     "address": "121-127 Harrington St 2000 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -62927,7 +62927,7 @@
     "country": "Australia",
     "address": "Macquarie Park 2113 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -62941,7 +62941,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -62955,7 +62955,7 @@
     "country": "Australia",
     "address": "135 King Street 2000 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -62969,7 +62969,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -62983,7 +62983,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -62997,7 +62997,7 @@
     "country": "Australia",
     "address": "Homebush Bay Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63011,7 +63011,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63025,7 +63025,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63039,7 +63039,7 @@
     "country": "Australia",
     "address": "Erskine Park Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63053,7 +63053,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63067,7 +63067,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63081,7 +63081,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63095,7 +63095,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63109,7 +63109,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63153,7 +63153,7 @@
     "country": "Australia",
     "address": "2000 Sydney Australia +81-3-3500-8111",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63187,7 +63187,7 @@
     "country": "Australia",
     "address": "2000 Sydney Australia 020 7357 6616",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63201,7 +63201,7 @@
     "country": "Australia",
     "address": "2000 Sydney Australia +(41)526302800",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63215,7 +63215,7 @@
     "country": "Australia",
     "address": "tbc Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63229,7 +63229,7 @@
     "country": "Australia",
     "address": "Norwest Business Park Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63253,7 +63253,7 @@
     "country": "Australia",
     "address": "Sydney, Rosebery Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63287,7 +63287,7 @@
     "country": "Australia",
     "address": "Alexandria Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63321,7 +63321,7 @@
     "country": "Australia",
     "address": "47 Bourke Road, Alexandria Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63335,7 +63335,7 @@
     "country": "Australia",
     "address": "Mascot Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63349,7 +63349,7 @@
     "country": "Australia",
     "address": "2000 Sydney Australia info@nextdc.com.au",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63373,7 +63373,7 @@
     "country": "Australia",
     "address": "133 Liverpool Street 2000 Sydney Australia",
     "city_coords": [
-      53.4084,
+      -53.4084,
       -2.9916
     ]
   },
@@ -63387,7 +63387,7 @@
     "country": "Australia",
     "address": "400 Harris Street Ultimo 2006 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63401,7 +63401,7 @@
     "country": "Australia",
     "address": "400 Harris Street NSW 2007 Sydney Australia",
     "city_coords": [
-      33.8688,
+      -33.8688,
       151.2093
     ]
   },
@@ -63541,7 +63541,7 @@
     "country": "Brazil",
     "address": "Rodovia Washington Luís, km 235 13565-905 São Carlos Brazil",
     "city_coords": [
-      38.9072,
+      -38.9072,
       -77.0369
     ]
   },
@@ -63555,7 +63555,7 @@
     "country": "Brazil",
     "address": "Av. Vanderlei Júnior, 05 Sala 804 - 8° Andar - Bairro Campinas Edifício Di Bernardi Tower 88101-010 São José Brazil",
     "city_coords": [
-      46.948,
+      -46.948,
       7.4474
     ]
   },
@@ -63569,7 +63569,7 @@
     "country": "Brazil",
     "address": "Rua bernardino de campos, 3039, 11o. andar - Centro 15015-300 São José do Rio Preto Brazil",
     "city_coords": [
-      46.948,
+      -46.948,
       7.4474
     ]
   },
@@ -64037,7 +64037,7 @@
     "country": "Singapore",
     "address": "35 Tai Seng St 534103 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -64051,7 +64051,7 @@
     "country": "Singapore",
     "address": "Tai Seng Ave Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -64065,7 +64065,7 @@
     "country": "Singapore",
     "address": "Tai Seng St Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -64865,7 +64865,7 @@
     "country": "Singapore",
     "address": "30 Changi N Way 498814 Changi Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -64879,7 +64879,7 @@
     "country": "Singapore",
     "address": "2 Tai Seng Ave 534408 Hougang Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -64893,7 +64893,7 @@
     "country": "Singapore",
     "address": "8 Sunview Drive 627485 Singapore Singapore",
     "city_coords": [
-      1.3521,
+      -1.3521,
       103.8198
     ]
   },
@@ -67451,7 +67451,7 @@
     "country": "South Africa",
     "address": "7530 Cape Town South Africa 27837057171",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
@@ -69231,7 +69231,7 @@
     "country": "New Zealand",
     "address": "58 Adelaide Rd 6021 Wellington New Zealand",
     "city_coords": [
-      34.9285,
+      -34.9285,
       138.6007
     ]
   },
@@ -70797,7 +70797,7 @@
     "country": "South Africa",
     "address": "Old Oak Rd 7530 Cape Town South Africa",
     "city_coords": [
-      33.9249,
+      -33.9249,
       18.4241
     ]
   },
