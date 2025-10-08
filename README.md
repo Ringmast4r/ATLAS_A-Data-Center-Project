@@ -29,6 +29,29 @@ The resulting dataset populates a specialized layer within our geospatial databa
 
 The scraped intelligence includes **6,266 verified data center locations** across 155 countries, operated by 2,508 companies. This represents one of the most comprehensive open-source data center location databases ever compiled.
 
+## ⚡ Latest Enhancements (v2.0)
+
+### Data Quality Improvements
+**Critical Issues Discovered & Fixed:**
+- 🔍 **970 entries (15.5%)** had missing country fields → **Fixed 382 via address parsing**
+- 🔍 **1,708 US entries (83.5%)** lacked state information → **Added 1,434 via ZIP code geocoding**
+- 🔍 **Only 36.6% (2,292)** had precise city-level coordinates
+- ✅ **Result:** Reduced invalid plotting by 39.4% (970 → 588 unresolved)
+
+**Automated Data Cleaning:**
+- Country extraction from address strings (handles international formats)
+- US state geocoding via ZIP code ranges (50 states + DC)
+- Coordinate validation (lat: -90 to 90, lon: -180 to 180)
+- Created optimized `datacenters_cleaned.json` database
+
+### Performance & Visualization Enhancements
+- 🚀 **Marker Clustering:** Smart proximity grouping for 6,266 markers - dramatic performance boost
+- 🔥 **Heatmap Layer:** Infrastructure density visualization with Matrix-style gradient
+- 🎯 **Precision Mapping:** Eliminated ocean/null island plotting
+- 🎨 **Enhanced UI:** Matrix-themed cluster bubbles with dynamic sizing
+- ⚡ **Instant Filtering:** Real-time search across 6,266 entries
+- 📊 **Live Statistics:** Dynamic country/facility count updates
+
 ### Quick Stats
 
 - **Total Data Centers**: 6,266
@@ -42,12 +65,22 @@ See [STATISTICS.md](STATISTICS.md) for detailed breakdowns and regional analysis
 ### Files
 
 #### Data Files
+- **`datacenters_cleaned.json`** ⭐ **NEW** - Optimized dataset with country/state extraction and coordinate validation
 - **`datacenters_processed.csv`** - Processed dataset with parsed address fields (CSV format)
 - **`datacenters_original_scraped.csv`** - Original scraped data (reference)
 - **`datacenters.json`** - JSON format for API/application integration with structured address data
 
 #### Interactive Tools
-- **`index.html`** - Live interactive world map with advanced search, state/city filtering, and results panel
+- **`index.html`** - Live interactive world map with:
+  - ✨ **Marker clustering** for performance
+  - 🔥 **Heatmap density visualization**
+  - 🔍 Advanced search (name, company, city, state, country)
+  - 📊 Real-time statistics display
+  - 🎯 Country/company filtering
+  - 📍 Interactive results panel
+
+#### Utilities
+- **`clean_data.py`** ⭐ **NEW** - Data cleaning script with country/state extraction and coordinate validation
 
 #### Documentation
 - **`STATISTICS.md`** - Comprehensive statistics and regional breakdowns
