@@ -178,11 +178,24 @@
         }
 
         #controls {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
             gap: 8px;
-            flex-wrap: wrap;
             align-items: center;
+        }
+
+        .controls-left {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-start;
+        }
+
+        .controls-right {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
         #search {
@@ -192,7 +205,7 @@
             padding: 6px 10px;
             font-family: 'Courier New', monospace;
             font-size: 12px;
-            width: 200px;
+            width: 320px;
             outline: none;
             border-radius: 2px;
         }
@@ -390,6 +403,11 @@
             height: 100%;
         }
 
+        /* Hide Leaflet attribution */
+        .leaflet-control-attribution {
+            display: none !important;
+        }
+
         /* Marker Cluster Styling - Matrix Theme */
         .marker-cluster-small {
             background-color: rgba(0, 255, 0, 0.6);
@@ -551,38 +569,45 @@
             <div class="subtitle">CRITICAL INFRASTRUCTURE MAPPING SYSTEM</div>
 
             <div id="controls">
-                <input type="text" id="search" placeholder="Search by name, company, city, state, or country...">
-                <select id="country-filter">
-                    <option value="">All Countries</option>
-                </select>
-                <select id="company-filter">
-                    <option value="">All Companies</option>
-                </select>
-                <button id="heatmap-toggle">
-                    🔥 Heatmap
-                </button>
-                <button id="stats-toggle">
-                    📊 Stats
-                </button>
-                <select id="theme-selector">
-                    <option value="matrix">🟢 Matrix</option>
-                    <option value="light">☀️ Light</option>
-                    <option value="satellite">🛰️ Satellite</option>
-                    <option value="topographic">🗺️ Topo</option>
-                    <option value="ocean">🌊 Ocean</option>
-                </select>
-                <button id="export-btn">
-                    💾 Export
-                </button>
-                <button id="radius-search-btn">
-                    📍 Radius
-                </button>
-                <button id="distance-calc-btn">
-                    📏 Distance
-                </button>
-                <button id="proximity-btn">
-                    🎯 Proximity
-                </button>
+                <div class="controls-left">
+                    <input type="text" id="search" placeholder="Search by name, company, city, state, or country...">
+                    <div style="display: flex; gap: 6px;">
+                        <select id="country-filter">
+                            <option value="">All Countries</option>
+                        </select>
+                        <select id="company-filter">
+                            <option value="">All Companies</option>
+                        </select>
+                    </div>
+                </div>
+                <div></div>
+                <div class="controls-right">
+                    <button id="heatmap-toggle">
+                        🔥 Heatmap
+                    </button>
+                    <button id="stats-toggle">
+                        📊 Stats
+                    </button>
+                    <select id="theme-selector">
+                        <option value="matrix">🟢 Matrix</option>
+                        <option value="light">☀️ Light</option>
+                        <option value="satellite">🛰️ Satellite</option>
+                        <option value="topographic">🗺️ Topo</option>
+                        <option value="ocean">🌊 Ocean</option>
+                    </select>
+                    <button id="export-btn">
+                        💾 Export
+                    </button>
+                    <button id="radius-search-btn">
+                        📍 Radius
+                    </button>
+                    <button id="distance-calc-btn">
+                        📏 Distance
+                    </button>
+                    <button id="proximity-btn">
+                        🎯 Proximity
+                    </button>
+                </div>
             </div>
 
             <div id="stats">
