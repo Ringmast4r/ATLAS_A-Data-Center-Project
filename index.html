@@ -2081,13 +2081,15 @@
                 // Get map container
                 const mapContainer = document.getElementById('globe');
 
-                // Create canvas from map
+                // Create high-resolution canvas from map (2x scale for better quality)
+                const scale = 2; // 2x resolution for crisp quality
                 const canvas = await html2canvas(mapContainer, {
                     useCORS: true,
                     allowTaint: true,
                     backgroundColor: '#0a0a0a',
                     width: mapContainer.offsetWidth,
                     height: mapContainer.offsetHeight,
+                    scale: scale, // High resolution capture
                     logging: false
                 });
 
@@ -2097,24 +2099,26 @@
                 const data = getVisibleData();
                 const timestamp = new Date().toISOString();
 
-                // Create metadata overlay on canvas
+                // Create metadata overlay on canvas (scaled for high-res)
                 const ctx = canvas.getContext('2d');
 
-                // Add watermark/metadata bar at bottom
-                const barHeight = 80;
+                // Add watermark/metadata bar at bottom (scaled)
+                const barHeight = 80 * scale;
                 ctx.fillStyle = 'rgba(0, 0, 0, 0.85)';
                 ctx.fillRect(0, canvas.height - barHeight, canvas.width, barHeight);
 
-                // Add text
+                // Add text (scaled for high-res)
                 ctx.fillStyle = '#00ff00';
-                ctx.font = 'bold 16px "Courier New", monospace';
-                ctx.textShadow = '0 0 10px #00ff00';
-                ctx.fillText('🌍 ATLAS Global Data Center Map - by ringmast4r', 20, canvas.height - barHeight + 25);
+                ctx.font = `bold ${16 * scale}px "Courier New", monospace`;
+                ctx.shadowColor = '#00ff00';
+                ctx.shadowBlur = 10 * scale;
+                ctx.fillText('🌍 ATLAS Global Data Center Map - by ringmast4r', 20 * scale, canvas.height - barHeight + 25 * scale);
 
-                ctx.font = '12px "Courier New", monospace';
+                ctx.font = `${12 * scale}px "Courier New", monospace`;
                 ctx.fillStyle = '#00aa00';
-                ctx.fillText(`📊 Facilities shown: ${data.length} | 📍 Center: ${center.lat.toFixed(4)}, ${center.lng.toFixed(4)} | 🔍 Zoom: ${zoom}`, 20, canvas.height - barHeight + 45);
-                ctx.fillText(`⏰ Captured: ${timestamp} | 🌐 ringmast4r.github.io/ATLAS_A-Data-Center-Project`, 20, canvas.height - barHeight + 65);
+                ctx.shadowBlur = 5 * scale;
+                ctx.fillText(`📊 Facilities shown: ${data.length} | 📍 Center: ${center.lat.toFixed(4)}, ${center.lng.toFixed(4)} | 🔍 Zoom: ${zoom}`, 20 * scale, canvas.height - barHeight + 45 * scale);
+                ctx.fillText(`⏰ Captured: ${timestamp} | 🌐 ringmast4r.github.io/ATLAS_A-Data-Center-Project`, 20 * scale, canvas.height - barHeight + 65 * scale);
 
                 // Convert to blob and download
                 canvas.toBlob(blob => {
@@ -2130,7 +2134,7 @@
 
                     loading.style.display = 'none';
                     loading.textContent = 'LOADING INTELLIGENCE DATA...';
-                }, 'image/png', 0.95);
+                }, 'image/png', 1.0); // Maximum quality PNG
 
             } catch (error) {
                 console.error('Screenshot export failed:', error);
