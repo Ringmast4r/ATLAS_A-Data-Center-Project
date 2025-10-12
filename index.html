@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3566183763727617"
+     crossorigin="anonymous"></script>
+
     <title>Global Data Center Intelligence Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
+        /* CSS Variables for Theming */
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --color-primary: #00ff00;
+            --color-secondary: #00aa00;
+            --color-accent: #006600;
+            --border-color: #00ff00;
+            --glow-color: rgba(0, 255, 0, 0.3);
+        }
+
+        body.theme-light {
+            --bg-primary: #f5f5f5;
+            --bg-secondary: #ffffff;
+            --color-primary: #1a1a1a;
+            --color-secondary: #444444;
+            --color-accent: #666666;
+            --border-color: #cccccc;
+            --glow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.theme-satellite {
+            --bg-primary: #0a0a1a;
+            --bg-secondary: #1a1a2a;
+            --color-primary: #00ccff;
+            --color-secondary: #0099cc;
+            --color-accent: #006699;
+            --border-color: #00ccff;
+            --glow-color: rgba(0, 204, 255, 0.3);
+        }
+
+        body.theme-topographic {
+            --bg-primary: #2a1a0a;
+            --bg-secondary: #3a2a1a;
+            --color-primary: #ff9900;
+            --color-secondary: #cc7700;
+            --color-accent: #995500;
+            --border-color: #ff9900;
+            --glow-color: rgba(255, 153, 0, 0.3);
+        }
+
+        body.theme-ocean {
+            --bg-primary: #001a33;
+            --bg-secondary: #002a4a;
+            --color-primary: #00ffff;
+            --color-secondary: #00cccc;
+            --color-accent: #009999;
+            --border-color: #00ffff;
+            --glow-color: rgba(0, 255, 255, 0.3);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -14,9 +73,10 @@
 
         body {
             font-family: 'Courier New', monospace;
-            background: #0a0a0a;
-            color: #00ff00;
+            background: var(--bg-primary);
+            color: var(--color-primary);
             overflow: hidden;
+            transition: background 0.3s, color 0.3s;
         }
 
         #container {
@@ -27,23 +87,23 @@
         }
 
         #header {
-            background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
             padding: 20px;
-            border-bottom: 2px solid #00ff00;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            border-bottom: 2px solid var(--border-color);
+            box-shadow: 0 0 20px var(--glow-color);
         }
 
         h1 {
             font-size: 24px;
             text-align: center;
-            text-shadow: 0 0 10px #00ff00;
+            text-shadow: 0 0 10px var(--color-primary);
             letter-spacing: 2px;
         }
 
         .subtitle {
             text-align: center;
             font-size: 12px;
-            color: #00aa00;
+            color: var(--color-secondary);
             margin-top: 5px;
         }
 
@@ -56,9 +116,9 @@
         }
 
         #search {
-            background: #1a1a1a;
-            border: 1px solid #00ff00;
-            color: #00ff00;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--color-primary);
             padding: 8px 15px;
             font-family: 'Courier New', monospace;
             font-size: 14px;
@@ -67,13 +127,13 @@
         }
 
         #search::placeholder {
-            color: #006600;
+            color: var(--color-accent);
         }
 
         select {
-            background: #1a1a1a;
-            border: 1px solid #00ff00;
-            color: #00ff00;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--color-primary);
             padding: 8px 15px;
             font-family: 'Courier New', monospace;
             font-size: 14px;
@@ -89,11 +149,11 @@
         }
 
         .stat {
-            color: #00aa00;
+            color: var(--color-secondary);
         }
 
         .stat span {
-            color: #00ff00;
+            color: var(--color-primary);
             font-weight: bold;
         }
 
@@ -107,13 +167,13 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            background: rgba(0, 0, 0, 0.95);
-            border: 1px solid #00ff00;
+            background: rgba(10, 10, 10, 0.95);
+            border: 1px solid var(--border-color);
             padding: 15px;
             max-width: 350px;
             max-height: 500px;
             overflow-y: auto;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            box-shadow: 0 0 20px var(--glow-color);
             display: none;
             z-index: 1000;
         }
@@ -122,13 +182,13 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            background: rgba(0, 0, 0, 0.95);
-            border: 1px solid #00ff00;
+            background: rgba(10, 10, 10, 0.95);
+            border: 1px solid var(--border-color);
             padding: 15px;
             width: 350px;
             max-height: 500px;
             overflow-y: auto;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            box-shadow: 0 0 20px var(--glow-color);
             display: none;
             z-index: 1000;
             font-size: 11px;
@@ -137,38 +197,38 @@
         .result-item {
             padding: 8px;
             margin: 5px 0;
-            border: 1px solid #006600;
+            border: 1px solid var(--color-accent);
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .result-item:hover {
-            background: rgba(0, 255, 0, 0.1);
-            border-color: #00ff00;
+            background: var(--glow-color);
+            border-color: var(--border-color);
         }
 
         .result-name {
-            color: #00ff00;
+            color: var(--color-primary);
             font-weight: bold;
             margin-bottom: 3px;
         }
 
         .result-details {
-            color: #00aa00;
+            color: var(--color-secondary);
             font-size: 10px;
         }
 
         #info-panel h3 {
-            color: #00ff00;
+            color: var(--color-primary);
             margin-bottom: 10px;
             font-size: 14px;
-            text-shadow: 0 0 5px #00ff00;
+            text-shadow: 0 0 5px var(--color-primary);
         }
 
         #info-panel p {
             font-size: 12px;
             margin: 5px 0;
-            color: #00aa00;
+            color: var(--color-secondary);
         }
 
         .close-btn {
@@ -225,6 +285,154 @@
             width: 100%;
             height: 100%;
         }
+
+        /* Marker Cluster Styling - Matrix Theme */
+        .marker-cluster-small {
+            background-color: rgba(0, 255, 0, 0.6);
+        }
+        .marker-cluster-small div {
+            background-color: rgba(0, 255, 0, 0.8);
+        }
+
+        .marker-cluster-medium {
+            background-color: rgba(255, 255, 0, 0.6);
+        }
+        .marker-cluster-medium div {
+            background-color: rgba(255, 255, 0, 0.8);
+        }
+
+        .marker-cluster-large {
+            background-color: rgba(255, 136, 0, 0.6);
+        }
+        .marker-cluster-large div {
+            background-color: rgba(255, 136, 0, 0.8);
+        }
+
+        .marker-cluster {
+            background-clip: padding-box;
+            border-radius: 20px;
+        }
+        .marker-cluster div {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            text-align: center;
+            border-radius: 15px;
+            font: 12px 'Courier New', monospace;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+        .marker-cluster span {
+            line-height: 30px;
+            color: #000;
+        }
+
+        /* Statistics Dashboard Styling */
+        #stats-dashboard {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.95);
+            border: 2px solid #00ff00;
+            padding: 20px;
+            width: 450px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+            display: none;
+            z-index: 1001;
+            font-size: 12px;
+        }
+
+        #stats-dashboard h2 {
+            color: #00ff00;
+            font-size: 16px;
+            text-shadow: 0 0 10px #00ff00;
+            margin-bottom: 15px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .stats-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #006600;
+            background: rgba(0, 255, 0, 0.05);
+        }
+
+        .stats-section h3 {
+            color: #00ff00;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 250px;
+            margin: 15px 0;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .metric-item {
+            background: rgba(0, 255, 0, 0.1);
+            padding: 10px;
+            border: 1px solid #00ff00;
+            text-align: center;
+        }
+
+        .metric-label {
+            color: #00aa00;
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            color: #00ff00;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+        .stats-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            color: #ff0000;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff0000;
+        }
+
+        .stats-close-btn:hover {
+            color: #ff3333;
+        }
+
+        /* Custom scrollbar for dashboard */
+        #stats-dashboard::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #stats-dashboard::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        #stats-dashboard::-webkit-scrollbar-thumb {
+            background: #00ff00;
+            border-radius: 4px;
+        }
+
+        #stats-dashboard::-webkit-scrollbar-thumb:hover {
+            background: #00aa00;
+        }
     </style>
 </head>
 <body>
@@ -241,6 +449,31 @@
                 <select id="company-filter">
                     <option value="">All Companies</option>
                 </select>
+                <button id="heatmap-toggle" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px 15px; font-family: 'Courier New', monospace; cursor: pointer;">
+                    🔥 Toggle Heatmap
+                </button>
+                <button id="stats-toggle" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px 15px; font-family: 'Courier New', monospace; cursor: pointer;">
+                    📊 Statistics Dashboard
+                </button>
+                <select id="theme-selector">
+                    <option value="matrix">🟢 Dark Matrix</option>
+                    <option value="light">☀️ Light Professional</option>
+                    <option value="satellite">🛰️ Satellite View</option>
+                    <option value="topographic">🗺️ Topographic</option>
+                    <option value="ocean">🌊 Ocean Navigation</option>
+                </select>
+                <button id="export-btn" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px 15px; font-family: 'Courier New', monospace; cursor: pointer;">
+                    💾 Export Data
+                </button>
+                <button id="radius-search-btn" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px 15px; font-family: 'Courier New', monospace; cursor: pointer;">
+                    📍 Radius Search
+                </button>
+                <button id="distance-calc-btn" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px 15px; font-family: 'Courier New', monospace; cursor: pointer;">
+                    📏 Distance Calculator
+                </button>
+                <button id="proximity-btn" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px 15px; font-family: 'Courier New', monospace; cursor: pointer;">
+                    🎯 Proximity Analysis
+                </button>
             </div>
 
             <div id="stats">
@@ -270,6 +503,150 @@
                 <p><strong>Country:</strong> <span id="info-country"></span></p>
             </div>
 
+            <div id="stats-dashboard">
+                <span class="stats-close-btn" onclick="closeStatsDashboard()">✕</span>
+                <h2>📊 INTELLIGENCE STATISTICS 📊</h2>
+
+                <!-- Key Metrics Grid -->
+                <div class="stats-section">
+                    <h3>KEY METRICS</h3>
+                    <div class="metric-grid">
+                        <div class="metric-item">
+                            <div class="metric-label">TOTAL FACILITIES</div>
+                            <div class="metric-value" id="metric-total">0</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">COUNTRIES</div>
+                            <div class="metric-value" id="metric-countries">0</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">OPERATORS</div>
+                            <div class="metric-value" id="metric-companies">0</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">VISIBLE</div>
+                            <div class="metric-value" id="metric-visible">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top 10 Countries Chart -->
+                <div class="stats-section">
+                    <h3>TOP 10 COUNTRIES</h3>
+                    <div class="chart-container">
+                        <canvas id="countriesChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Top 10 Companies Chart -->
+                <div class="stats-section">
+                    <h3>TOP 10 OPERATORS</h3>
+                    <div class="chart-container">
+                        <canvas id="companiesChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Data Quality Metrics -->
+                <div class="stats-section">
+                    <h3>DATA QUALITY</h3>
+                    <div class="chart-container">
+                        <canvas id="qualityChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Regional Distribution -->
+                <div class="stats-section">
+                    <h3>REGIONAL DISTRIBUTION</h3>
+                    <div class="chart-container">
+                        <canvas id="regionalChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div id="export-modal" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(10, 10, 10, 0.98); border: 2px solid #00ff00; padding: 30px; box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); z-index: 2000; min-width: 400px;">
+                <span class="stats-close-btn" onclick="closeExportModal()" style="position: absolute; top: 15px; right: 20px;">✕</span>
+                <h2 style="color: #00ff00; text-align: center; margin-bottom: 20px; text-shadow: 0 0 10px #00ff00;">💾 EXPORT DATA 💾</h2>
+                <p style="color: #00aa00; text-align: center; margin-bottom: 20px; font-size: 12px;">
+                    Export <span id="export-count" style="color: #00ff00; font-weight: bold;">0</span> visible facilities
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <button onclick="exportCSV()" style="background: #1a1a1a; border: 2px solid #00ff00; color: #00ff00; padding: 15px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 14px; transition: all 0.3s;">
+                        📄 Export as CSV
+                    </button>
+                    <button onclick="exportJSON()" style="background: #1a1a1a; border: 2px solid #00ff00; color: #00ff00; padding: 15px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 14px; transition: all 0.3s;">
+                        📋 Export as JSON
+                    </button>
+                    <button onclick="exportGeoJSON()" style="background: #1a1a1a; border: 2px solid #00ff00; color: #00ff00; padding: 15px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 14px; transition: all 0.3s;">
+                        🗺️ Export as GeoJSON
+                    </button>
+                </div>
+            </div>
+
+            <div id="radius-panel" style="display: none; position: absolute; bottom: 80px; left: 20px; background: rgba(10, 10, 10, 0.98); border: 2px solid #00ff00; padding: 20px; box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); z-index: 1000; min-width: 300px;">
+                <span class="stats-close-btn" onclick="cancelRadiusSearch()" style="position: absolute; top: 10px; right: 15px;">✕</span>
+                <h3 style="color: #00ff00; margin-bottom: 15px; text-shadow: 0 0 10px #00ff00;">📍 RADIUS SEARCH</h3>
+                <p style="color: #00aa00; font-size: 11px; margin-bottom: 15px;">Click on the map to set center point</p>
+                <div style="margin-bottom: 15px;">
+                    <label style="color: #00ff00; font-size: 12px; display: block; margin-bottom: 5px;">Radius:</label>
+                    <input type="number" id="radius-input" value="50" min="1" max="10000" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px; width: 100px; font-family: 'Courier New', monospace;">
+                    <select id="radius-unit" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px; font-family: 'Courier New', monospace;">
+                        <option value="miles">Miles</option>
+                        <option value="km">Kilometers</option>
+                    </select>
+                </div>
+                <div id="radius-results" style="color: #00aa00; font-size: 11px; margin-top: 10px;"></div>
+            </div>
+
+            <div id="distance-panel" style="display: none; position: absolute; bottom: 80px; right: 20px; background: rgba(10, 10, 10, 0.98); border: 2px solid #00ff00; padding: 20px; box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); z-index: 1000; min-width: 350px;">
+                <span class="stats-close-btn" onclick="cancelDistanceCalc()" style="position: absolute; top: 10px; right: 15px;">✕</span>
+                <h3 style="color: #00ff00; margin-bottom: 15px; text-shadow: 0 0 10px #00ff00;">📏 DISTANCE CALCULATOR</h3>
+                <p id="distance-instruction" style="color: #00aa00; font-size: 11px; margin-bottom: 15px;">Click on the map to set Point A</p>
+                <div style="margin-bottom: 15px;">
+                    <label style="color: #00ff00; font-size: 12px; display: block; margin-bottom: 5px;">Units:</label>
+                    <select id="distance-unit" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px; font-family: 'Courier New', monospace; width: 100%;">
+                        <option value="miles">Miles</option>
+                        <option value="km">Kilometers</option>
+                        <option value="nm">Nautical Miles</option>
+                    </select>
+                </div>
+                <div id="distance-points" style="color: #00aa00; font-size: 11px; margin-bottom: 15px;">
+                    <div style="margin-bottom: 8px;">
+                        <strong style="color: #00ff00;">Point A:</strong> <span id="point-a">Not set</span>
+                    </div>
+                    <div>
+                        <strong style="color: #00ff00;">Point B:</strong> <span id="point-b">Not set</span>
+                    </div>
+                </div>
+                <div id="distance-result" style="color: #00ff00; font-size: 16px; font-weight: bold; text-align: center; padding: 15px; border: 1px solid #00ff00; background: rgba(0, 255, 0, 0.1); display: none; text-shadow: 0 0 10px #00ff00;">
+                </div>
+                <button id="clear-distance" onclick="clearDistanceMeasurement()" style="display: none; width: 100%; margin-top: 15px; background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 10px; font-family: 'Courier New', monospace; cursor: pointer;">
+                    🔄 Clear & Measure Again
+                </button>
+            </div>
+
+            <div id="proximity-panel" style="display: none; position: absolute; top: 100px; right: 20px; background: rgba(10, 10, 10, 0.98); border: 2px solid #00ff00; padding: 20px; box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); z-index: 1000; min-width: 350px; max-height: 70vh; overflow-y: auto;">
+                <span class="stats-close-btn" onclick="cancelProximityAnalysis()" style="position: absolute; top: 10px; right: 15px;">✕</span>
+                <h3 style="color: #00ff00; margin-bottom: 15px; text-shadow: 0 0 10px #00ff00;">🎯 PROXIMITY ANALYSIS</h3>
+                <p style="color: #00aa00; font-size: 11px; margin-bottom: 15px;">Click on a facility marker to find nearest neighbors</p>
+                <div style="margin-bottom: 15px;">
+                    <label style="color: #00ff00; font-size: 12px; display: block; margin-bottom: 5px;">Number of neighbors:</label>
+                    <input type="number" id="proximity-count" value="10" min="1" max="50" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px; width: 100%; font-family: 'Courier New', monospace;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="color: #00ff00; font-size: 12px; display: block; margin-bottom: 5px;">Distance units:</label>
+                    <select id="proximity-unit" style="background: #1a1a1a; border: 1px solid #00ff00; color: #00ff00; padding: 8px; font-family: 'Courier New', monospace; width: 100%;">
+                        <option value="miles">Miles</option>
+                        <option value="km">Kilometers</option>
+                    </select>
+                </div>
+                <div id="proximity-target" style="color: #00ff00; font-size: 12px; margin-bottom: 15px; padding: 10px; border: 1px solid #00ff00; background: rgba(0, 255, 0, 0.1); display: none;">
+                    <strong>Target Facility:</strong><br>
+                    <span id="proximity-target-name"></span><br>
+                    <small id="proximity-target-location"></small>
+                </div>
+                <div id="proximity-results" style="color: #00aa00; font-size: 11px;"></div>
+            </div>
+
             <div class="legend">
                 <div style="color: #00ff00; font-weight: bold; margin-bottom: 10px;">MARKER LEGEND</div>
                 <div class="legend-item">
@@ -293,13 +670,62 @@
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
     <script>
         console.log('Script starting...');
 
         let datacenters = [];
         let map;
-        let markerLayer;
+        let markerClusterGroup;
+        let heatLayer;
         let allMarkers = [];
+        let showHeatmap = false;
+
+        // Chart variables
+        let countriesChart = null;
+        let companiesChart = null;
+        let qualityChart = null;
+        let regionalChart = null;
+
+        // Theme and tile layer variables
+        let currentTileLayer = null;
+
+        // Radius search variables
+        let radiusSearchActive = false;
+        let radiusCircle = null;
+        let radiusMarker = null;
+
+        // Distance calculator variables
+        let distanceCalcActive = false;
+        let distancePointA = null;
+        let distancePointB = null;
+        let distanceMarkerA = null;
+        let distanceMarkerB = null;
+        let distanceLine = null;
+
+        // Proximity analysis variables
+        let proximityActive = false;
+        let proximityLines = [];
+        const tileLayers = {
+            matrix: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap © CARTO',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }),
+            light: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap'
+            }),
+            satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Esri, DigitalGlobe, GeoEye, Earthstar Geographics'
+            }),
+            topographic: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenTopoMap'
+            }),
+            ocean: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Esri, GEBCO, NOAA'
+            })
+        };
 
         // US State coordinates
         const usStateCoords = {
@@ -313,7 +739,7 @@
             'Delaware': [39.318523, -75.507141],
             'Florida': [27.766279, -81.686783],
             'Georgia': [33.040619, -83.643074],
-            'Hawaii': [21.094318, -157.498337],
+            'Hawaii': [21.3069, -157.8583],
             'Idaho': [44.240459, -114.478828],
             'Illinois': [40.349457, -88.986137],
             'Indiana': [39.849426, -86.258278],
@@ -422,7 +848,7 @@
             'Lithuania': [55.1694, 23.8813],
             'Latvia': [56.8796, 24.6032],
             'Estonia': [58.5953, 25.0136],
-            'Iceland': [64.9631, -19.0208],
+            'Iceland': [64.1466, -21.9426],
             'Luxembourg': [49.8153, 6.1296],
             'Malta': [35.9375, 14.3754],
             'Cyprus': [35.1264, 33.4299],
@@ -453,14 +879,48 @@
                 maxZoom: 18
             });
 
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-                attribution: '© OpenStreetMap © CARTO',
-                subdomains: 'abcd',
-                maxZoom: 20
-            }).addTo(map);
+            // Load saved theme or default to matrix
+            const savedTheme = localStorage.getItem('atlas-theme') || 'matrix';
+            currentTileLayer = tileLayers[savedTheme];
+            currentTileLayer.addTo(map);
+            document.body.className = savedTheme !== 'matrix' ? `theme-${savedTheme}` : '';
+            document.getElementById('theme-selector').value = savedTheme;
 
-            markerLayer = L.layerGroup().addTo(map);
-            console.log('Map initialized');
+            // Initialize marker cluster group with custom styling
+            markerClusterGroup = L.markerClusterGroup({
+                maxClusterRadius: 50,
+                spiderfyOnMaxZoom: true,
+                showCoverageOnHover: false,
+                zoomToBoundsOnClick: true,
+                iconCreateFunction: function(cluster) {
+                    var childCount = cluster.getChildCount();
+                    var c = ' marker-cluster-';
+                    if (childCount < 10) {
+                        c += 'small';
+                    } else if (childCount < 100) {
+                        c += 'medium';
+                    } else {
+                        c += 'large';
+                    }
+                    return new L.DivIcon({
+                        html: '<div><span>' + childCount + '</span></div>',
+                        className: 'marker-cluster' + c,
+                        iconSize: new L.Point(40, 40)
+                    });
+                }
+            });
+            map.addLayer(markerClusterGroup);
+
+            // Map click handler for radius search and distance calculator
+            map.on('click', function(e) {
+                if (radiusSearchActive) {
+                    performRadiusSearch(e.latlng.lat, e.latlng.lng);
+                } else if (distanceCalcActive) {
+                    performDistanceCalculation(e.latlng.lat, e.latlng.lng);
+                }
+            });
+
+            console.log('Map initialized with clustering');
         }
 
         // Generate random offset for clustering
@@ -504,7 +964,7 @@
 
         function addMarkers(data) {
             console.log(`Adding ${data.length} markers...`);
-            markerLayer.clearLayers();
+            markerClusterGroup.clearLayers();
             allMarkers = [];
 
             // Count datacenters per country
@@ -582,8 +1042,14 @@
                     </div>
                 `);
 
-                marker.on('click', () => showInfo(dc));
-                marker.addTo(markerLayer);
+                marker.on('click', () => {
+                    if (proximityActive) {
+                        performProximityAnalysis(dc);
+                    } else {
+                        showInfo(dc);
+                    }
+                });
+                markerClusterGroup.addLayer(marker);
                 allMarkers.push({ marker, data: dc });
                 markersAdded++;
             });
@@ -737,10 +1203,832 @@
             document.getElementById('info-panel').style.display = 'none';
         }
 
+        function closeStatsDashboard() {
+            document.getElementById('stats-dashboard').style.display = 'none';
+            document.getElementById('stats-toggle').style.background = '#1a1a1a';
+            document.getElementById('stats-toggle').style.color = '#00ff00';
+        }
+
+        function toggleStatsDashboard() {
+            const dashboard = document.getElementById('stats-dashboard');
+            const toggleBtn = document.getElementById('stats-toggle');
+
+            if (dashboard.style.display === 'none' || dashboard.style.display === '') {
+                dashboard.style.display = 'block';
+                toggleBtn.style.background = '#00ff00';
+                toggleBtn.style.color = '#000';
+                updateStatsDashboard();
+            } else {
+                closeStatsDashboard();
+            }
+        }
+
+        // Heatmap Toggle Function
+        function toggleHeatmap() {
+            showHeatmap = !showHeatmap;
+
+            if (showHeatmap) {
+                // Generate heatmap data from current visible markers
+                const heatData = [];
+                datacenters.forEach(dc => {
+                    let lat, lng;
+                    if (dc.city_coords && Array.isArray(dc.city_coords) && dc.city_coords.length === 2) {
+                        lat = dc.city_coords[0];
+                        lng = dc.city_coords[1];
+                    } else if (dc.country === 'United States' && dc.state && usStateCoords[dc.state]) {
+                        let coords = usStateCoords[dc.state];
+                        lat = coords[0];
+                        lng = coords[1];
+                    } else {
+                        let coords = countryCoords[dc.country];
+                        if (coords) {
+                            lat = coords[0];
+                            lng = coords[1];
+                        }
+                    }
+
+                    if (lat && lng && lat !== 0 && lng !== 0) {
+                        heatData.push([lat, lng, 0.5]); // lat, lng, intensity
+                    }
+                });
+
+                // Create heatmap layer
+                heatLayer = L.heatLayer(heatData, {
+                    radius: 25,
+                    blur: 15,
+                    maxZoom: 10,
+                    max: 1.0,
+                    gradient: {
+                        0.0: '#000000',
+                        0.2: '#00ff00',
+                        0.4: '#ffff00',
+                        0.6: '#ff8800',
+                        0.8: '#ff0000',
+                        1.0: '#ff00ff'
+                    }
+                }).addTo(map);
+
+                // Hide markers
+                map.removeLayer(markerClusterGroup);
+                document.getElementById('heatmap-toggle').style.background = '#00ff00';
+                document.getElementById('heatmap-toggle').style.color = '#000';
+            } else {
+                // Remove heatmap, show markers
+                if (heatLayer) {
+                    map.removeLayer(heatLayer);
+                }
+                map.addLayer(markerClusterGroup);
+                document.getElementById('heatmap-toggle').style.background = '#1a1a1a';
+                document.getElementById('heatmap-toggle').style.color = '#00ff00';
+            }
+        }
+
+        // Update Statistics Dashboard
+        function updateStatsDashboard() {
+            // Get current filtered data
+            const visibleData = allMarkers
+                .filter(marker => marker.marker._icon && marker.marker._icon.style.display !== 'none')
+                .map(m => m.data);
+
+            // Update key metrics
+            const uniqueCountries = new Set(datacenters.filter(dc => dc.country).map(dc => dc.country));
+            const uniqueCompanies = new Set(datacenters.filter(dc => dc.company).map(dc => dc.company));
+
+            document.getElementById('metric-total').textContent = datacenters.length.toLocaleString();
+            document.getElementById('metric-countries').textContent = uniqueCountries.size;
+            document.getElementById('metric-companies').textContent = uniqueCompanies.size;
+            document.getElementById('metric-visible').textContent = visibleData.length.toLocaleString();
+
+            // Prepare data for charts
+            const countryCount = {};
+            const companyCount = {};
+
+            datacenters.forEach(dc => {
+                if (dc.country) {
+                    countryCount[dc.country] = (countryCount[dc.country] || 0) + 1;
+                }
+                if (dc.company) {
+                    companyCount[dc.company] = (companyCount[dc.company] || 0) + 1;
+                }
+            });
+
+            // Get top 10 countries
+            const topCountries = Object.entries(countryCount)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10);
+
+            // Get top 10 companies
+            const topCompanies = Object.entries(companyCount)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10);
+
+            // Matrix theme colors
+            const chartColors = [
+                '#00ff00', '#00dd00', '#00bb00', '#009900', '#007700',
+                '#ffff00', '#dddd00', '#ff8800', '#ff6600', '#ff4400'
+            ];
+
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#00ff00', font: { family: 'Courier New', size: 10 } },
+                        grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                    },
+                    y: {
+                        ticks: { color: '#00ff00', font: { family: 'Courier New', size: 10 } },
+                        grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                    }
+                }
+            };
+
+            // Countries Chart
+            if (countriesChart) countriesChart.destroy();
+            countriesChart = new Chart(document.getElementById('countriesChart'), {
+                type: 'bar',
+                data: {
+                    labels: topCountries.map(c => c[0]),
+                    datasets: [{
+                        label: 'Facilities',
+                        data: topCountries.map(c => c[1]),
+                        backgroundColor: chartColors,
+                        borderColor: '#00ff00',
+                        borderWidth: 1
+                    }]
+                },
+                options: chartOptions
+            });
+
+            // Companies Chart
+            if (companiesChart) companiesChart.destroy();
+            companiesChart = new Chart(document.getElementById('companiesChart'), {
+                type: 'bar',
+                data: {
+                    labels: topCompanies.map(c => c[0].length > 15 ? c[0].substring(0, 15) + '...' : c[0]),
+                    datasets: [{
+                        label: 'Facilities',
+                        data: topCompanies.map(c => c[1]),
+                        backgroundColor: chartColors,
+                        borderColor: '#00ff00',
+                        borderWidth: 1
+                    }]
+                },
+                options: chartOptions
+            });
+
+            // Data Quality Chart
+            const withCoords = datacenters.filter(dc => dc.city_coords && dc.city_coords[0] !== 0).length;
+            const withCountry = datacenters.filter(dc => dc.country).length;
+            const withState = datacenters.filter(dc => dc.state).length;
+            const withoutCountry = datacenters.length - withCountry;
+
+            if (qualityChart) qualityChart.destroy();
+            qualityChart = new Chart(document.getElementById('qualityChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['City Coords', 'Has Country', 'Has State', 'Missing Country'],
+                    datasets: [{
+                        data: [withCoords, withCountry, withState, withoutCountry],
+                        backgroundColor: ['#00ff00', '#00dd00', '#ffff00', '#ff0000'],
+                        borderColor: '#000',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                color: '#00ff00',
+                                font: { family: 'Courier New', size: 10 }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Regional Distribution
+            const regions = {
+                'North America': 0,
+                'Europe': 0,
+                'Asia-Pacific': 0,
+                'South America': 0,
+                'Africa': 0,
+                'Middle East': 0,
+                'Other': 0
+            };
+
+            const regionMap = {
+                'United States': 'North America', 'Canada': 'North America', 'Mexico': 'North America',
+                'United Kingdom': 'Europe', 'France': 'Europe', 'Germany': 'Europe', 'Netherlands': 'Europe',
+                'Spain': 'Europe', 'Italy': 'Europe', 'Switzerland': 'Europe', 'Sweden': 'Europe',
+                'Ireland': 'Europe', 'Poland': 'Europe', 'Belgium': 'Europe', 'Austria': 'Europe',
+                'Norway': 'Europe', 'Denmark': 'Europe', 'Finland': 'Europe', 'Portugal': 'Europe',
+                'China': 'Asia-Pacific', 'Japan': 'Asia-Pacific', 'India': 'Asia-Pacific', 'Singapore': 'Asia-Pacific',
+                'Australia': 'Asia-Pacific', 'South Korea': 'Asia-Pacific', 'Indonesia': 'Asia-Pacific',
+                'Malaysia': 'Asia-Pacific', 'Thailand': 'Asia-Pacific', 'New Zealand': 'Asia-Pacific',
+                'Brazil': 'South America', 'Argentina': 'South America', 'Chile': 'South America',
+                'Colombia': 'South America', 'Peru': 'South America',
+                'South Africa': 'Africa', 'Nigeria': 'Africa', 'Kenya': 'Africa', 'Egypt': 'Africa',
+                'Saudi Arabia': 'Middle East', 'United Arab Emirates': 'Middle East', 'Israel': 'Middle East',
+                'Qatar': 'Middle East', 'Kuwait': 'Middle East'
+            };
+
+            datacenters.forEach(dc => {
+                const region = regionMap[dc.country] || 'Other';
+                regions[region]++;
+            });
+
+            if (regionalChart) regionalChart.destroy();
+            regionalChart = new Chart(document.getElementById('regionalChart'), {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(regions),
+                    datasets: [{
+                        data: Object.values(regions),
+                        backgroundColor: chartColors.slice(0, 7),
+                        borderColor: '#000',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                color: '#00ff00',
+                                font: { family: 'Courier New', size: 10 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Haversine Distance Calculation (returns distance in kilometers)
+        function haversineDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371; // Earth's radius in kilometers
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
+        // Radius Search Functions
+        function activateRadiusSearch() {
+            radiusSearchActive = true;
+            document.getElementById('radius-panel').style.display = 'block';
+            document.getElementById('radius-search-btn').style.background = '#00ff00';
+            document.getElementById('radius-search-btn').style.color = '#000';
+            map.getContainer().style.cursor = 'crosshair';
+        }
+
+        function cancelRadiusSearch() {
+            radiusSearchActive = false;
+            document.getElementById('radius-panel').style.display = 'none';
+            document.getElementById('radius-search-btn').style.background = '#1a1a1a';
+            document.getElementById('radius-search-btn').style.color = '#00ff00';
+            document.getElementById('radius-results').innerHTML = '';
+            map.getContainer().style.cursor = '';
+
+            if (radiusCircle) {
+                map.removeLayer(radiusCircle);
+                radiusCircle = null;
+            }
+            if (radiusMarker) {
+                map.removeLayer(radiusMarker);
+                radiusMarker = null;
+            }
+        }
+
+        function performRadiusSearch(lat, lon) {
+            const radiusValue = parseFloat(document.getElementById('radius-input').value);
+            const unit = document.getElementById('radius-unit').value;
+            const radiusKm = unit === 'miles' ? radiusValue * 1.60934 : radiusValue;
+
+            // Remove existing circle and marker
+            if (radiusCircle) map.removeLayer(radiusCircle);
+            if (radiusMarker) map.removeLayer(radiusMarker);
+
+            // Draw circle
+            radiusCircle = L.circle([lat, lon], {
+                radius: radiusKm * 1000, // Convert to meters
+                color: '#00ff00',
+                fillColor: '#00ff00',
+                fillOpacity: 0.1,
+                weight: 2
+            }).addTo(map);
+
+            // Add center marker
+            radiusMarker = L.marker([lat, lon], {
+                icon: L.divIcon({
+                    className: 'radius-center-marker',
+                    html: '<div style="background: #00ff00; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #000; box-shadow: 0 0 10px #00ff00;"></div>',
+                    iconSize: [12, 12]
+                })
+            }).addTo(map);
+
+            // Find facilities within radius
+            const facilitiesInRadius = [];
+            datacenters.forEach(dc => {
+                let dcLat, dcLon;
+                if (dc.city_coords && dc.city_coords[0] !== 0) {
+                    dcLat = dc.city_coords[0];
+                    dcLon = dc.city_coords[1];
+                } else if (dc.country === 'United States' && dc.state && usStateCoords[dc.state]) {
+                    dcLat = usStateCoords[dc.state][0];
+                    dcLon = usStateCoords[dc.state][1];
+                } else if (dc.country && countryCoords[dc.country]) {
+                    dcLat = countryCoords[dc.country][0];
+                    dcLon = countryCoords[dc.country][1];
+                }
+
+                if (dcLat && dcLon) {
+                    const distance = haversineDistance(lat, lon, dcLat, dcLon);
+                    if (distance <= radiusKm) {
+                        facilitiesInRadius.push({
+                            ...dc,
+                            distance: unit === 'miles' ? distance / 1.60934 : distance
+                        });
+                    }
+                }
+            });
+
+            // Sort by distance
+            facilitiesInRadius.sort((a, b) => a.distance - b.distance);
+
+            // Display results
+            const resultsDiv = document.getElementById('radius-results');
+            const unitLabel = unit === 'miles' ? 'mi' : 'km';
+            resultsDiv.innerHTML = `<strong style="color: #00ff00;">${facilitiesInRadius.length} facilities found</strong><br><br>`;
+
+            if (facilitiesInRadius.length > 0) {
+                resultsDiv.innerHTML += facilitiesInRadius.slice(0, 10).map(dc =>
+                    `<div style="margin-bottom: 8px; padding: 5px; border: 1px solid #006600;">
+                        <strong>${dc.name}</strong><br>
+                        <small>${dc.city || 'N/A'}, ${dc.country || 'N/A'}</small><br>
+                        <small style="color: #00ff00;">${dc.distance.toFixed(2)} ${unitLabel} away</small>
+                    </div>`
+                ).join('');
+
+                if (facilitiesInRadius.length > 10) {
+                    resultsDiv.innerHTML += `<small style="color: #00aa00;">...and ${facilitiesInRadius.length - 10} more</small>`;
+                }
+            }
+
+            // Fit map to circle
+            map.fitBounds(radiusCircle.getBounds(), { padding: [50, 50] });
+        }
+
+        // Distance Calculator Functions
+        function activateDistanceCalc() {
+            // Cancel radius search if active
+            if (radiusSearchActive) {
+                cancelRadiusSearch();
+            }
+
+            distanceCalcActive = true;
+            document.getElementById('distance-panel').style.display = 'block';
+            document.getElementById('distance-calc-btn').style.background = '#00ff00';
+            document.getElementById('distance-calc-btn').style.color = '#000';
+            map.getContainer().style.cursor = 'crosshair';
+
+            // Reset state
+            clearDistanceMeasurement();
+        }
+
+        function cancelDistanceCalc() {
+            distanceCalcActive = false;
+            document.getElementById('distance-panel').style.display = 'none';
+            document.getElementById('distance-calc-btn').style.background = '#1a1a1a';
+            document.getElementById('distance-calc-btn').style.color = '#00ff00';
+            map.getContainer().style.cursor = '';
+
+            clearDistanceMeasurement();
+        }
+
+        function clearDistanceMeasurement() {
+            distancePointA = null;
+            distancePointB = null;
+
+            if (distanceMarkerA) {
+                map.removeLayer(distanceMarkerA);
+                distanceMarkerA = null;
+            }
+            if (distanceMarkerB) {
+                map.removeLayer(distanceMarkerB);
+                distanceMarkerB = null;
+            }
+            if (distanceLine) {
+                map.removeLayer(distanceLine);
+                distanceLine = null;
+            }
+
+            document.getElementById('point-a').textContent = 'Not set';
+            document.getElementById('point-b').textContent = 'Not set';
+            document.getElementById('distance-instruction').textContent = 'Click on the map to set Point A';
+            document.getElementById('distance-result').style.display = 'none';
+            document.getElementById('clear-distance').style.display = 'none';
+        }
+
+        function performDistanceCalculation(lat, lon) {
+            if (!distancePointA) {
+                // Set Point A
+                distancePointA = { lat, lon };
+
+                // Add marker A
+                distanceMarkerA = L.marker([lat, lon], {
+                    icon: L.divIcon({
+                        className: 'distance-marker-a',
+                        html: '<div style="background: #00ff00; width: 16px; height: 16px; border-radius: 50%; border: 3px solid #000; box-shadow: 0 0 10px #00ff00; position: relative;"><div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background: #000; border: 1px solid #00ff00; padding: 2px 5px; white-space: nowrap; color: #00ff00; font-family: \'Courier New\'; font-size: 10px;">A</div></div>',
+                        iconSize: [16, 16]
+                    })
+                }).addTo(map);
+
+                document.getElementById('point-a').textContent = `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
+                document.getElementById('distance-instruction').textContent = 'Click on the map to set Point B';
+
+            } else if (!distancePointB) {
+                // Set Point B
+                distancePointB = { lat, lon };
+
+                // Add marker B
+                distanceMarkerB = L.marker([lat, lon], {
+                    icon: L.divIcon({
+                        className: 'distance-marker-b',
+                        html: '<div style="background: #ffff00; width: 16px; height: 16px; border-radius: 50%; border: 3px solid #000; box-shadow: 0 0 10px #ffff00; position: relative;"><div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background: #000; border: 1px solid #ffff00; padding: 2px 5px; white-space: nowrap; color: #ffff00; font-family: \'Courier New\'; font-size: 10px;">B</div></div>',
+                        iconSize: [16, 16]
+                    })
+                }).addTo(map);
+
+                document.getElementById('point-b').textContent = `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
+
+                // Draw line
+                distanceLine = L.polyline(
+                    [[distancePointA.lat, distancePointA.lon], [distancePointB.lat, distancePointB.lon]],
+                    {
+                        color: '#00ff00',
+                        weight: 3,
+                        opacity: 0.8,
+                        dashArray: '10, 10'
+                    }
+                ).addTo(map);
+
+                // Calculate distance
+                const distanceKm = haversineDistance(distancePointA.lat, distancePointA.lon, distancePointB.lat, distancePointB.lon);
+                const unit = document.getElementById('distance-unit').value;
+                let distance, unitLabel;
+
+                if (unit === 'miles') {
+                    distance = distanceKm / 1.60934;
+                    unitLabel = 'miles';
+                } else if (unit === 'nm') {
+                    distance = distanceKm / 1.852;
+                    unitLabel = 'nautical miles';
+                } else {
+                    distance = distanceKm;
+                    unitLabel = 'kilometers';
+                }
+
+                // Display result
+                document.getElementById('distance-result').innerHTML = `${distance.toFixed(2)} ${unitLabel}`;
+                document.getElementById('distance-result').style.display = 'block';
+                document.getElementById('clear-distance').style.display = 'block';
+                document.getElementById('distance-instruction').textContent = 'Distance calculated!';
+
+                // Fit map to show both points
+                map.fitBounds(distanceLine.getBounds(), { padding: [50, 50] });
+            }
+        }
+
+        // Proximity Analysis Functions
+        function activateProximityAnalysis() {
+            // Cancel other tools if active
+            if (radiusSearchActive) cancelRadiusSearch();
+            if (distanceCalcActive) cancelDistanceCalc();
+
+            proximityActive = true;
+            document.getElementById('proximity-panel').style.display = 'block';
+            document.getElementById('proximity-btn').style.background = '#00ff00';
+            document.getElementById('proximity-btn').style.color = '#000';
+            document.getElementById('proximity-target').style.display = 'none';
+            document.getElementById('proximity-results').innerHTML = '';
+
+            // Clear any existing lines
+            proximityLines.forEach(line => map.removeLayer(line));
+            proximityLines = [];
+        }
+
+        function cancelProximityAnalysis() {
+            proximityActive = false;
+            document.getElementById('proximity-panel').style.display = 'none';
+            document.getElementById('proximity-btn').style.background = '#1a1a1a';
+            document.getElementById('proximity-btn').style.color = '#00ff00';
+
+            // Clear proximity visualization
+            proximityLines.forEach(line => map.removeLayer(line));
+            proximityLines = [];
+        }
+
+        function performProximityAnalysis(targetFacility) {
+            if (!proximityActive) return;
+
+            const count = parseInt(document.getElementById('proximity-count').value);
+            const unit = document.getElementById('proximity-unit').value;
+
+            // Get target facility coordinates
+            let targetLat, targetLon;
+            if (targetFacility.city_coords && targetFacility.city_coords[0] !== 0) {
+                targetLat = targetFacility.city_coords[0];
+                targetLon = targetFacility.city_coords[1];
+            } else if (targetFacility.country === 'United States' && targetFacility.state && usStateCoords[targetFacility.state]) {
+                targetLat = usStateCoords[targetFacility.state][0];
+                targetLon = usStateCoords[targetFacility.state][1];
+            } else if (targetFacility.country && countryCoords[targetFacility.country]) {
+                targetLat = countryCoords[targetFacility.country][0];
+                targetLon = countryCoords[targetFacility.country][1];
+            } else {
+                alert('Cannot determine coordinates for this facility');
+                return;
+            }
+
+            // Calculate distances to all other facilities
+            const facilitiesWithDistance = [];
+            datacenters.forEach(dc => {
+                if (dc.name === targetFacility.name && dc.company === targetFacility.company) {
+                    return; // Skip the target facility itself
+                }
+
+                let dcLat, dcLon;
+                if (dc.city_coords && dc.city_coords[0] !== 0) {
+                    dcLat = dc.city_coords[0];
+                    dcLon = dc.city_coords[1];
+                } else if (dc.country === 'United States' && dc.state && usStateCoords[dc.state]) {
+                    dcLat = usStateCoords[dc.state][0];
+                    dcLon = usStateCoords[dc.state][1];
+                } else if (dc.country && countryCoords[dc.country]) {
+                    dcLat = countryCoords[dc.country][0];
+                    dcLon = countryCoords[dc.country][1];
+                }
+
+                if (dcLat && dcLon) {
+                    const distanceKm = haversineDistance(targetLat, targetLon, dcLat, dcLon);
+                    facilitiesWithDistance.push({
+                        ...dc,
+                        distance: unit === 'miles' ? distanceKm / 1.60934 : distanceKm,
+                        lat: dcLat,
+                        lon: dcLon
+                    });
+                }
+            });
+
+            // Sort by distance and take top N
+            facilitiesWithDistance.sort((a, b) => a.distance - b.distance);
+            const nearestNeighbors = facilitiesWithDistance.slice(0, count);
+
+            // Display target facility
+            document.getElementById('proximity-target').style.display = 'block';
+            document.getElementById('proximity-target-name').textContent = targetFacility.name;
+            document.getElementById('proximity-target-location').textContent =
+                `${targetFacility.city || 'N/A'}, ${targetFacility.country || 'N/A'}`;
+
+            // Clear previous lines
+            proximityLines.forEach(line => map.removeLayer(line));
+            proximityLines = [];
+
+            // Draw lines to nearest neighbors
+            const unitLabel = unit === 'miles' ? 'mi' : 'km';
+            let resultsHtml = `<strong style="color: #00ff00;">${nearestNeighbors.length} Nearest Facilities:</strong><br><br>`;
+
+            nearestNeighbors.forEach((neighbor, index) => {
+                // Draw line
+                const line = L.polyline(
+                    [[targetLat, targetLon], [neighbor.lat, neighbor.lon]],
+                    {
+                        color: index < 3 ? '#00ff00' : '#ffff00',
+                        weight: index < 3 ? 2 : 1,
+                        opacity: 0.6,
+                        dashArray: '5, 5'
+                    }
+                ).addTo(map);
+                proximityLines.push(line);
+
+                // Add to results
+                resultsHtml += `
+                    <div style="margin-bottom: 10px; padding: 8px; border: 1px solid ${index < 3 ? '#00ff00' : '#006600'}; background: ${index < 3 ? 'rgba(0, 255, 0, 0.1)' : 'transparent'};">
+                        <strong style="color: ${index < 3 ? '#00ff00' : '#ffff00'};">#${index + 1}</strong> - ${neighbor.name}<br>
+                        <small>${neighbor.company || 'N/A'}</small><br>
+                        <small>${neighbor.city || 'N/A'}, ${neighbor.country || 'N/A'}</small><br>
+                        <strong style="color: #00ff00;">${neighbor.distance.toFixed(2)} ${unitLabel}</strong>
+                    </div>
+                `;
+            });
+
+            document.getElementById('proximity-results').innerHTML = resultsHtml;
+
+            // Zoom to show all facilities
+            const bounds = L.latLngBounds([[targetLat, targetLon]]);
+            nearestNeighbors.forEach(n => bounds.extend([n.lat, n.lon]));
+            map.fitBounds(bounds, { padding: [50, 50] });
+        }
+
+        // Export Modal Functions
+        function openExportModal() {
+            const visibleData = allMarkers
+                .filter(marker => marker.marker._icon && marker.marker._icon.style.display !== 'none')
+                .map(m => m.data);
+
+            document.getElementById('export-count').textContent = visibleData.length.toLocaleString();
+            document.getElementById('export-modal').style.display = 'block';
+        }
+
+        function closeExportModal() {
+            document.getElementById('export-modal').style.display = 'none';
+        }
+
+        function getVisibleData() {
+            return allMarkers
+                .filter(marker => marker.marker._icon && marker.marker._icon.style.display !== 'none')
+                .map(m => m.data);
+        }
+
+        function downloadFile(content, filename, contentType) {
+            const blob = new Blob([content], { type: contentType });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        function exportCSV() {
+            const data = getVisibleData();
+            const headers = ['name', 'company', 'street', 'city', 'state', 'zip', 'country', 'address'];
+
+            let csv = headers.join(',') + '\n';
+
+            data.forEach(dc => {
+                const row = headers.map(header => {
+                    let value = dc[header] || '';
+                    // Escape quotes and wrap in quotes if contains comma
+                    if (value.toString().includes(',') || value.toString().includes('"')) {
+                        value = '"' + value.toString().replace(/"/g, '""') + '"';
+                    }
+                    return value;
+                });
+                csv += row.join(',') + '\n';
+            });
+
+            const timestamp = new Date().toISOString().split('T')[0];
+            downloadFile(csv, `atlas_export_${timestamp}.csv`, 'text/csv');
+            closeExportModal();
+        }
+
+        function exportJSON() {
+            const data = getVisibleData();
+            const json = JSON.stringify(data, null, 2);
+            const timestamp = new Date().toISOString().split('T')[0];
+            downloadFile(json, `atlas_export_${timestamp}.json`, 'application/json');
+            closeExportModal();
+        }
+
+        function exportGeoJSON() {
+            const data = getVisibleData();
+
+            const geojson = {
+                type: 'FeatureCollection',
+                features: data.map(dc => {
+                    // Get coordinates
+                    let coords = [0, 0];
+                    if (dc.city_coords && dc.city_coords[0] !== 0) {
+                        coords = [dc.city_coords[1], dc.city_coords[0]]; // GeoJSON is [lng, lat]
+                    } else if (dc.country === 'United States' && dc.state && usStateCoords[dc.state]) {
+                        coords = [usStateCoords[dc.state][1], usStateCoords[dc.state][0]];
+                    } else if (dc.country && countryCoords[dc.country]) {
+                        coords = [countryCoords[dc.country][1], countryCoords[dc.country][0]];
+                    }
+
+                    return {
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: coords
+                        },
+                        properties: {
+                            name: dc.name || '',
+                            company: dc.company || '',
+                            street: dc.street || '',
+                            city: dc.city || '',
+                            state: dc.state || '',
+                            zip: dc.zip || '',
+                            country: dc.country || '',
+                            address: dc.address || ''
+                        }
+                    };
+                })
+            };
+
+            const json = JSON.stringify(geojson, null, 2);
+            const timestamp = new Date().toISOString().split('T')[0];
+            downloadFile(json, `atlas_export_${timestamp}.geojson`, 'application/geo+json');
+            closeExportModal();
+        }
+
+        // Change Theme Function
+        function changeTheme(themeName) {
+            // Remove current tile layer
+            if (currentTileLayer) {
+                map.removeLayer(currentTileLayer);
+            }
+
+            // Add new tile layer
+            currentTileLayer = tileLayers[themeName];
+            currentTileLayer.addTo(map);
+
+            // Update body class for CSS theming
+            if (themeName === 'matrix') {
+                document.body.className = '';
+            } else {
+                document.body.className = `theme-${themeName}`;
+            }
+
+            // Save theme preference
+            localStorage.setItem('atlas-theme', themeName);
+
+            // Update chart colors if dashboard is open
+            const dashboard = document.getElementById('stats-dashboard');
+            if (dashboard && dashboard.style.display === 'block') {
+                updateStatsDashboard();
+            }
+
+            console.log(`Theme changed to: ${themeName}`);
+        }
+
         // Event listeners
         document.getElementById('search').addEventListener('input', filterData);
         document.getElementById('country-filter').addEventListener('change', filterData);
         document.getElementById('company-filter').addEventListener('change', filterData);
+        document.getElementById('heatmap-toggle').addEventListener('click', toggleHeatmap);
+        document.getElementById('stats-toggle').addEventListener('click', toggleStatsDashboard);
+        document.getElementById('theme-selector').addEventListener('change', (e) => changeTheme(e.target.value));
+        document.getElementById('export-btn').addEventListener('click', openExportModal);
+        document.getElementById('radius-search-btn').addEventListener('click', activateRadiusSearch);
+        document.getElementById('distance-calc-btn').addEventListener('click', activateDistanceCalc);
+        document.getElementById('proximity-btn').addEventListener('click', activateProximityAnalysis);
+
+        // Radius input change handler
+        document.getElementById('radius-input').addEventListener('change', function() {
+            if (radiusCircle && radiusMarker) {
+                const center = radiusMarker.getLatLng();
+                performRadiusSearch(center.lat, center.lng);
+            }
+        });
+        document.getElementById('radius-unit').addEventListener('change', function() {
+            if (radiusCircle && radiusMarker) {
+                const center = radiusMarker.getLatLng();
+                performRadiusSearch(center.lat, center.lng);
+            }
+        });
+
+        // Distance unit change handler
+        document.getElementById('distance-unit').addEventListener('change', function() {
+            if (distancePointA && distancePointB) {
+                const distanceKm = haversineDistance(distancePointA.lat, distancePointA.lon, distancePointB.lat, distancePointB.lon);
+                const unit = this.value;
+                let distance, unitLabel;
+
+                if (unit === 'miles') {
+                    distance = distanceKm / 1.60934;
+                    unitLabel = 'miles';
+                } else if (unit === 'nm') {
+                    distance = distanceKm / 1.852;
+                    unitLabel = 'nautical miles';
+                } else {
+                    distance = distanceKm;
+                    unitLabel = 'kilometers';
+                }
+
+                document.getElementById('distance-result').innerHTML = `${distance.toFixed(2)} ${unitLabel}`;
+            }
+        });
 
         // Initialize
         console.log('Starting initialization...');
