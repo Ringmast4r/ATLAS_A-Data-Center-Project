@@ -788,6 +788,7 @@
                         <option value="ocean">🌊 Ocean</option>
                     </select>
                     <button id="export-btn">💾 Export</button>
+                    <button id="share-btn">🔗 Share</button>
                     <button id="radius-search-btn">📍 Radius</button>
                     <button id="distance-calc-btn">📏 Distance</button>
                     <button id="proximity-btn">🎯 Proximity</button>
@@ -899,6 +900,28 @@
                     </button>
                     <button onclick="exportMapScreenshot()" style="background: var(--bg-secondary); border: 1px solid var(--color-accent); border-radius: 2px; color: var(--color-primary); padding: 10px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 11px; transition: all 0.2s;">
                         📸 Screenshot
+                    </button>
+                </div>
+            </div>
+
+            <div id="share-modal" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(10, 10, 10, 0.98); border: 1px solid var(--color-accent); border-radius: 2px; padding: 15px; box-shadow: 0 2px 15px rgba(0, 255, 0, 0.4); z-index: 2000; min-width: 300px;">
+                <span class="stats-close-btn" onclick="closeShareModal()" style="position: absolute; top: 8px; right: 10px; font-size: 14px;">✕</span>
+                <h2 style="color: var(--color-primary); text-align: center; margin-bottom: 12px; text-shadow: 0 0 5px var(--color-primary); font-size: 13px;">🔗 SHARE</h2>
+                <p style="color: var(--color-secondary); text-align: center; margin-bottom: 12px; font-size: 10px;">
+                    Share this map with others
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <button onclick="shareTwitter()" style="background: #1DA1F2; border: 1px solid #1DA1F2; border-radius: 2px; color: white; padding: 10px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 11px; transition: all 0.2s;">
+                        🐦 Share on Twitter
+                    </button>
+                    <button onclick="shareLinkedIn()" style="background: #0077B5; border: 1px solid #0077B5; border-radius: 2px; color: white; padding: 10px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 11px; transition: all 0.2s;">
+                        💼 Share on LinkedIn
+                    </button>
+                    <button onclick="shareReddit()" style="background: #FF4500; border: 1px solid #FF4500; border-radius: 2px; color: white; padding: 10px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 11px; transition: all 0.2s;">
+                        🔴 Share on Reddit
+                    </button>
+                    <button onclick="copyLink()" style="background: var(--bg-secondary); border: 1px solid var(--color-accent); border-radius: 2px; color: var(--color-primary); padding: 10px; font-family: 'Courier New', monospace; cursor: pointer; font-size: 11px; transition: all 0.2s;">
+                        📋 Copy Link
                     </button>
                 </div>
             </div>
@@ -2356,6 +2379,56 @@
             }
         }
 
+        // Share Modal Functions
+        function openShareModal() {
+            document.getElementById('share-modal').style.display = 'block';
+        }
+
+        function closeShareModal() {
+            document.getElementById('share-modal').style.display = 'none';
+        }
+
+        function shareTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('Check out this interactive map of 6,266+ data centers worldwide! 🌍 #DataCenter #CloudInfrastructure #OSINT');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+            closeShareModal();
+        }
+
+        function shareLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+            closeShareModal();
+        }
+
+        function shareReddit() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('Interactive Global Data Center Map - 6,266+ Locations Worldwide');
+            window.open(`https://reddit.com/submit?url=${url}&title=${title}`, '_blank');
+            closeShareModal();
+        }
+
+        async function copyLink() {
+            try {
+                await navigator.clipboard.writeText(window.location.href);
+                // Change button text temporarily
+                const btn = event.target;
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                btn.style.background = '#00ff00';
+                btn.style.color = '#000';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = 'var(--bg-secondary)';
+                    btn.style.color = 'var(--color-primary)';
+                    closeShareModal();
+                }, 1500);
+            } catch (err) {
+                alert('Link: ' + window.location.href);
+                closeShareModal();
+            }
+        }
+
         // Change Theme Function
         function changeTheme(themeName) {
             // Remove current tile layer
@@ -2394,6 +2467,7 @@
         document.getElementById('stats-toggle').addEventListener('click', toggleStatsDashboard);
         document.getElementById('theme-selector').addEventListener('change', (e) => changeTheme(e.target.value));
         document.getElementById('export-btn').addEventListener('click', openExportModal);
+        document.getElementById('share-btn').addEventListener('click', openShareModal);
         document.getElementById('radius-search-btn').addEventListener('click', activateRadiusSearch);
         document.getElementById('distance-calc-btn').addEventListener('click', activateDistanceCalc);
         document.getElementById('proximity-btn').addEventListener('click', activateProximityAnalysis);
