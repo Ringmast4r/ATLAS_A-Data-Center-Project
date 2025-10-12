@@ -178,36 +178,38 @@
         }
 
         #controls {
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            gap: 8px;
-            align-items: center;
-        }
-
-        .controls-left {
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            align-items: flex-start;
+            gap: 8px;
         }
 
-        .controls-right {
+        .search-row {
             display: flex;
             gap: 6px;
             flex-wrap: wrap;
-            justify-content: flex-end;
+            justify-content: center;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         #search {
             background: var(--bg-secondary);
             border: 1px solid var(--color-accent);
             color: var(--color-primary);
-            padding: 6px 10px;
+            padding: 7px 12px;
             font-family: 'Courier New', monospace;
             font-size: 12px;
-            width: 320px;
+            flex: 1 1 300px;
+            max-width: 500px;
+            min-width: 200px;
             outline: none;
-            border-radius: 2px;
+            border-radius: 3px;
+            transition: all 0.2s;
         }
 
         #search::placeholder {
@@ -215,7 +217,8 @@
         }
 
         #search:focus {
-            border-color: var(--border-color);
+            border-color: var(--color-primary);
+            box-shadow: 0 0 8px var(--glow-color);
         }
 
         select {
@@ -560,6 +563,202 @@
         #stats-dashboard::-webkit-scrollbar-thumb:hover {
             background: #00aa00;
         }
+
+        /* Mobile & Tablet Responsive Design */
+        @media (max-width: 1024px) {
+            #header {
+                padding: 10px 15px;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+
+            .subtitle {
+                font-size: 9px;
+            }
+
+            #search {
+                flex: 1 1 250px;
+                font-size: 11px;
+                padding: 6px 10px;
+            }
+
+            button, select {
+                font-size: 10px;
+                padding: 5px 8px;
+            }
+
+            #stats {
+                font-size: 9px;
+                gap: 10px;
+            }
+
+            #info-panel, #results-panel {
+                max-width: 240px;
+                font-size: 9px;
+                padding: 8px;
+            }
+
+            #stats-dashboard {
+                width: 90%;
+                max-width: 320px;
+                right: 5%;
+                top: 5px;
+            }
+
+            .chart-container {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #header {
+                padding: 8px 10px;
+            }
+
+            h1 {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+
+            .subtitle {
+                font-size: 8px;
+                margin-bottom: 8px;
+            }
+
+            #controls {
+                gap: 6px;
+            }
+
+            .search-row, .button-row {
+                gap: 4px;
+            }
+
+            #search {
+                flex: 1 1 100%;
+                min-width: 0;
+                font-size: 11px;
+            }
+
+            select {
+                flex: 1;
+                min-width: 120px;
+            }
+
+            button {
+                flex: 1 1 auto;
+                min-width: 70px;
+                font-size: 9px;
+                padding: 5px;
+                white-space: nowrap;
+            }
+
+            #stats {
+                font-size: 8px;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            #info-panel, #results-panel {
+                width: calc(100% - 20px);
+                max-width: none;
+                left: 10px;
+                right: 10px;
+                top: 10px;
+                max-height: 50vh;
+                font-size: 9px;
+            }
+
+            #stats-dashboard {
+                width: calc(100% - 20px);
+                max-width: none;
+                left: 10px;
+                right: 10px;
+                top: 10px;
+                max-height: 60vh;
+                font-size: 9px;
+            }
+
+            .chart-container {
+                height: 150px;
+            }
+
+            .metric-grid {
+                gap: 6px;
+            }
+
+            #radius-panel, #distance-panel, #proximity-panel {
+                width: calc(100% - 20px);
+                max-width: none;
+                left: 10px;
+                right: 10px;
+                bottom: auto;
+                top: 60px;
+                min-width: 0;
+            }
+
+            #export-modal {
+                width: calc(100% - 40px);
+                min-width: 0;
+                padding: 12px;
+            }
+
+            .legend {
+                font-size: 8px;
+                padding: 6px;
+                bottom: 5px;
+                left: 5px;
+            }
+
+            .legend-item {
+                margin: 2px 0;
+                gap: 4px;
+            }
+
+            .legend-color {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 12px;
+                letter-spacing: 0.5px;
+            }
+
+            .subtitle {
+                font-size: 7px;
+            }
+
+            button, select {
+                font-size: 9px;
+                padding: 4px 6px;
+            }
+
+            #search {
+                font-size: 10px;
+                padding: 5px 8px;
+            }
+
+            #stats {
+                font-size: 7px;
+            }
+
+            .result-item {
+                padding: 5px;
+                margin: 3px 0;
+            }
+
+            .result-name {
+                font-size: 10px;
+            }
+
+            .result-details {
+                font-size: 8px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -569,25 +768,18 @@
             <div class="subtitle">CRITICAL INFRASTRUCTURE MAPPING SYSTEM</div>
 
             <div id="controls">
-                <div class="controls-left">
+                <div class="search-row">
                     <input type="text" id="search" placeholder="Search by name, company, city, state, or country...">
-                    <div style="display: flex; gap: 6px;">
-                        <select id="country-filter">
-                            <option value="">All Countries</option>
-                        </select>
-                        <select id="company-filter">
-                            <option value="">All Companies</option>
-                        </select>
-                    </div>
+                    <select id="country-filter">
+                        <option value="">All Countries</option>
+                    </select>
+                    <select id="company-filter">
+                        <option value="">All Companies</option>
+                    </select>
                 </div>
-                <div></div>
-                <div class="controls-right">
-                    <button id="heatmap-toggle">
-                        🔥 Heatmap
-                    </button>
-                    <button id="stats-toggle">
-                        📊 Stats
-                    </button>
+                <div class="button-row">
+                    <button id="heatmap-toggle">🔥 Heatmap</button>
+                    <button id="stats-toggle">📊 Stats</button>
                     <select id="theme-selector">
                         <option value="matrix">🟢 Matrix</option>
                         <option value="light">☀️ Light</option>
@@ -595,18 +787,10 @@
                         <option value="topographic">🗺️ Topo</option>
                         <option value="ocean">🌊 Ocean</option>
                     </select>
-                    <button id="export-btn">
-                        💾 Export
-                    </button>
-                    <button id="radius-search-btn">
-                        📍 Radius
-                    </button>
-                    <button id="distance-calc-btn">
-                        📏 Distance
-                    </button>
-                    <button id="proximity-btn">
-                        🎯 Proximity
-                    </button>
+                    <button id="export-btn">💾 Export</button>
+                    <button id="radius-search-btn">📍 Radius</button>
+                    <button id="distance-calc-btn">📏 Distance</button>
+                    <button id="proximity-btn">🎯 Proximity</button>
                 </div>
             </div>
 
